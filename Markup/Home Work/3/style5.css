@@ -1,0 +1,13 @@
+﻿body{
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 90%;
+}
+
+tr:nth-child(2n+2){
+    background: #ddebf7;
+}
+
+tr td:nth-of-type(3n+3){
+    background: #f2f2de;
+}

@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>task3_Homework2</title>
+</head>
+<body>
+    <!--как правильнее задавать переносы - через br или через параграф?-->
+    <form name="userData" action="post">
+        <label>
+            Name <br />
+            <input type="text" name="userName" />
+        </label>
+        <br />
+        <label>
+            Email <br />
+            <input type="email" name="userEmail" />
+        </label>
+        <br /><br />
+        <label>
+            Sex <br />
+            <input type="radio" name="userSex" value="Male">Male
+            <input type="radio" name="userSex" value="Female">Female
+        </label>
+        <br /><br />
+        <label>
+            Current status <br />
+            <input type="checkbox" name="userStatus" value="Student" />Student <br />
+            <input type="checkbox" name="userStatus" value="Employed" />Employed <br />
+            <input type="checkbox" name="userStatus" value="Unemployed" />Unemployed <br />
+        </label>
+        <br /><br />
+        <label>
+            <!--как сделать чтоб отображение выпадающего календарика было как на заданной картинке?-->
+            Month and Year of Birth <br />
+            <input type="month" name="userBirthday" />
+        </label>
+        <br /><br />
+        <label>
+            <!--что имеется ввиду тут сделать? просто список в рамочке?-->
+            Skills and Technologies <br />
+            <select multiple="multiple" size="10">
+                <optgroup label="Tech skills">
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="git">git</option>
+                </optgroup>
+                <optgroup label="Soft skills">
+                    <option value="Time management">Time management</option>
+                    <option value="Proactivity">Proactivity</option>
+                    <option value="Teamwork">Teamwork</option>
+                    <option value="Leadership">Leadership</option>
+                </optgroup>
+            </select>
+        </label>
+        <br /><br />
+        <!--почему кнопка и подпись к кнопке на русском языке? можно как то это изменить?-->
+        <input type="file" name="file">
+        <br /> <br />
+        <label>
+            Comments <br />
+            <textarea rows="4" cols="20" name="mytext"></textarea>
+        </label>
+        <br />
+        <button type="submit">Save</button>
+</form>
+</body>
+</html>

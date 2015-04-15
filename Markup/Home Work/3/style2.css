@@ -1,0 +1,13 @@
+﻿body{
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 90%;
+}
+
+article p:nth-of-type(1){
+    font-size: 20px;
+}
+
+article p:nth-last-child(1){
+    color: #999;
+}

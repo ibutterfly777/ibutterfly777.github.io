@@ -1,0 +1,22 @@
+﻿body{
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 90%;
+}
+
+a[href^="http"]{
+    color: #f70;
+}
+
+a[href*="google"]{
+    color: #666;
+}
+
+a[target="_blank"]:after
+{
+	content: '\21F1';
+	margin-left: 5px;
+	position: absolute;
+	color: orange;
+	transform: rotate(-270deg);
+}
