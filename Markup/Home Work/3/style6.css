@@ -1,0 +1,42 @@
+﻿body{
+    margin: 5px auto 0;
+    max-width: 1440px;
+    width: 90%;
+}
+
+input{
+    display: none
+}
+
+label[for="red"], label[for="green"], label[for="blue"]{
+    margin-right: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+label[for="red"]{
+    color: red;
+}
+
+label[for="green"]{
+    color: green;
+}
+
+label[for="blue"]{
+    color: blue;
+}
+
+#red:checked  ~.red, 
+#green:checked  ~.green,
+#blue:checked  ~.blue{
+    color: white;
+    border-radius: 5px;
+    padding: 3px;
+}
+ 
+#red:checked  ~.red{ background: red }
+ 
+#green:checked  ~.green{ background: green }
+ 
+#blue:checked  ~.blue{ background: blue }
+ 
