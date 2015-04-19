@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8" />
+    <title>test_form</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+    #mapContainer {
+		position:relative;
+	    height: 500px;
+	    width: 800px;
+		border:10px solid #eaeaea;	
+	}
+    </style>
+</head>
+<body>
+	<div>
+		<div>
+			<form id="userForm" name="userData" action="#">
+				<p>
+		        	<label for="userName">Name <span>*</span></label>
+					<input type="text" name="userName" placeholder="Your Name" id="userName" required="required" />
+		        </p>
+		        <p>
+		        	<label for="userSurname">Surname <span>*</span></label>
+		        	<input type="text" name="userSurname" placeholder="Your Surname" id="userSurname" required="required" />
+		        </p>
+		        <p>
+		        	<label for="userSex">Sex</label>
+		        	<select id="userSex">
+			        	<option value="Male">Male</option>
+			        	<option value="Female">Female</option>
+			        	<option value="Don't know">Don't know</option>
+			        </select>
+		        </p>
+		        <p>
+		        	<label for="userBirth">Your Birth <span>*</span></label>
+		            <input type="date" name="userBirthday" min="1950-01" max="2010-12" id="userBirth" required="required" />
+		        </p>
+		        <p>
+		            <label for="userChoise">I want to reseive your emails</label>
+		        	<input type="checkbox" name="userChoise" value="AgreeEmail" id="userChoise" />
+		        </p>		        
+		    </form>
+		    <button form="userForm" type="submit" value="Submit">Submit</button>
+		</div>
+		<div>
+			<form name="userLogoPass" action="#">
+				<p>
+					<label for="userLogin">Login</label>
+					<input type="email" name="userLogin" placeholder="Your email" required="required" id="userLogin" />
+				</p>
+				<p>
+					<label for="userPass">Login</label>
+					<input type="password" name="userPass" placeholder="Your password" required="required" id="userPass" />
+				</p>
+				<button type="submit" value="Send">Send</button>
+			</form>
+			<div id="mapContainer"></div>
+		</div>
+	</div>
+
+	<script src="http://maps.google.com/maps/api/js?sensor=false">
+	</script>
+	<script type="text/javascript">
+	    if (navigator.geolocation) {
+ navigator.geolocation.getCurrentPosition(function(position){
+	        var latitude = position.coords.latitude;
+	        var longitude = position.coords.longitude;
+	        var coords = new google.maps.LatLng(latitude, longitude);
+	        var mapOptions = {
+	            zoom: 15,
+	            center: coords,
+	            mapTypeControl: true,
+	            navigationControlOptions: {
+	                style: google.maps.NavigationControlStyle.SMALL
+	            },
+	            mapTypeId: google.maps.MapTypeId.ROADMAP
+	            };
+	            map = new google.maps.Map(
+	                document.getElementById("mapContainer"), mapOptions
+	                );
+	            var marker = new google.maps.Marker({
+	                    position: coords,
+	                    map: map,
+	                    title: "Your current location!"
+	            });
+	 
+	        });
+	    }else {
+	        alert("Geolocation API не поддерживается в вашем браузере");
+	    }
+	</script>
+</body>
+</html>
