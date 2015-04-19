@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "ImpactRegular";
+    src: url("ImpactRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body{	
+	font-family: ImpactRegular; 
+	margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav{
+	background-color: #a64dff;
+	height: 38px;
+	margin-top: 10px;
+	width: 100%;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+nav ul{	
+	width: 900px;
+	font-weight: normal;
+}
+
+ul li{
+	list-style-position: inside;
+	float: left;
+	text-transform: uppercase;
+	cursor: pointer;
+	color: #fff;
+	display: inline-block;
+    padding: 10px 40px;
+    margin: 0;
+
+}
+
+ul li.active {
+    background: #eeeeee;
+    color: #a0a0a0;
+}
+
+nav > p{
+	color: #fff;
+	text-transform: uppercase;
+	float: right;
+	cursor: pointer;
+	display: inline-block;
+    padding: 10px 40px;
+    margin: 0;
+}
