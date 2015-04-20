@@ -83,6 +83,10 @@ input:not(.checkbox), select{
 	color: #666;
 }
 
+input[type=date]{
+	padding-top: 4px;
+}
+
 select{
 	width: 195px;
 	height: 28px;
