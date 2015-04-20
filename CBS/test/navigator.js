@@ -1,4 +1,4 @@
-(function($) {
+$(document).ready(function(){
 	if (navigator.geolocation) {
 	    navigator.geolocation.getCurrentPosition(function(position){
 	    var latitude = position.coords.latitude;
