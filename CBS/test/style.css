@@ -1,0 +1,194 @@
+body{
+	background: url(bg.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        font-family: "Helvetica Neue",Helvetica, Arial;
+}
+
+h1 {
+  font-size: 36px;
+  color: #0A192A;
+  margin-top: 60px;
+  letter-spacing: -1px;
+  font-weight: normal;
+  text-shadow: 0px 0px 5px #36404B;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+body > div {
+	background: rgba(10, 26, 43, 0.85);
+	width: 750px;
+	height: 400px;
+	margin: 50px auto 0;
+	border: 5px solid #0A192A;
+	color: #fff;
+	box-shadow: 0 5px 10px 5px #0A192A;
+	border-radius: 0.4em;
+}
+
+body > div span{
+	color: #DF1C79;
+	font-weight: bold;
+}
+
+div > div:first-child{
+	float: left;
+	padding: 30px 0 0 30px;
+}
+
+div > div:last-child{
+	float: right;
+	padding: 30px 30px 0 0;
+}
+
+label{
+	float:left;
+}
+
+button{
+	width: 290px;
+	height: 35px;
+	text-transform: uppercase;
+	border-radius: 5px;
+	background: #f5e800; /* Old browsers */
+		background: -moz-linear-gradient(top,  #f5e800 0%, #a39b24 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5e800), color-stop(100%,#a39b24)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #f5e800 0%,#a39b24 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #f5e800 0%,#a39b24 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #f5e800 0%,#a39b24 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #f5e800 0%,#a39b24 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5e800', endColorstr='#a39b24',GradientType=0 ); /* IE6-9 */
+
+	color: #0A192A;
+	font-weight: bold;
+	border: none;
+	box-shadow: 1px 1px 2px #A39B24;
+}
+
+button:hover{
+	background: #A39B24;
+}
+
+input:not(.checkbox), select{
+	background-color: #F5F5F5;
+	border: none;
+	border-radius: 5px;
+	height: 25px;
+	padding-left: 10px;
+	width: 185px;
+	box-shadow: inset 1px 1px 3px #333333;
+	color: #666;
+}
+
+select{
+	width: 195px;
+	height: 28px;
+	padding-left: 6px;
+}
+
+p{
+	clear:both;
+	text-align:right;
+}
+
+#mapContainer {
+	position:relative;
+	height: 150px;
+	width: 250px;
+	border: 5px solid #ccc;
+	margin-top: 20px;
+}
+
+
+
+@media only screen and (min-width : 700px) and (max-width : 900px) {
+h1 {
+  font-size: 26px;
+  margin-top: 40px;
+}
+
+body > div {
+	width: 600px;
+	min-height: 300px;
+	margin: 30px auto 0;
+	border: 3px solid #0A192A;
+	font-size: 13px;
+}
+
+div > div:first-child{
+	padding: 20px 0 0 20px;
+}
+
+div > div:last-child{
+	padding: 20px 20px 0 0;
+}
+
+button{
+  width: 255px;
+  height: 30px;
+}
+
+input:not(.checkbox), select{
+	height: 25px;
+	width: 155px;
+	font-size: 12px;
+}
+
+select{
+	width: 165px;
+	height: 28px;
+}
+
+#mapContainer {
+	position:relative;
+	height: 150px;
+	width: 225px;
+	border: 5px solid #ccc;
+	margin-top: 20px;
+}
+}
+
+@media only screen and (max-width : 699px) {
+h1 {
+  font-size: 18px;
+  margin-top: 20px;
+  text-shadow: none;
+}
+
+body > div {
+	width: 315px;
+	min-height: 630px;
+	margin: 20px auto 0;
+	font-size: 12px;
+}
+
+div > div:first-child, div > div:last-child{
+	float: none;
+	padding: 10px 30px 20px;
+}
+
+button{
+  width: 255px;
+  height: 30px;
+}
+
+input:not(.checkbox), select{
+  height: 25px;
+  width: 155px;
+  font-size: 10px;
+}
+
+select{
+	width: 165px;
+	height: 28px;
+}
+
+#mapContainer {
+	position:relative;
+	height: 150px;
+	width: 185px;
+	margin-top: 30px;
+}
