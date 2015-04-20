@@ -1,4 +1,4 @@
-<script type="text/javascript">
+
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position){
         var latitude = position.coords.latitude;
@@ -26,4 +26,4 @@
     }else {
         alert("Geolocation API не поддерживается в вашем браузере");
     }
-</script>
+
