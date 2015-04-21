@@ -1,12 +1,6 @@
-@font-face{
-	font-family: Trebuchet;
-	src: url(trebuc.ttf);
-}
-
 body{
 	margin: 0;
 	padding: 0; 
-	font-family: 'Trebuchet MS', Helvetica, sans-serif;
 }
 
 div.orange{
@@ -45,7 +39,7 @@ div.value_white > p {
 
 div.value_white > div p{
 	margin: 26px 0 0;
-	font: bold 72px/20px Trebuchet;
+	font: bold 72px/20px 'Trebuchet MS', Helvetica, sans-serif;
 	text-align: center;
 	color: #35495a;
 	letter-spacing: -2px;
@@ -78,7 +72,7 @@ div.value_white > ul li{
 	list-style-image: url(check.png);
 	margin-bottom: 2px;
 	color: #888c94;
-	font: 15px/15px Trebuchet;
+	font: 15px/15px 'Trebuchet MS', Helvetica, sans-serif;
 	  letter-spacing: 0.5px;
 }
 
@@ -93,7 +87,7 @@ div.value_white > button{
 	border-bottom: 3px solid #b3560b;
 	border-radius: 4px;
 	color: #fff;
-	font: bold 14px/15px Trebuchet;
+	font: bold 14px/15px 'Trebuchet MS', Helvetica, sans-serif;
 	height: 42px;
 	margin: 17px 4px 0;
 	text-transform: uppercase;
