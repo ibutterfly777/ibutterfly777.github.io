@@ -23,7 +23,7 @@ div.orange{
 div.value_orange p{
 	color: #fff;
 	text-transform: uppercase;
-	font: bold 24px/0px Trebuchet;
+	font: bold 24px/0px 'Trebuchet MS', Helvetica, sans-serif;
 	margin: 0;
 	text-align: center;
 	background-color: #ee8129;
@@ -37,7 +37,7 @@ div.value_white{
 
 div.value_white > p {
 	color: #3f4042;
-	font: 24px/22px Trebuchet;
+	font: 24px/22px 'Trebuchet MS', Helvetica, sans-serif;
 	text-align: center;
 	text-transform: uppercase;
 	margin-bottom:0; 
