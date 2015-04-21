@@ -62,6 +62,7 @@ div.value_white > div sub{
 	font-weight: normal;
 	letter-spacing: 0px;
 	vertical-align: -webkit-baseline-middle;
+	vertical-align: -moz-middle-with-baseline;
 }
 
 div.value_white > ul{
