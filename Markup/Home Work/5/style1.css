@@ -3,14 +3,6 @@ body{
 	margin: 0;
 }
 
-nav{
-	background-color: #1AA4FF;
-	height: 38px;
-	margin-top: 10px;
-	width: 100%;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-
 ul{
 	margin: 0 auto;
 	padding: 0;
@@ -41,8 +33,16 @@ ul.nav li:hover, ul.nav li a:hover{
 
 ul.nav {
 	position: relative;
-	height: 30px;
+	height: 38px;
+	width: 100%;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	background-color: #1AA4FF;
+	margin-top: 10px;
+}
+
+ul div {
 	width: 900px;
+	margin: 0 auto;
 }
 
 ul.sub-menu li a{
@@ -55,7 +55,7 @@ ul.nav li:hover > ul {
 	background: #eeeeee;
 	border-top: 1px solid white;
 	display: block;
-	width: 900px;
+	width: 100%;
 	position: absolute;
 	top: 38px; 
 	left: 0;
@@ -66,4 +66,4 @@ ul.sub-menu li a:hover{
 	color: #eeeeee;
 }
 
-  
+/*-------не получается сделать так, чтоб шрифт пункта путешествия после перевода мышки на подпункт оставался серым... в чем ошибка?-------*/
