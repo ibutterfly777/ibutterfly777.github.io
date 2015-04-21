@@ -15,7 +15,7 @@ ul.nav li {
 	text-transform: uppercase; 
 }
 
-ul.nav li a {
+ul.nav li a{
 	text-decoration: none;
 	display: block;
 	padding: 10px 11px;
@@ -51,6 +51,10 @@ ul.sub-menu li a{
 	text-transform: none;
 }
 
+ul.nav li:hover > a{
+	color: #a0a0a0;
+}
+
 ul.nav li:hover > ul {
 	background: #eeeeee;
 	border-top: 1px solid white;
@@ -65,5 +69,3 @@ ul.sub-menu li a:hover{
 	background: #727272;
 	color: #eeeeee;
 }
-
-/*-------не получается сделать так, чтоб шрифт пункта путешествия после перевода мышки на подпункт оставался серым... в чем ошибка?-------*/
