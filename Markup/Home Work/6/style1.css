@@ -1,0 +1,111 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+div.review_back{
+	background: url(bg_reviews.jpg) repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    width: 100%;
+    min-height: 315px;
+    font-family: "Trebuchet MS", sans-serif;
+    margin-top: 30px; 
+    overflow: hidden;
+}
+
+div.reviews{
+	width: 1020px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+div.review_title{
+	padding-top: 58px;
+	padding-bottom: 48px;
+}
+
+h2{
+	color: #3170a8;
+	font-size: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+h2 span{
+	color: #ee8129;
+	font-weight: normal;
+}
+
+div.review_testimonial{
+	padding-bottom: 78px;
+	overflow: hidden;
+}
+
+div.review_testimonial_item_left{
+	float: left;
+	width: 488px;
+}
+
+div.review_testimonial_item_right{
+	float: right;
+	width: 488px;
+}
+
+div.testimonial_photo{
+	float: left;
+	width: 98px;
+	height: 98px;
+}
+
+div.testimonial_card{
+	background-color: #fff;
+	float: right;
+	width: 365px;
+	border: 1px solid #e0e0e0;
+	box-sizing: border-box;
+	color: #666666;
+	font-size: 13px;
+	padding: 12px 14px;
+	position: relative;
+}
+
+div.testimonial_card_name{
+	color: #3070a8;
+	border-bottom: 1px dotted #666666;
+	position: relative;
+	padding-bottom: 8px;
+	margin-bottom: 8px;
+	font-style: italic;
+}
+
+div.testimonial_card_name > p.testimonial_name{
+	margin: 0;
+}
+
+div.testimonial_card_name > p.testimonial_customer{
+	position: absolute;
+	margin: 0;
+	right: 0;
+	top: 0;
+}
+
+div.testimonial_card_text{
+	line-height: 20px;
+	letter-spacing: 0.4px;
+}
+
+
+div.testimonial_card:before{
+	content: ' ';
+	width: 0;
+	height: 0;
+	position: absolute;
+	border: 12px solid;
+	border-color: transparent white transparent transparent;
+	left: -24px;
+	top: 35px;
+}
