@@ -22,6 +22,7 @@ div.price_blue_block, div.price_green_block{
 	display: inline-block;
 	height: 440px;
 	width: 290px;
+	margin-top: 79px;
 }
 
 div.price_blue_block_title, div.price_green_block_title{
@@ -76,7 +77,7 @@ div.price_orange_block_title > div, div.price_blue_block_title > div, div.price_
 
 div.price_white_block{
 	margin: 0 auto;
-	width: 260px;
+	background: white;
 }
 
 div.price_white_block > p {
@@ -113,6 +114,7 @@ div.price_white_block > ul{
 	list-style-position: inside;
 	margin: 20px auto 0;
 	padding: 0;
+	width: 260px;
 }
 
 div.price_white_block > ul li{
@@ -131,10 +133,9 @@ div.price_white_block > ul li:nth-child(2n+2){
 /*---end main white block---*/
 
 /*----buttons----*/
-div.price_white_block > button.blue, div.price_white_block > button.green, div.price_white_block > button.orange{
+button.blue, button.green, button.orange{
 	background-color: #3371a6;
 	border-color: #3371a6; 
-	border-bottom: 3px solid #16436a;
 	border-radius: 4px;
 	border-right: none; 
 	color: #fff;
@@ -144,24 +145,26 @@ div.price_white_block > button.blue, div.price_white_block > button.green, div.p
 	margin: 17px auto 0;
 	text-transform: uppercase;
 	width: 252px;
+	box-shadow: 0 1px #193752;
 }
 
-div.price_white_block > button.orange{
+button.orange{
 	background-color: #ee8129;
 	border-color: #ee8129; 
-	border-bottom: 3px solid #b3560b;
+	box-shadow: 0 1px #9A531A;
 }
 
-div.price_white_block > button.blue:hover, div.price_white_block > button.green:hover{
-	background-color: #16436a;
+button.blue:hover, button.green:hover{
+	background-color: #417EB2;
 	border: none;
-	box-shadow: inset 2px 2px 2px #001120; 
+	border-radius: 5px;
+	transform: translateY(3px);
 }
 
-div.price_white_block > button:hover{
-	background-color: #b3560b;
+button.orange:hover{
+	background-color: #D66912;
 	border: none;
-	box-shadow: inset 2px 2px 2px #3C1C02; 
+	transform: translateY(3px);
 }
 /*---end buttons---*/
 
