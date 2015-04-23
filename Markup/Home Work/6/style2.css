@@ -12,6 +12,7 @@ div.pricing_block{
 h2.pricing_title{
 	color: #41525c;
 	font-size: 30px;
+	text-align: center;
 	text-transform: uppercase;
 }
 
