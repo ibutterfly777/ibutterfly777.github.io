@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+ 	<title>Он-лайн конструктор свадебных сайтов</title>
+
+ 	<link rel="stylesheet" href="css/main.css">
+ 	<link rel="stylesheet" href="css/mobile.css">
+ 	<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="carousel/style.css" media="all">
+		<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="style/css/ie7.css" media="all" />
+		<![endif]-->
+
+		<script type="text/javascript" src="carousel/jquery.jcarousel.js"></script>
+
+		<script type="text/javascript">
+		jQuery(document).ready(function() {
+		    // Initialise the first and second carousel by class selector.
+			// Note that they use both the same configuration options (none in this case).
+			jQuery('.d-carousel .carousel').jcarousel({
+		        scroll: 1
+		    });
+		});
+		</script>
+
+		<script type="text/javascript">
+		jQuery(document).ready(function($){
+
+			/* Подготавливаем иконку меню */
+			$('#nav-wrap').prepend('<div id="menu-icon"></div>');
+			
+			/* Переключаем навигацию */
+			$("#menu-icon").on("click", function(){
+				$(".menu").slideToggle();
+				$(this).toggleClass("active");
+			});
+
+		});
+		</script>
+
+		<script type="text/javascript">
+		$(
+		  function(){
+		    $("body").addClass("js");
+		  
+		    $(".link_nav").click(
+		      function(){
+		        $("body").toggleClass("mobile_nav");
+		      });
+		  });
+		</script>
+
+		<script type="text/javascript">
+		var id_menu = new Array('sub_menu_2');
+		startList = function allclose() {
+			for (i=0; i < id_menu.length; i++){
+				document.getElementById(id_menu[i]).style.display = "none";
+			}
+		}
+		function openMenu(id){
+			for (i=0; i < id_menu.length; i++){
+				if (id != id_menu[i]){
+					document.getElementById(id_menu[i]).style.display = "none";
+				}
+			}
+			if (document.getElementById(id).style.display == "block"){
+				document.getElementById(id).style.display = "none";
+			}else{
+				document.getElementById(id).style.display = "block";
+			}
+		}
+		window.onload=startList;
+		</script>
+
+	<script src="js/modernizr.custom.js"></script>
+
+
+ <script type="text/javascript">
+  function openbox(id){
+    if(window.innerWidth < 480){
+      display = document.getElementById(id).style.display;
+
+      if(display=='block'){
+         document.getElementById(id).style.display='none';
+      }else{
+         document.getElementById(id).style.display='block';
+      }
+    }
+  }
+ </script>
+
+ </head>
+
+ <body>
+ 	<header>
+	 	<div id="logo">
+	 		<a href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
+	 	</div>
+	 	<div id="right_part">
+	 		<div class="search_button">
+		 		<div id="sb-search" class="sb-search"  class="search_button">
+				    <form class="search_button">
+				        <input class="sb-search-input" placeholder="Search" type="search" value="" name="search" id="search">
+				        <input class="sb-search-submit" type="submit" value="">
+				        <span class="sb-icon-search"></span>
+				    </form>
+				</div>
+			</div>
+			<script src="js/classie.js"></script>
+			<script src="js/uisearch.js"></script>
+			<script>
+				new UISearch( document.getElementById( 'sb-search' ) );
+			</script>
+
+			<div id="menu_body">
+				<a href="#go_nav" class="link_nav"><img class="menu" src="img/menu.png" alt="menu"></a>
+				<ul class="menu">
+					<h3 class="name_menu">Меню сайта:</h3>
+					<li class="home"><a href="#">Home</a></li>
+					<li><a href="articles.html">About Us</a></li>
+					<li class="white"><a id="dd" class="wrapper-dropdown-1" tabindex="1" href="#" onclick="openMenu('sub_menu_2');return(false)">Your Services</a>
+						<ul id="sub_menu_2" class="submenu">
+							<li class="sub"><a href="#">first item</a></li>
+							<li class="sub"><a href="#">second item</a></li>
+							<li class="sub"><a href="#">third item</a></li>
+						</ul>
+					</li>
+					<li><a href="articles.html">Prices</a></li>
+					<li><a href="articles.html">Testimonials</a></li>
+					<li><a href="articles.html">Contact us</a></li>
+				</ul>
+			</div>
+			
+		 </div>
+			<script type="text/javascript">
+			
+			function DropDown(el) {
+				this.dd = el;
+				this.placeholder = this.dd.children('span');
+				this.opts = this.dd.find('ul.dropdown > li');
+				this.val = '';
+				this.index = -1;
+				this.initEvents();
+			}
+			DropDown.prototype = {
+				initEvents : function() {
+					var obj = this;
+
+					obj.dd.on('click', function(event){
+						$(this).toggleClass('active');
+						return false;
+					});
+
+					obj.opts.on('click',function(){
+						var opt = $(this);
+						obj.val = opt.text();
+						obj.index = opt.index();
+						obj.placeholder.text('Gender: ' + obj.val);
+					});
+				},
+				getValue : function() {
+					return this.val;
+				},
+				getIndex : function() {
+					return this.index;
+				}
+			}
+
+			$(function() {
+
+				var dd = new DropDown( $('#dd') );
+
+				$(document).click(function() {
+					// all dropdowns
+					$('.wrapper-dropdown-1').removeClass('active');
+				});
+
+			});
+			
+		</script>
+		 </div>
+	</header>
+
+	<div class="info">
+		<div id="screen1">
+			<div class="screen1">
+				<p id="name_slide">Your headline</p>
+				<p id="text_slide">Plan your wedding, browse dresses & gowns, see rings & jewelry, find honeymoon destination ideas</p>
+			</div>
+		</div>
+		<div id="slider">
+		</div>
+
+		<div id="best_offer">
+			<p id="name_offer">The best offer</p>
+			<p id="describe">Haven’t been looking at wedding dresses since you were 10? You’re not alone. Start your wedding planning by exploring thousands of photos. Then, save what inspires you.</p>
+			<a href="#"><button class="button"><span>book</span></button></a>
+		</div>
+
+		<div class="center">
+			<div id="left">
+				<h2><a href="articles.html">Your events</a></h2>
+				<div class="news">
+					<a href="article.html" class="read_more"><img class="preview" src="img/new1.png" alt="new"></a>
+					<h3><a href="article.html">Headline</a></h3>
+					<p>Haven’t been looking at wedding dresses since you were 10? You’re not alone. Start your wedding planning by exploring thousands of photos. Then, save what inspires you. </p>
+					<p class="date">20.06.2014</p>
+					<a href="article.html" class="read_more">Read more >></a>
+				</div>
+				<div class="news">
+					<a href="article.html" class="read_more"><img class="preview" src="img/new1.png" alt="new"></a>
+					<h3><a href="article.html">Headline</a></h3>
+					<p>Haven’t been looking at wedding dresses since you were 10? You’re not alone. Start your wedding planning by exploring thousands of photos. Then, save what inspires you. </p>
+					<p class="date">20.06.2014</p>
+					<a href="article.html" class="read_more">Read more >></a>
+				</div>
+				<div class="news">
+					<a href="article.html" class="read_more"><img class="preview" src="img/new1.png" alt="new"></a>
+					<h3><a href="article.html">Headline</a></h3>
+					<p>Haven’t been looking at wedding dresses since you were 10? You’re not alone. Start your wedding planning by exploring thousands of photos. Then, save what inspires you. </p>
+					<p class="date">20.06.2014</p>
+					<a href="article.html" class="read_more">Read more >></a>
+				</div>
+				<div class="news">
+					<a href="article.html" class="read_more"><img class="preview" src="img/new1.png" alt="new"></a>
+					<h3><a href="article.html">Headline</a></h3>
+					<p>Haven’t been looking at wedding dresses since you were 10? You’re not alone. Start your wedding planning by exploring thousands of photos. Then, save what inspires you. </p>
+					<p class="date">20.06.2014</p>
+					<a href="article.html" class="read_more">Read more >></a>
+				</div>
+				<div class="news">
+					<a href="article.html" class="read_more"><img class="preview" src="img/new1.png" alt="new"></a>
+					<h3><a href="article.html">Headline</a></h3>
+					<p>Haven’t been looking at wedding dresses since you were 10? You’re not alone. Start your wedding planning by exploring thousands of photos. Then, save what inspires you. </p>
+					<p class="date">20.06.2014</p>
+					<a href="article.html" class="read_more">Read more >></a>
+				</div>
+				<div class="news">
+					<a href="article.html" class="read_more"><img class="preview" src="img/new1.png" alt="new"></a>
+					<h3><a href="article.html">Headline</a></h3>
+					<p>Haven’t been looking at wedding dresses since you were 10? You’re not alone. Start your wedding planning by exploring thousands of photos. Then, save what inspires you. </p>
+					<p class="date">20.06.2014</p>
+					<a href="article.html" class="read_more">Read more >></a>
+				</div>
+
+				<div class="pagerDRUPAL">
+					<div class="pager-list">
+
+					<a href="" class="pager-first active" title="Go to first page"><<</a>
+					<a href="" class="pager-previous active" title="Go to previous page"><</a>
+						<strong>1</strong>
+						<a href="" class="pager-next active" title="Go to page 2">2</a>
+						<a href="" class="pager-next active" title="Go to page 3">3</a>
+						<div class="pager-list-dots-right">...</div>
+					</div>
+					<a href="" class="pager-next active" title="Go to next page">></a>
+					<a href="" class="pager-last active" title="Go to last page">>></a>
+				</div>
+			</div>
+			<div id="right">
+				<div class="form_block">
+						<img class="form_image" src="img/form_image.jpg" alt="form_image">
+						<p>Your picture can be here</p>
+						<form action="option.php" method="post" name="call-form" class="call-form"> 
+								<input type="text" name="name" id="name" class="txt" tabindex="1" placeholder="Your name" required>
+								<input type="email" name="email" id="email" class="txt" tabindex="2" placeholder="Your e-mail" required>
+								<input type="submit" id="submitbtn" name="submitbtn" tabindex="5" value="subscribe">
+						</form>
+				</div>
+				<div id="left_news">
+					<div class="news">
+						<h3><a href="article.html">Headline</a></h3>
+						<p>Haven’t been looking at wedding dresses since you were 10?Haven’t been looking at wedding dresses since you were 10?Haven’t been looking at.</p>
+						<p class="date">20.06.2014</p>
+						<a href="article.html" class="read_more">Read more >></a>
+					</div>
+					<div class="news">
+						<h3><a href="article.html">Headline</a></h3>
+						<p>Haven’t been looking at wedding dresses since you were 10?Haven’t been looking at wedding dresses since you were 10?Haven’t been looking at.</p>
+						<p class="date">20.06.2014</p>
+						<a href="article.html" class="read_more">Read more >></a>
+					</div>
+				</div>
+				<div id="banner">
+					<img class="banner" src="img/banner.jpg" alt="banner">
+					<p>Your slogan can be here</p>
+				</div>
+			</div>
+		</div>
+		<div class="weddings">
+			<h2><a href="our_weddings.html">Our weddings</a></h2>
+
+			<div id="wrapper">
+	  
+			    <div class="d-carousel">
+			      <ul class="carousel">
+			        <li>
+			            <a href="husband&wife.html"><img class="photo_wedding" src="img/wedding1.jpg" alt="wedding">
+						<p class="name_wedding">Husband & Wife</p></a>
+						<p class="date_wedding">27.06.2014</p>
+						<p class="Subject">Subject of wedding</p>
+			        </li>
+			         <li>
+			            <a href="husband&wife.html"><img class="photo_wedding" src="img/wedding1.jpg" alt="wedding">
+						<p class="name_wedding">Husband & Wife</p></a>
+						<p class="date_wedding">27.06.2014</p>
+						<p class="Subject">Subject of wedding</p>
+			        </li>
+			        <li>
+			            <a href="husband&wife.html"><img class="photo_wedding" src="img/wedding1.jpg" alt="wedding">
+						<p class="name_wedding">Husband & Wife</p></a>
+						<p class="date_wedding">27.06.2014</p>
+						<p class="Subject">Subject of wedding</p>
+			        </li>
+			        <li>
+			            <a href="husband&wife.html"><img class="photo_wedding" src="img/wedding1.jpg" alt="wedding">
+						<p class="name_wedding">Husband & Wife</p></a>
+						<p class="date_wedding">27.06.2014</p>
+						<p class="Subject">Subject of wedding</p>
+			        </li>
+			        <li>
+			            <a href="husband&wife.html"><img class="photo_wedding" src="img/wedding1.jpg" alt="wedding">
+						<p class="name_wedding">Husband & Wife</p></a>
+						<p class="date_wedding">27.06.2014</p>
+						<p class="Subject">Subject of wedding</p>
+			        </li>
+			        <li>
+			            <a href="husband&wife.html"><img class="photo_wedding" src="img/wedding1.jpg" alt="wedding">
+						<p class="name_wedding">Husband & Wife</p></a>
+						<p class="date_wedding">27.06.2014</p>
+						<p class="Subject">Subject of wedding</p>
+			        </li>
+			        <li>
+			            <a href="husband&wife.html"><img class="photo_wedding" src="img/wedding1.jpg" alt="wedding">
+						<p class="name_wedding">Husband & Wife</p></a>
+						<p class="date_wedding">27.06.2014</p>
+						<p class="Subject">Subject of wedding</p>
+			        </li>
+
+			      </ul>	
+			    </div>
+			</div>
+		</div>
+
+		<div id="video">
+			<h2><a href="yourvideo.html">Your video</a></h2>
+			<div class="wedding_video">
+
+			     <div class="video">
+			        <a href="#"><img class="picturevideo_" src="img/video1.jpg" alt="" aria-hidden="true" data-group-key="thumb-group-0">
+			    	<p class="video-time">11:53</p>
+			  		<p class="describe_video">Haven’t been looking at wedding dresses since you were 10</p></a>
+				 </div>
+				 <div class="video">
+			        <a href="#"><img class="picturevideo_" src="img/video2.jpg" alt="" aria-hidden="true" data-group-key="thumb-group-0">
+			    	<p class="video-time">11:53</p>
+			  		<p class="describe_video">Haven’t been looking at wedding dresses since you were 10</p></a>
+				 </div>
+				 <div class="video">
+			        <a href="#"><img class="picturevideo_" src="img/video1.jpg" alt="" aria-hidden="true" data-group-key="thumb-group-0">
+			    	<p class="video-time">11:53</p>
+			  		<p class="describe_video">Haven’t been looking at wedding dresses since you were 10</p></a>
+				 </div>
+				 <div class="video">
+			        <a href="#"><img class="picturevideo_" src="img/video1.jpg" alt="" aria-hidden="true" data-group-key="thumb-group-0">
+			    	<p class="video-time">11:53</p>
+			  		<p class="describe_video">Haven’t been looking at wedding dresses since you were 10</p></a>
+				 </div>
+				 <div class="video">
+			        <a href="#"><img class="picturevideo_" src="img/video2.jpg" alt="" aria-hidden="true" data-group-key="thumb-group-0">
+			    	<p class="video-time">11:53</p>
+			  		<p class="describe_video">Haven’t been looking at wedding dresses since you were 10</p></a>
+				 </div>
+				 <div class="video">
+			        <a href="#"><img class="picturevideo_" src="img/video2.jpg" alt="" aria-hidden="true" data-group-key="thumb-group-0">
+			    	<p class="video-time">11:53</p>
+			  		<p class="describe_video">Haven’t been looking at wedding dresses since you were 10</p></a>
+				 </div>
+			</div>
+
+			<p><a href="#" class="read_more">Read more >></a></p>
+		</div>
+
+
+		<footer>
+			<div id="footer">
+				<div class="inline">
+					<div class="first_block">
+						<div class="box">
+							<h4><a href="#" onclick="openbox('box'); return false">Контакты<span class="plus"><img class="arrow_little" src="img/arrow_little.png" alt="arrow"></span></a></h4>
+							<div id="box" class="cont1">
+								<ul class="sub_menu">
+									<li>Россия +7 499 346 7818, +7 812 424 5604</li>
+									<li>Украина +38 067 588 3344</li>
+									<li>США +1 718 425 3181</li>
+									<li>Великобритания +44 203 411 4526</li>
+									<li>admin@professionalwedding.org</li>
+									<li><a href="#">Правила использования портала</a><li>
+									<li><a href="#">Политика конфиденциальности</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="second_block">
+						<div class="box">
+							<h4><a href="#" onclick="openbox('box2'); return false">Свадебные курсы<span class="plus"><img class="arrow_little" src="img/arrow_little.png" alt="arrow"></span></a></h4>
+							<div id="box2" class="cont">
+								<ul class="sub_menu">
+									<li><a href="#">Группа № 1</a></li>
+									<li><a href="#">Свадебный Организатор Beginner</a></li>
+									<li><a href="#">Свадебный координатор 3.0</a></li>
+									<li><a href="#">Свадебный Организатор Professional</a></li>
+									<li><a href="#">Свадебный Гуру 3.0</a></li>
+									<li><a href="#">The Boss</a></li>
+									<li><a href="#">VIP Клиенты на всю жизнь</a></li>
+									<li><a href="#">Комплект из 4 вебинаров</a></li>
+									<li><a href="#">Курсы для самостоятельного изучения</a></li>
+									<li><a href="#">Индивидуальная консультация с Ольгой Ермиловой</a></li>
+									<li><a href="#">Идеальная свадьба от идеи до воплощения</a></li>
+									<li><a href="#">Пригласить Ольгу Ермилову</a></li>
+									<li><a href="#">Все секреты успешной первой встречи</a></li>
+									<li><a href="#">Свадебный бизнес для чайников</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="third_block">
+							<h4>Мы в сети:</h4>
+							<div class="social">
+								<p><a href="#"><img class="socseti" src="img/vk.png" alt="vk"><span class="text">VKontakte</span></a></p>
+								<p><a href="#"><img class="socseti" src="img/tw.png" alt="tw"><span class="text">Twitter</span></a></p>
+								<p><a href="#"><img class="socseti" src="img/fb.png" alt="fb"><span class="text">Facebook</span></a></p>
+								<p><a href="#"><img class="socseti" src="img/google.png" alt="google"><span class="text">Google+</span></a></p>
+								<p><a href="#"><img class="socseti" src="img/mm.png" alt="mm"><span class="text">Мой мир</span></a></p>
+								<p><a href="#"><img class="socseti" src="img/odn.png" alt="odn"><span class="text">Одноклассники</span></a></p>
+							</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<p id="copyright">© Международная свадебная федерация. Все права защищены</p>
+	</div>
+ </body>
+ </html>

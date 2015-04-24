@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 	<meta charset="utf-8">
+ 	<title>кухни VIP класса в Полтаве</title>
+ 	<link rel="stylesheet" href="css/style.css">
+ 	<link rel="stylesheet" href="css/popup.css">
+ 	<link rel="stylesheet" href="css/reveal.css">
+
+ 	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+
+	<link href="css/style_gal.css" type="text/css" media="screen" rel="stylesheet" />
+	<script src="js/lightgallery.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	lightgallery.init();
+	
+	var AJAX = (function(){
+
+	  var req = window.ActiveXObject ? new ActiveXObject("Microsoft.XMLHTTP") : new XMLHttpRequest();
+
+	  return {
+
+		get : function(url, callback, context){
+		  req.open('GET', url);
+		  req.onreadystatechange = function() {
+		if(req.readyState == 4){
+			callback.call(context || window, req);
+		}
+		  };
+		  req.send(null);
+		}
+
+	  }
+
+	})();
+
+	var someObj = {a : 'test'};
+
+	function loadImages() {
+	  AJAX.get('load.html', function(req){
+		document.getElementById("moreImages").innerHTML += req.responseText;
+		document.getElementById("load_new").style.display = 'none';
+		
+		lightgallery.init();
+	  }, someObj);
+	}
+	</script>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="js/jquery.arcticmodal.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/jquery.reveal.js"></script>	
+
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-54063735-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+ </head>
+ <body>
+ 	<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter25943159 = new Ya.Metrika({id:25943159,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/25943159" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+	<header>
+ 		<div id="main">
+			<img class="logo" src="img/logo.png" alt="logo">
+			<h1>кухни <span class="blue">VIP</span> класса в Полтаве</h1>
+
+			<p class="phone">8(0532)689608</p>	
+			<!-- кнопка -->
+				<button class="button" onClick="$('#call-request').arcticmodal()"><span>Заказать звонок</span></button>
+				<!-- //кнопка -->
+
+				<!-- форма -->
+				<div class="g-hidden">
+				<div class="b-modal" id="call-request">
+				<div class="b-modal_close arcticmodal-close">X</div>
+
+				<div class="modal-form" align="center">
+					<form action="options.php" method="post" name="call-form" class="call-form">
+					<h3>Заказать бесплатный звонок!</h3>
+							<input type="text" required="required" class="inputbox" name="name" placeholder="Ваше имя"> 
+							<input type="phone" required="required" class="inputbox phone-box" name="number" value="+38" placeholder="____">
+					        <input type="vopros" required="required" class="inputbox" name="vopros" placeholder="Удобное время звонка"> 
+							<input name=""  id="submit" type="submit" class="button03" value="Перезвоните мне"/>
+					        <p>Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!</p>
+					</form>
+				</div>
+
+				</div>
+				</div>
+				<!-- // форма -->
+			</div>
+	</header>
+	<div id="screen1">
+		<img class="sale" src="img/sale.png" alt="sale">
+		<div class="form_block">
+			<p class="name_form">Закажите у нас кухню и получите туристическую путевку в <span class="small">ПОДАРОК</span></p>
+			<form action="options1.php" method="post" name="call-form" class="call-form">
+					<input type="text" required="required" class="inputbox2" name="name" placeholder="Введите Ваше имя">
+					<input type="phone" required="required" maxlength="19" class="inputbox phone-box" name="number" placeholder="Введите Ваш номер телефона">
+					<input name=""  id="submit" type="submit" class="button2" value="Заказать кухню"/>
+			</form>
+			<p class="data">Гарантируем конфиденциальность Ваших данных. Ваше имя используется для обращения лично к Вам, а Ваш телефон для ведения с Вами переговоров относительно услуг нашей компании, заявленных на сайте</p>
+		</div>
+	</div>
+	<div class="grey">
+		<div class="benefits">
+			<h2>Украинские кухни по европейским стандартам</h2>
+			<div class="benefit"><span class="main_ben">2 года</span><br>гарантии на мебель</div>
+			<div class="benefit"><span class="main_ben">10 лет</span><br>сервисного обслуживания</div>
+			<div class="benefit"><span class="main_ben">100%</span><br>оригинальная продукция</div>
+			<div class="benefit"><span class="main_ben">100%</span><br>натуральные материалы</div>
+		</div>
+	</div>
+	<div class="kitchens">
+		<h2>Наши кухни</h2>
+		<div class="kitchen">
+			<h3>Латина Эксклюзив</h3>
+			<a href="img/001.jpg" rel="lightgallery[flowers]" title="Leaves after rain"><img class="kitchen_picture" src="img/1.png" alt="bolero_1"></a>
+					<!-- кнопка -->
+				<button class="button3" onClick="$('#call-request2').arcticmodal()"><span>Хочу такую же!</span></button>
+				<!-- //кнопка -->
+
+				<!-- форма -->
+				<div class="g-hidden">
+				<div class="b-modal" id="call-request2">
+				<div class="b-modal_close arcticmodal-close">X</div>
+
+				<div class="modal-form" align="center">
+					<form action="options2.php" method="post" name="call-form" class="call-form">
+					<h3>Хочу такую же!</h3>
+							<input type="text" required="required" class="inputbox2" name="name" placeholder="Название кухни"> 
+							<input type="phone" required="required" class="inputbox2 phone-box" name="number" value="+38" placeholder="____">
+					        <input type="vopros" required="required" class="inputbox2" name="vopros" placeholder="Удобное время звонка"> 
+							<input name=""  id="submit" type="submit" class="button03" value="Хочу кухню!"/>
+					        <p>Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!</p>
+					</form>
+				</div>
+
+				</div>
+				</div>
+				<!-- // форма -->
+		</div>
+		<div class="kitchen">
+			<h3>Элегия</h3>
+			<a href="img/002.JPG" rel="lightgallery[flowers]" title="Leaves after rain"><img class="kitchen_picture" src="img/2.png" alt="bolero_2"></a>
+							<!-- кнопка -->
+				<button class="button3" onClick="$('#call-request2').arcticmodal()"><span>Хочу такую же!</span></button>
+				<!-- //кнопка -->
+
+				<!-- форма -->
+				<div class="g-hidden">
+				<div class="b-modal" id="call-request2">
+				<div class="b-modal_close arcticmodal-close">X</div>
+
+				<div class="modal-form" align="center">
+					<form action="options2.php" method="post" name="call-form" class="call-form">
+					<h3>Хочу такую же!</h3>
+							<input type="text" required="required" class="inputbox2" name="name" placeholder="Название кухни"> 
+							<input type="phone" required="required" class="inputbox2 phone-box" name="number" value="+38" placeholder="____">
+					        <input type="vopros" required="required" class="inputbox2" name="vopros" placeholder="Удобное время звонка"> 
+							<input name=""  id="submit" type="submit" class="button03" value="Хочу кухню!"/>
+					        <p>Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!</p>
+					</form>
+				</div>
+
+				</div>
+				</div>
+				<!-- // форма -->
+		</div>
+		<div class="kitchen">
+			<h3>Меренге</h3>
+			<a href="img/003.jpg" rel="lightgallery[flowers]" title="Leaves after rain"><img class="kitchen_picture" src="img/3.png" alt="kantata_1"></a>
+							<!-- кнопка -->
+				<button class="button3" onClick="$('#call-request2').arcticmodal()"><span>Хочу такую же!</span></button>
+				<!-- //кнопка -->
+
+				<!-- форма -->
+				<div class="g-hidden">
+				<div class="b-modal" id="call-request2">
+				<div class="b-modal_close arcticmodal-close">X</div>
+
+				<div class="modal-form" align="center">
+					<form action="options2.php" method="post" name="call-form" class="call-form">
+					<h3>Хочу такую же!</h3>
+							<input type="text" required="required" class="inputbox2" name="name" placeholder="Название кухни"> 
+							<input type="phone" required="required" class="inputbox2 phone-box" name="number" value="+38" placeholder="____">
+					        <input type="vopros" required="required" class="inputbox2" name="vopros" placeholder="Удобное время звонка"> 
+							<input name=""  id="submit" type="submit" class="button03" value="Хочу кухню!"/>
+					        <p>Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!</p>
+					</form>
+				</div>
+
+				</div>
+				</div>
+				<!-- // форма -->
+		</div>
+		<div class="kitchen">
+			<h3>Прованс</h3>
+			<a href="img/004.jpg" rel="lightgallery[flowers]" title="Leaves after rain"><img class="kitchen_picture" src="img/4.png" alt="kantata_2"></a>
+							<!-- кнопка -->
+				<button class="button3" onClick="$('#call-request2').arcticmodal()"><span>Хочу такую же!</span></button>
+				<!-- //кнопка -->
+
+				<!-- форма -->
+				<div class="g-hidden">
+				<div class="b-modal" id="call-request2">
+				<div class="b-modal_close arcticmodal-close">X</div>
+
+				<div class="modal-form" align="center">
+					<form action="options2.php" method="post" name="call-form" class="call-form">
+					<h3>Хочу такую же!</h3>
+							<input type="text" required="required" class="inputbox2" name="name" placeholder="Название кухни"> 
+							<input type="phone" required="required" class="inputbox2 phone-box" name="number" value="+38" placeholder="____">
+					        <input type="vopros" required="required" class="inputbox2" name="vopros" placeholder="Удобное время звонка"> 
+							<input name=""  id="submit" type="submit" class="button03" value="Хочу кухню!"/>
+					        <p>Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!</p>
+					</form>
+				</div>
+
+				</div>
+				</div>
+				<!-- // форма -->
+		</div>
+		<div class="kitchen">
+			<h3>Руэда</h3>
+			<a href="img/005.jpg" rel="lightgallery[flowers]" title="Leaves after rain"><img class="kitchen_picture" src="img/5.png" alt="kantata_3"></a>
+							<!-- кнопка -->
+				<button class="button3" onClick="$('#call-request2').arcticmodal()"><span>Хочу такую же!</span></button>
+				<!-- //кнопка -->
+
+				<!-- форма -->
+				<div class="g-hidden">
+				<div class="b-modal" id="call-request2">
+				<div class="b-modal_close arcticmodal-close">X</div>
+
+				<div class="modal-form" align="center">
+					<form action="options2.php" method="post" name="call-form" class="call-form">
+					<h3>Хочу такую же!</h3>
+							<input type="text" required="required" class="inputbox2" name="name" placeholder="Название кухни"> 
+							<input type="phone" required="required" class="inputbox2 phone-box" name="number" value="+38" placeholder="____">
+					        <input type="vopros" required="required" class="inputbox2" name="vopros" placeholder="Удобное время звонка"> 
+							<input name=""  id="submit" type="submit" class="button03" value="Хочу кухню!"/>
+					        <p>Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!</p>
+					</form>
+				</div>
+
+				</div>
+				</div>
+				<!-- // форма -->
+		</div>
+		<div class="kitchen">
+			<h3>Латина</h3>
+			<a href="img/006.jpg" rel="lightgallery[flowers]" title="Leaves after rain"><img class="kitchen_picture" src="img/6.png" alt="latina_1"></a>
+							<!-- кнопка -->
+				<button class="button3" onClick="$('#call-request2').arcticmodal()"><span>Хочу такую же!</span></button>
+				<!-- //кнопка -->
+
+				<!-- форма -->
+				<div class="g-hidden">
+				<div class="b-modal" id="call-request2">
+				<div class="b-modal_close arcticmodal-close">X</div>
+
+				<div class="modal-form" align="center">
+					<form action="options2.php" method="post" name="call-form" class="call-form">
+					<h3>Хочу такую же!</h3>
+							<input type="text" required="required" class="inputbox2" name="name" placeholder="Название кухни"> 
+							<input type="phone" required="required" class="inputbox2 phone-box" name="number" value="+38" placeholder="____">
+					        <input type="vopros" required="required" class="inputbox2" name="vopros" placeholder="Удобное время звонка"> 
+							<input name=""  id="submit" type="submit" class="button03" value="Хочу кухню!"/>
+					        <p>Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!</p>
+					</form>
+				</div>
+
+				</div>
+				</div>
+				<!-- // форма -->
+		</div>
+		<div class="kitchen">
+			<h3>Нота</h3>
+			<a href="img/007.jpg" rel="lightgallery[flowers]" title="Leaves after rain"><img class="kitchen_picture" src="img/7.png" alt="latina_2"></a>
+							<!-- кнопка -->
+				<button class="button3" onClick="$('#call-request2').arcticmodal()"><span>Хочу такую же!</span></button>
+				<!-- //кнопка -->
+
+				<!-- форма -->
+				<div class="g-hidden">
+				<div class="b-modal" id="call-request2">
+				<div class="b-modal_close arcticmodal-close">X</div>
+
+				<div class="modal-form" align="center">
+					<form action="options2.php" method="post" name="call-form" class="call-form">
+					<h3>Хочу такую же!</h3>
+							<input type="text" required="required" class="inputbox2" name="name" placeholder="Название кухни"> 
+							<input type="phone" required="required" class="inputbox2 phone-box" name="number" value="+38" placeholder="____">
+					        <input type="vopros" required="required" class="inputbox2" name="vopros" placeholder="Удобное время звонка"> 
+							<input name=""  id="submit" type="submit" class="button03" value="Хочу кухню!"/>
+					        <p>Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!</p>
+					</form>
+				</div>
+
+				</div>
+				</div>
+				<!-- // форма -->
+		</div>
+		<div class="kitchen">
+			<h3>Соната</h3>
+			<a href="img/008.jpg" rel="lightgallery[flowers]" title="Leaves after rain"><img class="kitchen_picture" src="img/8.png" alt="merenge_1"></a>
+							<!-- кнопка -->
+				<button class="button3" onClick="$('#call-request2').arcticmodal()"><span>Хочу такую же!</span></button>
+				<!-- //кнопка -->
+
+				<!-- форма -->
+				<div class="g-hidden">
+				<div class="b-modal" id="call-request2">
+				<div class="b-modal_close arcticmodal-close">X</div>
+
+				<div class="modal-form" align="center">
+					<form action="options2.php" method="post" name="call-form" class="call-form">
+					<h3>Хочу такую же!</h3>
+							<input type="text" required="required" class="inputbox2" name="name" placeholder="Название кухни"> 
+							<input type="phone" required="required" class="inputbox2 phone-box" name="number" value="+38" placeholder="____">
+					        <input type="vopros" required="required" class="inputbox2" name="vopros" placeholder="Удобное время звонка"> 
+							<input name=""  id="submit" type="submit" class="button03" value="Хочу кухню!"/>
+					        <p>Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!</p>
+					</form>
+				</div>
+
+				</div>
+				</div>
+				<!-- // форма -->
+		</div>
+		<div class="kitchen">
+			<h3>Танго</h3>
+			<a href="img/009.JPG" rel="lightgallery[flowers]" title="Leaves after rain"><img class="kitchen_picture" src="img/9.png" alt="merenge_2"></a>
+							<!-- кнопка -->
+				<button class="button3" onClick="$('#call-request2').arcticmodal()"><span>Хочу такую же!</span></button>
+				<!-- //кнопка -->
+
+				<!-- форма -->
+				<div class="g-hidden">
+				<div class="b-modal" id="call-request2">
+				<div class="b-modal_close arcticmodal-close">X</div>
+
+				<div class="modal-form" align="center">
+					<form action="options2.php" method="post" name="call-form" class="call-form">
+					<h3>Хочу такую же!</h3>
+							<input type="text" required="required" class="inputbox2" name="name" placeholder="Название кухни"> 
+							<input type="phone" required="required" class="inputbox2 phone-box" name="number" value="+38" placeholder="____">
+					        <input type="vopros" required="required" class="inputbox2" name="vopros" placeholder="Удобное время звонка"> 
+							<input name=""  id="submit" type="submit" class="button03" value="Хочу кухню!"/>
+					        <p>Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!</p>
+					</form>
+				</div>
+
+				</div>
+				</div>
+				<!-- // форма -->
+		</div>
+	</div>
+	<div class="form_block2">
+		<p class="name">Заказать кухню по индивидуальному проекту</p>
+			<form action="options3.php" method="post" name="call-form" class="call-form"> 
+					<input type="text" required="required" class="inputbox3" name="name" placeholder="Введите Ваше имя">
+					<input type="phone" required="required" maxlength="23" class="inputbox3 phone-box" name="number" placeholder="Введите Ваш номер телефона"><br>
+					<input name=""  id="submit" type="submit" class="button4" value="Хочу свою!"/>
+			</form>
+			<p class="conf">Введя свои данные, Вы соглашаетесь с политикой конфиденциальности</p>
+	</div>
+	<div class="why_our">
+		<h2>Почему именно наши кухни?</h2>
+		<div class="block">
+			<h4>100% оригинальные фасады из дерева и МДФ немецкого качества</h4>
+			<ul>
+				<li>фасады прочны и надежны</li>
+				<li>не впитывают влагу, не деформируются</li>
+				<li>срок службы от 10 лет</li>
+				<li>100% экологичны</li>
+			</ul>
+		</div>
+		<div class="block">
+			<h4>Комплектующие от известных европейских производителей</h4>
+			<ul>
+				<li>австрийская фурнитура делает корпус кухни в 6 раз прочнее</li>
+				<li>кухонные ящики выдерживают нагрузку до 50 кг</li>
+				<li>немецкие столешницы не впитывают влагу, запахи, не боятся перепадов температур, на них не остаются жирные пятна</li>
+			</ul>
+		</div>
+		<div class="block1">
+			<h4>Фабричное производство</h4>
+			<ul>
+				<li>качество и прочность используемых материалов</li>
+				<li>новейшие европейские технологии производства</li>
+				<li>100% заявленный срок службы</li>
+				<li>система контроля качества на производстве</li>
+			</ul>
+		</div>
+		<div class="block">
+			<h4>2 года гарантии<br>10 лет сервисного обслуживания</h4>
+			<ul>
+				<li>замена брака</li>
+				<li>замена компонентов мебели, поврежденных при транспортировке</li>
+				<li>устранение недостатков до 14 дней</li>
+			</ul>
+		</div>
+		<div class="block">
+			<h4>Встроенная техника для кухни "под ключ"</h4>
+			<ul>
+				<li>Вы можете заказать технику прямо у нас вместе с кухней</li>
+				<li>Доставка и монтаж встроенной техники осуществляется бесплатно</li>
+				<li>встроенная техника подключается специалистами сервисной службы</li>
+			</ul>
+		</div>
+	</div>
+	<div class="form_block2">
+		<p class="name">Закажите бесплатную консультацию дизайнера</p>
+			<form action="options4.php" method="post" name="call-form" class="call-form"> 
+					<input type="text" required="required" class="inputbox3" name="name" placeholder="Введите Ваше имя">
+					<input type="phone" required="required" maxlength="23" class="inputbox3 phone-box" name="number" placeholder="Введите Ваш номер телефона"><br>
+					<input name=""  id="submit" type="submit" class="button4" value="Оформить заявку"/>
+			</form>
+			<p class="conf">Введя свои данные, Вы соглашаетесь с политикой конфиденциальности</p>
+	</div>
+	<div class="how">
+		<h2>Как все происходит</h2>
+		<img class="arrows" src="img/arrows.png" alt="arrows">
+		<div class="work">
+			<img class="icon" src="img/icon1.png" alt="icon">
+			<p>Вы оформляете заявку</p>
+		</div>
+		<div class="work">
+			<img class="icon" src="img/icon2.png" alt="icon">
+			<p>Мы связываемся с Вами и договариваемся о выезде на место для замера в удобное для Вас время</p>
+		</div>
+		<div class="work">
+			<img class="icon" src="img/icon3.png" alt="icon">
+			<p>Наш дизайнер выезжает<br>на замер</p>
+		</div>
+		<div class="work">
+			<img class="icon" src="img/icon6.png" alt="icon">
+			<p>Установка кухни.<br>Срок установки - 1-2 дня.</p>
+		</div>
+		<div class="work">
+			<img class="icon" src="img/icon5.png" alt="icon">
+			<p>Вы вносите предоплату и проект отправляется на производство</p>
+		</div>
+		<div class="work">
+			<img class="icon" src="img/icon4.png" alt="icon">
+			<p>Дизайнер разрабатывает проект вашей будущей кухни с учетом всех ваших пожеланий</p>
+		</div>
+	</div>
+	<div class="not">
+		<h2>Что Вам <span>не</span> нужно делать,<br>чтобы заказать у нас кухню?</h2>
+		<ul>
+			<li>Вам не нужно обмерять рулеткой стены Вашей кухни, учитывая выступающие шахты, входы и окна, трубы и батареи и т.д </li>
+			<li>Вам не нужно самостоятельно рисовать план кухни</li>
+			<li>Вам не нужно составлять список планируемой техники</li>
+			<li>Вам не нужно выделять время, чтобы составить план электрики</li>
+		</ul>
+	</div>
+	<div class="form_block2">
+		<p class="name">Заполните форму и мы все сделаем за Вас!</p>
+			<form action="options5.php" method="post" name="call-form" class="call-form"> 
+					<input type="text" required="required" class="inputbox3" name="name" placeholder="Введите Ваше имя">
+					<input type="phone" required="required" maxlength="23" class="inputbox3 phone-box" name="number" placeholder="Введите Ваш номер телефона"><br>
+					<input name=""  id="submit" type="submit" class="button4" value="Сделать заказ"/>
+			</form>
+			<p class="conf">Введя свои данные, Вы соглашаетесь с политикой конфиденциальности</p>
+	</div>
+	<header>
+		<div id="main">
+			<img class="logo" src="img/logo.png" alt="logo">
+			<h1>кухни VIP класса в Полтаве</h1>
+
+			<p class="phone">8(0532)689608</p>	
+			<!-- кнопка -->
+				<button class="button" onClick="$('#call-request').arcticmodal()"><span>Заказать звонок</span></button>
+				<!-- //кнопка -->
+
+				<!-- форма -->
+				<div class="g-hidden">
+				<div class="b-modal" id="call-request">
+				<div class="b-modal_close arcticmodal-close">X</div>
+
+				<div class="modal-form" align="center">
+					<form action="options.php" method="post" name="call-form" class="call-form">
+					<h3>Есть вопросы? Задайте их нашему менеджеру!</h3>
+							<input type="text" required="required" class="inputbox2" name="name" placeholder="Ваше имя"> 
+							<input type="phone" required="required" class="inputbox2 phone-box" name="number" value="+38" placeholder="____">
+					        <input type="vopros" required="required" class="inputbox2" name="vopros" placeholder="Удобное время звонка"> 
+							<input name=""  id="submit" type="submit" class="button03" value="Задать вопрос"/>
+					        <p>Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!</p>
+					</form>
+				</div>
+
+				</div>
+				</div>
+				<!-- // форма -->
+		</div>
+	</header>
+	<div class="screen2">
+		<div class="form_block3">
+			<p class="name_form">Есть вопросы? Задайте их нашему менеджеру!</p>
+			<button class="button5" onClick="$('#call-request5').arcticmodal()"><span>Задать вопрос</span></button>
+				<!-- //кнопка -->
+
+				<!-- форма -->
+				<div class="g-hidden">
+				<div class="b-modal" id="call-request5">
+				<div class="b-modal_close arcticmodal-close">X</div>
+
+				<div class="modal-form" align="center">
+					<form action="options.php" method="post" name="call-form" class="call-form">
+					<h3>Есть вопросы?<br>Задайте их нашему менеджеру!</h3>
+							<input type="text" required="required" class="inputbox2" name="name" placeholder="Ваше имя"> 
+							<input type="phone" required="required" class="inputbox2 phone-box" name="number" value="+38" placeholder="____">
+					        <input type="vopros" required="required" class="inputbox2" name="vopros" placeholder="Удобное время звонка"> 
+							<input name=""  id="submit" type="submit" class="button03" value="Задать вопрос"/>
+					        <p>Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!</p>
+					</form>
+				</div>
+
+				</div>
+				</div>
+		</div>
+	</div>
+	<div class="map">
+		<h2>Как нас найти</h2>
+		<img class="manager" src="img/manager.png" alt="manager">
+
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2587.0122752932884!2d34.5740148!3d49.5786574!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d82f7cfd0c1ecb%3A0x49de3d507e9fecd9!2z0LLRg9C7LiDQm9C10L3RltC90LAsIDg20JAsINCf0L7Qu9GC0LDQstCwLCDQn9C-0LvRgtCw0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgMzYwMDA!5e0!3m2!1sru!2sua!4v1408558013276" width="600" height="450" frameborder="0"></iframe>
+
+		<div class="data2">
+			<div class="block2">
+				<p class="head">E-mail:</p>
+				<p>lykelen_2014@ukr.net</p>
+			</div>
+			<div class="block2">
+				<p class="head">Наш Адрес:</p>
+				<p>г.Полтава,</br>Ленина, 86а</p>
+			</div>
+			<div class="block2">
+				<p class="head">Наши телефоны:</p>
+				<p> 8(066)9674275,<br>8(093)8523928,<br>689608</p>
+			</div>
+			<div class="block2">
+				<p class="head">Режим работы:</p>
+				<p>пн.-пт.: с 10-00 до 19-00,<br>суб. - с 10-00 до 16-00,<br>воск. - выходной</p>
+			</div>
+		</div>
+
+		<p class="copy">© 1993-2014. ООО «МебельДизайн». Киев, Украина.</p>
+		<p class="confid"><a href="#" class="polit" data-reveal-id="myModal" data-animation="fade">Политика конфиденциальности</a></p>
+		<p class="confid2"><a href="#" class="polit" data-reveal-id="myModal2" data-animation="fade">Условия предоставления услуг</a></p>
+	</div>
+
+		<div id="myModal" class="reveal-modal">
+			<div class="fancybox-inner">
+			<div id="pol" class="modal">
+
+				<p>Администрация сайта  www.vip-kuhni.lead-contact.com (далее Сайт) с уважением относится к правам посетителей Сайта. Мы безоговорочно признаем важность конфиденциальности личной информации посетителей нашего Сайта.<br>Посещая Сайт и регистрируясь на Сайте в качестве пользователя, Вы полностью соглашаетесь с данной Политикой конфиденциальности.</p>
+
+				<p><strong>Основные положения Политики конфиденциальности </strong></p>
+				<p>Ваша конфиденциальность очень важна для нас. Мы хотим, чтобы Ваша работа в Интернет по возможности была максимально приятной и полезной, и Вы совершенно спокойно использовали широчайший спектр информации, инструментов и возможностей, которые предлагает Интернет.<br>Личная информация потенциальных клиентов, собранная при регистрации (или в любое другое время) преимущественно используется для подготовки Продуктов или Услуг в соответствии с Вашими потребностями.<br>Мы не передаем Вашу персональную информацию третьим лицам.<br>Мы не передаем Вашу контактную информацию без Вашего согласия.<br>Вы самостоятельно определяете объем раскрываемой персональной информации.</p>
+
+				<p><strong>Собираемая информация</strong></p>
+				<p>Мы собираем следующую информацию:<br>При добровольной регистрации на оформление заказа Вы отправляете свое Имя и Телефон через форму регистрации.<br>Техническая информация, автоматически собираемая программным обеспечением Сайта во время его посещения.</p>
+				 
+				<p><strong>Персональная информация. </strong></p>
+				<p>Имя используется для обращения лично к Вам, а Ваш телефон для ведения с Вами переговоров относительно услуг нашей компании, заявленных на сайте. Ваши имя, телефон не передаются третьим лицам, ни при каких условиях кроме случаев, связанных с исполнением требований законодательства. Ваше имя, телефон на защищенных серверах сервиса www.vip-kuhni.lead-contact.com и используются в соответствии с его политикой конфиденциальности.<br>Персональная информация, предоставляемая Вами при регистрации на сайте, проверке на достоверность не подвергается.</p>
+
+				<p><strong>Техническая информация.</strong></p> 
+				<p>Во время посещения Вами Сайта, администрации Сайта автоматически становится доступной информация из стандартных журналов регистрации сервера (server logs). Сюда включается:  IP-адрес Вашего компьютера (или прокси-сервера, если он используется для выхода в Интернет), имя Интернет-провайдера, имя домена, тип браузера и операционной системы, информация о сайте, с которого Вы совершили переход на Сайт, страницах Сайта, которые Вы посещаете, дате и времени этих посещений, файлах, которые Вы загружаете.<br>На сайте www.vip-kuhni.lead-contact.com используются также куки (Cookies) и данные о посетителях сервиса Яндекс.Метрика.</p>
+
+				<p><strong>Как используется эта информация</strong></p>
+				<p>При помощи этих данных собирается информация о действиях посетителей на сайте с целью улучшения его содержания, улучшения функциональных возможностей сайта и, как следствие, создания качественного контента и сервисов для посетителей.<br>Вы можете в любой момент изменить настройки своего браузера так, чтобы браузер блокировал все файлы cookie или оповещал об отправке этих файлов. Учтите при этом, что некоторые функции и сервисы не смогут работать должным образом.</p>
+
+				<p><strong>Как эти данные защищаются</strong></p>
+				<p>Администрация Сайта осуществляет защиту информации, предоставленной пользователями, и использует ее только в соответствии с принятой Политикой конфиденциальности. На Сайте используются общепринятые методы безопасности для обеспечения защиты информации от потери, искажения и несанкционированного распространения. Безопасность реализуется программными средствами сетевой защиты, процедурами проверки доступа, применением криптографических средств защиты информации, соблюдением Политики конфиденциальности.</p>
+
+				<p><strong>Предоставление информации третьим лицам</strong></p>
+				<p>Мы никогда не предоставляем Вашу личную информацию третьим лицам, кроме случаев, когда это прямо может требовать законодательство (например, по запросу суда).</p>
+
+				<p><strong>Рекомендации по безопасности для пользователей</strong></p>
+				<p>Несмотря на то, что мы стремимся обезопасить Вашу личную информацию, Вы тоже должны принимать меры, чтобы защитить ее.<br>Мы настоятельно рекомендуем Вам принимать все возможные меры предосторожности во время пребывания в Интернете. Организованные нами услуги и веб-сайты предусматривают меры по защите от утечки, несанкционированного использования и изменения информации, которую мы контролируем. Несмотря на то, что мы делаем все возможное, чтобы обеспечить целостность и безопасность своей сети и систем, мы не можем гарантировать, что наши меры безопасности предотвратят незаконный доступ к этой информации хакеров сторонних организаций.</p>
+
+				<p><strong>Заключительные положения</strong></p>
+				<p>Никакие из содержащихся здесь заявлений не означают заключения договора или соглашения между Владельцем Сайта и Пользователем, предоставляющим персональную информацию. Политика конфиденциальности лишь проинформирует Вас о подходах Сайта к работе с персональными данными.<br>Мы оставляем за собой право вносить изменения в настоящую Политику конфиденциальности в любое время без предварительного уведомления.<br>В случае изменения данной Политики конфиденциальности Вы сможете прочитать об этих изменениях на этой странице.<br>Для связи с администратором сайта по любым вопросам Вы можете написать письмо на e-mail: leadcont@lead-contact.com.</p>
+			</div>
+		</div>
+			<div class="close-reveal-modal">X</div>
+		</div>
+
+
+
+		<div id="myModal2" class="reveal-modal">
+			<div class="fancybox-inner">
+			<div id="pol" class="modal">
+
+				<h3>Условия предоставления услуг</h3>
+
+				<p><strong>1. Общая информация</strong></p>
+				<p>Используя сайт www.vip-kuhni.lead-contact.com, (далее – «сайт ООО «МебельДизайн»), Пользователь соглашается с настоящими Условиями предоставления услуг.<br><br>Под Пользователем данного сайта подразумевается любое лицо, посещающее данный сайт и/или использующее предоставляемые им возможности, вне зависимости от количества случаев посещения и/или использования.<br><br>ООО «МебельДизайн» оставляет за собой право изменять настоящие Условия, частично или целиком, в любое время, с предварительным предупреждением или без него. Каждый раз перед началом работы с сайтом Пользователь обязан проверять данные Условия на предмет наличия изменений. Если Пользователь использует сайт ООО «МебельДизайн» после изменения Условий использования, это расценивается как его согласие с условиями в измененном виде.</p>
+
+				<p><strong>2. Защита авторских прав</strong></p>
+				<p>Содержание сайта ООО «МебельДизайн» защищено законодательством  Украины об авторском праве, а также международным законодательством о защите авторских прав, ратифицированном Украиной.<br><br>За исключением случаев, указанных в данном документе, ни один из материалов сайта ООО «МебельДизайн» не может быть скопирован, растиражирован, распространен, перепечатан, загружен, использован с целью демонстрации где-либо, для рекламных объявлений или каким-либо другим образом без официального разрешения ООО «МебельДизайн». Тем не менее, Пользователь может скачивать материалы для собственных, некоммерческих нужд. Принимая данные условия, Пользователь соглашается соблюдать авторские права на материалы сайта, которые он скачивает. Изменение материалов сайта или использование материалов в целях, отличных от тех, что изложены в данном разделе, является нарушением авторских прав ООО «МебельДизайн» или авторских прав третьих лиц. Товарный знак ООО «МебельДизайн», а также иные товарные знаки, появляющиеся на сайте ООО «МебельДизайн», являются собственностью ООО «МебельДизайн». Использование любых товарных знаков или любой другой информации с сайта ООО «МебельДизайн», кроме как на условиях, указанных в данном документе, строго запрещено.</p>
+				 
+				<p><strong>3. Конфиденциальность</strong></p>
+				<p>При работе с нашими Службами вы разрешаете нам использовать свою личную информацию в соответствии с политикой конфиденциальности ООО «МебельДизайн». В последней изложено, для чего мы применяем эти данные и как обеспечиваем конфиденциальность пользователей при работе.</p>
+
+				<p><strong>4. Гарантии и отказ от обязательств</strong></p>
+				<p>Мы предоставляем свои услуги исходя из экономически обоснованного уровня функциональности и поддержки. Надеемся, что вы оцените их по достоинству. Однако мы не можем взять на себя некоторые обязательства, касающиеся наших услуг.<br><br>НИ КОМПАНИЯ ООО «МЕБЕЛЬДИЗАЙН», НИ ЕЕ ПОСТАВЩИКИ И ДИСТРИБЬЮТОРЫ НЕ ДАЮТ НИКАКИХ ГАРАНТИЙ И НЕ ПРИНИМАЮТ НА СЕБЯ НИКАКИХ ОБЯЗАТЕЛЬСТВ ОТНОСИТЕЛЬНО УСЛУГ, КРОМЕ ТЕХ, КОТОРЫЕ УКАЗАНЫ В НАСТОЯЩИХ УСЛОВИЯХ ИЛИ В ДОПОЛНИТЕЛЬНЫХ УСЛОВИЯХ И ДОГОВОРАХ.<br><br>НАПРИМЕР: ООО «МебельДизайн»не несет ответственности и не предоставляет гарантий в связи с публикацией фактов, данных, результатов и другой информации, связанной с индивидуальными результатами наших клиентов.</p>
+				 
+				<p><strong>5. Ответственность применительно к Услугам</strong></p>
+				<p>НИ КОМПАНИЯ ООО «МЕБЕЛЬДИЗАЙН», НИ ЕЕ ПОСТАВЩИКИ И ДИСТРИБЬЮТОРЫ НЕ НЕСУТ ОТВЕТСТВЕННОСТЬ ЗА УПУЩЕННУЮ ПРИБЫЛЬ, НЕДОПОЛУЧЕННЫЙ ДОХОД, ПОТЕРЮ ДАННЫХ, ФИНАНСОВЫЕ УБЫТКИ, А ТАКЖЕ ЗА КОСВЕННЫЕ, СПЕЦИАЛЬНЫЕ, ОПОСРЕДОВАННЫЕ, ШТРАФНЫЕ ИЛИ КАРАТЕЛЬНЫЕ УБЫТКИ, ЕСЛИ ТАКОЕ ОГРАНИЧЕНИЕ ОТВЕТСТВЕННОСТИ ДОПУСКАЕТСЯ ЗАКОНОДАТЕЛЬСТВОМ.<br><br>ЗА ИСКЛЮЧЕНИЕМ СИТУАЦИЙ, ОГОВОРЕННЫХ ЗАКОНОДАТЕЛЬСТВОМ, ОБЩАЯ ОТВЕТСТВЕННОСТЬ КОМПАНИИ ООО «МЕБЕЛЬДИЗАЙН», ЕЕ ПОСТАВЩИКОВ И ДИСТРИБЬЮТОРОВ ПО ЛЮБОМУ ИСКУ В ОТНОШЕНИИ ДАННЫХ УСЛОВИЙ, ВКЛЮЧАЯ ВСЕ ПОДРАЗУМЕВАЕМЫЕ ГАРАНТИИ, ОГРАНИЧИВАЕТСЯ СУММОЙ, УПЛАЧЕННОЙ ВАМИ ЗА ПОЛЬЗОВАНИЕ УСЛУГАМИ (ЛИБО, ПО НАШЕМУ ВЫБОРУ, ПОВТОРНЫМ ПРЕДОСТАВЛЕНИЕМ ВАМ СООТВЕТСТВУЮЩИХ УСЛУГ).<br><br>НИ ПРИ КАКИХ ОБСТОЯТЕЛЬСТВАХ КОМПАНИЯ ООО «МЕБЕЛЬДИЗАЙН», ЕЕ ПОСТАВЩИКИ И ДИСТРИБЬЮТОРЫ НЕ БУДУТ НЕСТИ ОТВЕТСТВЕННОСТЬ ЗА НЕПРЕДВИДЕННЫЙ УЩЕРБ ИЛИ УБЫТКИ.</p>
+
+				<p><strong>6. Ссылки на другие сайты либо ссылки с других сайтов</strong></p>
+				<p>ООО «МебельДизайн» не несет ответственность за содержание, достоверность или доступность информации, находящейся на сайтах, на которые ссылается сайт ООО «МебельДизайн», или которые ссылаются на данный сайт. ООО «МебельДизайн» не предоставляет рекомендаций относительно приобретения товаров, а также не подтверждает точность и достоверность любой информации, содержащейся на сайтах третьих сторон. ООО «МебельДизайн» не несет ответственности за безопасность информации (включая, без ограничений, информацию о кредитной карте или другую личную информацию), которую Пользователь предоставляет третьим лицам.</p>
+				 
+			</div>
+			</div>
+			<div class="close-reveal-modal">X</div>
+		</div>
+
+</body>
+</html>
+

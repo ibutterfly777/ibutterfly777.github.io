@@ -1,0 +1,449 @@
+#wrapper {
+	width: 1080px;
+	max-width: 92.3%;
+	margin: 0 auto;
+}
+
+#wrapper a{
+	text-decoration: none;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	3. CAROUSEL
+/*-----------------------------------------------------------------------------------*/
+
+#wrapper .d-carousel ul li {
+}
+
+#wrapper ul{
+	width: 407px;
+}
+
+.jcarousel-direction-rtl {
+	direction: rtl;
+}
+
+.d-carousel h4 {
+	margin: 5px 0 5px 0;
+}
+
+.photo_wedding{
+     -webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(0.9);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: url(grayscale.svg#greyscale);
+	filter: gray;
+     border-radius: 100px;
+     width: 180px;
+     height: 180px;
+     overflow: hidden; 
+}
+
+.photo_wedding2{
+    -webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: url(grayscale.svg#greyscale);
+	filter: gray;
+     border-radius: 250px;
+     width: 235px;
+	 height: 235px;
+     overflow: hidden; 
+}
+
+.photo_wedding:hover, .photo_wedding2:hover{
+	-webkit-filter: none;
+	-moz-filter: none;
+	-ms-filter: none;
+	-o-filter:none;
+	filter: none;
+	filter: url(grayscale.svg);
+	filter: none;
+}
+
+.d-carousel .jcarousel-container {
+	display: block;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.d-carousel .jcarousel-item {
+	width: 185px;
+	height: 260px;
+}
+
+.d-carousel .jcarousel-container-horizontal {
+	width: 1000px;
+	max-width: 100%;
+	margin-left: -43px;
+	height: 265px;
+	margin-bottom: 50px;
+	padding: 0 30px;
+}
+
+.d-carousel .jcarousel-item-horizontal {
+	margin-left: 5px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+	margin-right: 11px;
+}
+
+.d-carousel .jcarousel-next-horizontal {
+	position: absolute;
+	top: 115px;
+	right: 0;
+	margin-right: 3px;
+	width: 15px;
+	height: 28px;
+	cursor: pointer;
+	background: transparent url(blog-arrows.jpg) no-repeat top right;
+}
+
+.d-carousel .jcarousel-direction-rtl .jcarousel-next-horizontal {
+	left: 5px;
+	right: auto;
+	background-image: url(blog-arrows.jpg);
+}
+
+.d-carousel .jcarousel-next-horizontal:hover {
+	background-position: bottom right;
+}
+
+.d-carousel .jcarousel-prev-horizontal {
+	position: absolute;
+	top: 115px;
+	left: 0;
+	margin-left: 3px;
+	width: 15px;
+	height: 28px;
+	cursor: pointer;
+	background: transparent url(blog-arrows.jpg) no-repeat top left;
+}
+
+.d-carousel .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+	left: auto;
+	right: 5px;
+	background-image: url(blog-arrows.jpg);
+}
+
+.d-carousel .jcarousel-prev-horizontal:hover {
+	background-position: bottom left;
+}
+
+.name_wedding,.date_wedding,.Subject{
+	color: #ff916b;
+	font: normal 16px/22px RobotoCondensed;
+	text-align: center;
+	margin: 10px auto 0;
+}
+
+.date_wedding,.Subject{
+	color: #31404a;
+	margin: 0;
+}
+
+.name_wedding2{
+	color: #ff916b;
+	font: normal 28px/22px RobotoCondensed;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 10px auto 0;
+}
+
+/*---------------------------tablet screen------------------------------------*/
+
+@media only screen and (max-width: 1280px) and (min-width: 1090px){
+
+#wrapper {
+	width: 940px;
+	margin: 0 auto;
+}
+
+
+.d-carousel .jcarousel-container-horizontal {
+	width: 840px;
+	height: 240px;
+	padding: 0 45px;
+}
+
+
+.d-carousel .jcarousel-item {
+	width: 140px;
+	height: 235px;
+}
+
+.photo_wedding{
+	width: 140px;
+	height: 140px;
+}
+
+.d-carousel .jcarousel-prev-horizontal, .d-carousel .jcarousel-next-horizontal {
+	top: 96px;
+}
+
+.date_wedding,.Subject{
+	font-size: 14px;
+}
+
+.photo_wedding2{
+     -webkit-filter: grayscale(100%); 
+     border-radius: 250px;
+     width: 195px;
+     height: 195px;
+     overflow: hidden; 
+}
+
+.name_wedding2{
+	color: #ff916b;
+	font: normal 22px/22px RobotoCondensed;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 10px auto 0;
+}
+}
+
+/*---------------------------tablet screen2------------------------------------*/
+
+@media only screen and (max-width: 1089px) and (min-width: 861px){
+
+#wrapper {
+	width: 660px;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+
+.d-carousel .jcarousel-container-horizontal {
+	width: 595px;
+	max-width: 90%;
+	height: 176px;
+	padding: 0 32px;
+	margin-left: 0;
+}
+
+.name_wedding, .date_wedding, .Subject {
+	color: #ff916b;
+	font: normal 14px/20px RobotoCondensed;
+	text-align: center;
+	margin: 7px auto 0;
+}
+
+.date_wedding,.Subject{
+	color: #31404a;
+	margin: 0;
+}
+
+
+.d-carousel .jcarousel-item {
+	width: 103px;
+	height: 170px;
+}
+
+.photo_wedding{
+	width: 103px;
+	height: 103px;
+}
+
+.d-carousel .jcarousel-prev-horizontal, .d-carousel .jcarousel-next-horizontal {
+	top: 96px;
+}
+
+.date_wedding,.Subject{
+	font-size: 12px;
+}
+
+.photo_wedding2{
+     -webkit-filter: grayscale(100%); 
+     border-radius: 250px;
+     width: 150px;
+     height: 150px;
+     overflow: hidden; 
+}
+
+.name_wedding2{
+	color: #ff916b;
+	font: normal 16px/18px RobotoCondensed;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 10px auto 0;
+}
+}
+
+@media only screen and (max-width: 860px) and (min-width: 551px){
+
+#wrapper {
+	width: 455px;
+	margin: 0 auto;
+}
+
+
+.d-carousel .jcarousel-container-horizontal {
+	width: 435px;
+	height: 115px;
+	padding: 0 12px;
+	margin-bottom: 25px;
+	margin-left: -14px;
+}
+
+.d-carousel .jcarousel-item-horizontal {
+	margin-left: 5px;
+	margin-bottom: 3px;
+	margin-top: 2px;
+	margin-right: 5px;
+}
+
+.d-carousel .jcarousel-item {
+	width: 69px;
+	height: 115px;
+}
+
+.name_wedding{
+	color: #ff916b;
+	font: normal 11px/16px RobotoCondensed;
+	text-align: center;
+	margin: 2px auto 0;
+}
+
+.d-carousel .jcarousel-prev-horizontal {
+	position: absolute;
+	top: 115px;
+	left: 0;
+	margin-left: 3px;
+	width: 9px;
+	height: 29px;
+	cursor: pointer;
+	background: transparent url(blog-arrows.jpg) no-repeat top left;
+}
+
+.d-carousel .jcarousel-next-horizontal {
+	position: absolute;
+	top: 115px;
+	right: 0;
+	margin-right: 3px;
+	width: 9px;
+	height: 28px;
+	cursor: pointer;
+	background: transparent url(blog-arrows.jpg) no-repeat top right;
+}
+
+.photo_wedding{
+	width: 69px;
+	height: 69px;
+}
+
+.d-carousel .jcarousel-prev-horizontal, .d-carousel .jcarousel-next-horizontal {
+	top: 46px;
+}
+
+.date_wedding,.Subject{
+	font-size: 9px;
+	line-height: 11px;
+}
+
+.photo_wedding2{
+     -webkit-filter: grayscale(100%); 
+     border-radius: 250px;
+     width: 100px;
+     height: 100px;
+     overflow: hidden; 
+}
+
+.name_wedding2{
+	color: #ff916b;
+	font: normal 12px/14px RobotoCondensed;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 10px auto 0;
+}
+}
+
+
+/*---------------------------tablet screen------------------------------------*/
+
+@media only screen and (max-width: 550px){
+#wrapper {
+	width: 300px;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.d-carousel .jcarousel-container-horizontal {
+	width: 300px;
+	height: 400px;
+	margin-bottom: 50px;
+	margin-left: -10%;
+}
+
+.d-carousel .jcarousel-prev-horizontal, .d-carousel .jcarousel-next-horizontal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: 0;
+	width: 0;
+	height: 0px;
+	cursor: pointer;
+	background: none;
+}
+
+.photo_wedding{
+     -webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(0.9);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: url(grayscale.svg#greyscale);
+	filter: gray;
+     border-radius: 100px;
+     width: 140px;
+     height: 140px;
+     overflow: hidden; 
+}
+
+.photo_wedding2{
+    -webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: url(grayscale.svg#greyscale);
+	filter: gray;
+     border-radius:150px;
+     width: 113px;
+     height: 113px;
+     overflow: hidden; 
+}
+
+.name_wedding,.date_wedding,.Subject{
+	color: #ff916b;
+	font: normal 11px/12px RobotoCondensed;
+	text-align: center;
+	margin: 10px auto 0;
+}
+
+.date_wedding,.Subject{
+	color: #31404a;
+	margin: 0;
+}
+
+.name_wedding2{
+	color: #ff916b;
+	font: normal 18px/22px RobotoCondensed;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 10px auto 0;
+}
+
+.d-carousel .jcarousel-item {
+	width: 140px;
+	height: 210px;
+	padding-right: 5%;
+	margin: 0;
+}
+
+.d-carousel .carousel{
+	width: 350px!important;
+}

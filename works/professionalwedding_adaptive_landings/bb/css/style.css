@@ -1,0 +1,586 @@
+@font-face{
+	font-family: MinionR;
+	src: url(../fonts/MinionPro-Regular.otf);
+}
+@font-face{
+	font-family: MinionI;
+	src: url(../fonts/MinionPro-It.otf);
+}
+@font-face{
+	font-family: MinionB;
+	src: url(../fonts/MinionPro-Bold.otf);
+}
+
+body{
+	margin: 0 auto;
+	padding: 0;
+	height: 100%;
+	width: 1000px;
+	max-width: 100%;
+	text-align: center;
+	font-size: 23px;
+	color: #6d6e71;
+	font-family: MinionR;
+}
+
+.form_block{
+	width: 470px;
+	margin: 55px auto 150px;
+}
+
+.inputbox{
+	width: 450px;
+	padding: 0 10px;
+	height: 40px;
+	border-radius: 10px;
+	margin-top: 10px;
+	background: #f1f1f2;
+	border: none;
+	box-shadow: inset 1px 1px 2px #7e7e80;
+	font-size: 19px;
+	font-family: MinionI;
+	color: #6d6e71;
+}
+
+hr {
+    background: url(../image/line.jpg) no-repeat;
+    height: 3px;
+    border: none;
+
+}
+
+.button{
+	float: right;
+	margin-top: 3px;
+	width: 224px;
+	height: 43px;
+	border-radius: 10px;
+	border: none;
+	background: #f49cc2;
+	box-shadow: inset 2px 2px 2px #7f5267;
+	font-size: 19px;
+	font-family: MinionB;
+	color: #fff;
+	text-transform: uppercase;
+	padding-top: 5px;
+}
+
+.button:hover{
+	background: #d77ba3;
+}
+
+.slide{
+	position: relative;
+}
+
+.slide p{
+	width: 410px;
+	background: rgba(255, 255, 255, 0.4);
+	padding: 23px 18px;
+	border-radius: 13px;
+	position: absolute;
+	bottom: 90px;
+	margin-left: 19px;
+	font-size: 16px;
+	line-height: 18px;
+	text-align: justify;
+}
+
+.slide p span, .title span{
+	text-transform: uppercase;
+}
+
+.title{
+	margin: 105px auto 0;
+	width: 665px;
+}
+
+.grey{
+	background: #f1f1f2;
+	height: 644px;
+}
+
+.wrap{
+	width: 662px;
+	margin: 0 auto;
+}
+
+.grey2 .wrap{
+	width: 682px;
+	margin: 0 auto;
+}
+
+.title2{
+	margin-top: 0;
+	padding-top: 105px;
+	text-transform: uppercase;
+	border-bottom: 1px solid #6d6e71;
+	padding-bottom: 10px;
+	margin-bottom: 50px;
+}
+
+.title4{
+	margin-top: -30px;
+	text-transform: uppercase;
+}
+
+.grey p span, .grey2 p span, .pink .title3 span{
+	font-family: MinionB;
+}
+
+.icon{
+	display: inline-block;
+	position: relative;
+	margin-left: -14px;
+}
+
+.name{	
+	font-family: MinionB;
+	text-transform: uppercase;
+	position: absolute;
+	right: 13px;
+	top: 56px;
+	text-align: right;
+	line-height: 24px;
+}
+
+.name1{	
+	font-family: MinionB;
+	text-transform: uppercase;
+	position: absolute;
+	right: 13px;
+	top: 40px;
+	text-align: right;
+	line-height: 24px;
+}
+
+.grey .name span, .grey .name1 span{
+	text-transform: none;
+}
+
+.age{
+	color: #f49cc3;
+	font-family: MinionB;
+	text-transform: uppercase;
+	position: absolute;
+	right: 13px;
+	bottom: 5px;
+}
+
+.pink{
+	background: url(../image/bg.jpg) repeat-x;
+	height: 660px;
+}
+
+.pink22{
+	background: url(../image/bg2.jpg) repeat-x;
+	height: 820px;
+}
+
+.pink .icon{
+	margin-left: 0;
+}
+
+.title3{
+	margin-top: 0;
+	padding-top: 105px;
+	color: #fff;
+	text-transform: uppercase;
+	border-bottom: 1px solid #fff;
+	padding-bottom: 10px;
+	margin-bottom: 50px;
+}
+
+.pink .name, .pink .name1{
+	font-size: 20px;
+	line-height: 21px;
+}
+
+.pink .name span, .pink .name1 span{
+	text-transform: none;
+	font-size: 17px;
+}
+
+.slide2{
+	margin-top: 100px;
+}
+
+.texttrans{
+	width: 630px;
+	margin: 70px auto 0;
+	border-bottom: 1px solid #6d6e71;
+	border-top: 1px solid #6d6e71;
+	padding: 15px;
+}
+
+.texttrans p span{
+	text-transform: uppercase;
+}
+
+.bold{
+	font-family: MinionB;	
+}
+
+.grey2{
+	background: #f1f1f2;
+	height: 435px;
+}
+
+.link{
+	font: 37px/37px MinionB;
+	padding-top: 30px;
+	text-decoration: underline;
+}
+
+.adres{
+	font: 37px/51px MinionB;
+	margin: 70px auto 60px;
+}
+
+.logo{
+	margin-bottom: 50px;
+}
+
+
+/*---------------------------tablet screen------------------------------------*/
+
+@media only screen and (max-width: 1023px) and (min-width: 601px){
+
+	body{
+		height: 100%;
+		width: 800px;
+		font-size: 18.5px;
+	}
+
+	.slider{
+		width: 800px;
+		max-width: 100%;
+	}
+
+	.slide p{
+		width: 355px;
+		padding: 13px 10px;
+		border-radius: 13px;
+		bottom: 76px;
+		margin-left: 11px;
+		font-size: 13px;
+		line-height: 14.5px;
+	}
+
+	.title{
+		margin: 85px auto 0;
+		width: 530px;
+	}
+
+	.grey{
+		height: 515px;
+	}
+
+	.wrap{
+		width: 530px;
+	}
+
+	.grey2 .wrap{
+		width: 550px;
+	}
+
+	.title2{
+		padding-top: 85px;
+		padding-bottom: 7px;
+		margin-bottom: 35px;
+	}
+
+	.label{
+		width: 275px;
+		height: 142px;
+	}
+
+	.label2{
+		width: 260px;
+		height: 136px;
+	}
+
+	.title4{
+		margin-top: -30px;
+	}
+
+	.icon{
+		margin-left: -13px;
+	}
+
+	.name{	
+		right: 12px;
+		top: 42px;
+		line-height: 19px;
+	}
+
+	.name1{	
+		right: 12px;
+		top: 37px;
+		line-height: 19px;
+	}
+
+	.age{
+		right: 11px;
+		bottom: 5px;
+	}
+
+	.pink{
+		height: 510px;
+	}
+
+	.pink22{
+		height: 655px;
+	}
+
+	.title3{
+		padding-top: 85px;
+		padding-bottom: 7px;
+		margin-bottom: 35px;
+	}
+
+	.pink .name, .pink .name1{
+		font-size: 16px;
+		line-height: 17px;
+	}
+
+	.pink .name span, .pink .name1 span{
+		font-size: 13.5px;
+	}
+
+	.slide2{
+		margin-top: 80px;
+	}
+
+	.slider2{
+		width: 525px;
+		height: auto;
+	}
+
+	.texttrans{
+		width: 503px;
+		margin: 45px auto 0;
+		padding: 11px;
+	}
+
+	.grey2{
+		height: 350px;
+	}
+
+	.link{
+		font: 29.7px/29px MinionB;
+		padding-top: 29px;
+	}
+
+	.adres{
+		font: 29.7px/41px MinionB;
+		margin: 50px auto 40px;
+	}
+
+	.logo{
+		margin-bottom: 30px;
+	}
+
+	.logo_img{
+		width: 210px;
+	}
+}
+
+/*---------------------------tablet screen------------------------------------*/
+
+@media only screen and (max-width: 719px) and (min-width: 601px){
+
+	.slide p {
+		width: 300px;
+		padding: 7px 6px;
+		border-radius: 6px;
+		bottom: 55px;
+		margin-left: 2%;
+		font-size: 13px;
+		line-height: 14.5px;
+		background: rgba(255, 255, 255, 0.6);
+	}
+}
+
+/*---------------------------phone screen------------------------------------*/
+
+@media only screen and (max-width: 600px){
+	body{
+		height: 100%;
+		width: 500px;
+		font-size: 14px;
+	}
+
+	.form_block{
+	width: 270px;
+	margin: 35px auto 100px;
+	}
+
+	.inputbox{
+		width: 253px;
+		padding: 0 8px;
+		height: 35px;
+		border-radius: 10px;
+		margin-top: 10px;
+		font-size: 14px;
+	}
+
+	hr {
+	    background: url(../image/line.jpg) no-repeat;
+	    height: 3px;
+	    border: none;
+
+	}
+
+	.button{
+		width: 180px;
+		height: 36px;
+		font-size: 16px;
+	}
+
+	.slider{
+		width: 800px;
+		max-width: 100%;
+	}
+
+	.slide p{
+		width: 88%;
+		padding: 13px 6%;
+		border-radius: 0;
+		bottom: 0;
+		margin: -7px 0 0;
+		font-size: 12px;
+		line-height: 14px;
+		position: inherit;
+		background: rgba(0,0,0,0.5);
+		color: #e6e6e6;
+	}
+
+	.title{
+		margin: 40px auto 0;
+		width: 68%;
+	}
+
+	.grey{
+		height: 700px;
+	}
+
+	.wrap{
+		width: 80%;
+	}
+
+	.grey2 .wrap{
+		width: 80%;
+	}
+
+	.title2{
+		padding-top: 50px;
+		padding-bottom: 3px;
+		margin-bottom: 26px;
+	}
+
+	.label{
+		width: 258px;
+		height: 133px;
+	}
+
+	.label2{
+		width: 250px;
+		height: 135px;
+	}
+
+	.title4{
+		margin-top: -15px;
+	}
+
+	.icon{
+		margin-left: -13px;
+	}
+
+	.name{	
+		font-size: 17px;
+		line-height: 21px;
+		top: 35px;
+	}
+
+	.name1{	
+		right: 12px;
+		top: 37px;
+		line-height: 19px;
+	}
+
+	.age{
+		right: 11px;
+		bottom: 5px;
+		font-size: 17px;
+	}
+
+	.pink{
+		background: url(../image/bg2.jpg) repeat-x;
+		height: 700px;
+	}
+
+	.pink22{
+		height: 290px;
+	}
+
+	.title3{
+		padding-top: 45px;
+		padding-bottom: 3px;
+		margin-bottom: 26px;
+	}
+
+	.pink .name, .pink .name1{
+		font-size: 16px;
+		line-height: 17px;
+	}
+
+	.pink .name span, .pink .name1 span{
+		font-size: 13.5px;
+	}
+
+	.slide2{
+		margin-top: 50px;
+	}
+
+	.slider2{
+		width: 80%;
+		height: auto;
+	}
+
+	.texttrans{
+		width: 80%;
+		margin: 45px auto 0;
+		padding: 6px 0 3px;
+	}
+
+	.grey2{
+		height: 310px;
+	}
+
+	.link{
+		font: 22px/22px MinionB;
+		padding-top: 22px;
+	}
+
+	.adres{
+		font: 22px/31px MinionB;
+		margin: 40px auto 30px;
+	}
+
+	.logo{
+		margin-bottom: 20px;
+	}
+
+	.logo_img{
+		width: 140px;
+	}
+
+	}
+
+/*---------------------------phone screen------------------------------------*/
+
+@media only screen and (max-width: 600px) and (min-width: 410px){
+	.pink22{
+		height: 350px;
+	}

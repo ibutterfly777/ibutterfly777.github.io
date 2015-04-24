@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+ 	<title>Первое Лид Агентство</title>
+ 	<link rel="stylesheet" href="style/style.css">
+ 	<link rel="stylesheet" href="style/popup.css">
+ 	<link rel="stylesheet" href="style/reveal.css">	
+ 	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="js/jquery.arcticmodal.js" type="text/javascript"></script>
+		<!-- <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script> -->
+		<script type="text/javascript" src="js/jquery.reveal.js"></script>
+		
+</head>
+
+<body>
+	<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter25766354 = new Ya.Metrika({id:25766354,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/25766354" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+	
+	<header>
+		<div id="main">
+			<img id="logo" src="img/logo.png" alt="logo">
+			<h1>Первое Лид Агентство</h1>
+			<p id="business">Любое количество клиентов в любой бизнес</p>
+
+			<p id="rus">Работаем по всей России</p>
+			<p id="phone">+7(473)-228-49-70</p>	
+			<!-- кнопка -->
+				<button class="button" onClick="$('#call-request').arcticmodal()"><span>Заказать звонок</span></button>
+				<!-- //кнопка -->
+
+				<!-- форма -->
+				<div class="g-hidden">
+				<div class="b-modal" id="call-request">
+				<div class="b-modal_close arcticmodal-close">X</div>
+
+				<div class="modal-form" align="center">
+					<form action="options.php" method="post" name="call-form" class="call-form">
+					<h3>Заказать бесплатный звонок!</h3>
+							<input type="text" required="required" class="inputbox2" name="name" placeholder="Ваше имя"> 
+							<input type="phone" required="required" class="inputbox2 phone-box" name="number" value="+7" placeholder="____">
+					        <input type="vopros" required="required" class="inputbox2" name="vopros" placeholder="Удобное время звонка (по МСК)"> 
+							<input name=""  id="submit" type="submit" class="button10" value="Перезвоните мне"/>
+					        <p>Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!</p>
+					</form>
+				</div>
+
+				</div>
+				</div>
+				<!-- // форма -->
+		</div>
+	</header>
+
+<div id="slider">
+	<div id="screen1">
+		<img class="yel" src="img/yel1.png" alt="yel1">
+		<p class="internet">Интернет-раскрутка под ключ<br><span class="yelbg">с оплатой за результат</span></p>
+		<p class="lidogen"><span class="yellowtext">Лидогенерация</span> - создание стабильно высокого<br>потока клиентов в бизнес.</p>
+
+
+
+		<div class="form_block">
+			<p class="name_form">Узнать стоимость заявки <span class="small">для Вашего бизнеса</span></p>
+			<form action="options1.php" method="post" name="call-form" class="call-form">
+					<input type="text" required="required" class="inputbox2" name="name" placeholder="Введите Ваше имя">
+					<input type="phone" required="required" maxlength="19" class="inputbox phone-box" name="number" placeholder="Укажите Ваш номер телефона"><br>
+					<input name=""  id="submit" type="submit" class="button2" value="Заказать расчет"/>
+					<img class="letter" src="img/letter.png" alt="letter">
+					<p class="data"><span class="ziro4ka">*</span> Ваши данные не будут переданы третьим лицам</p>
+					<a href="#" class="polit" data-reveal-id="myModal" data-animation="fade">Политика конфиденциальности</a>
+			</form>
+		</div>
+	</div>
+</div>
+	<div class="screen2">
+		<h2>Вам это нужно, если:</h2>
+
+		<div class="numbers">
+			<div class="first">
+				<img class="icon" src="img/1.png" alt="1">
+				<p class="icon_text">Вы хотите вывести свой бизнес на новый уровень.</p>
+			</div>
+			<div class="second">
+				<img class="icon" src="img/2.png" alt="2">
+				<p class="icon_text">Вы хотите привлекать клиентов из интернета с оплатой за измеримый результат</p>
+			</div>
+			<div class="third">
+				<img class="icon" src="img/3.png" alt="3">
+				<p class="icon_text">Вам надоели низкоэффективные рекламные кампании и холодные звонки.</p>
+			</div>
+		</div>
+
+		<div id="purple">
+			<p>Мы дадим Вам столько клиентов, заинтересованных в покупке именно вашего продукта, сколько Ваш отдел продаж сможет обработать.</>
+		</div>
+
+		<div class="form_block2">
+			<p class="small">УЗНАТЬ ПОДХОДИТ ЛИ ВАМ ТАКОЙ СПОСОБ РАСКРУТКИ?</p>
+			<form action="options2.php" method="post" name="call-form" class="call-form">
+					<input type="text" required="required" class="inputbox2" name="name" placeholder="Введите Ваше имя">
+					<input type="phone" required="required" maxlength="19" class="inputbox phone-box" name="number" placeholder="Укажите Ваш номер телефона"><br>
+					<input name=""  id="submit" type="submit" class="button2" value="Заказать расчет"/>
+					<img class="letter" src="img/letter2.png" alt="letter">
+					<p class="data"><span class="ziro4ka">*</span> Ваши данные не будут переданы третьим лицам</p>
+					<a href="#" class="polit" data-reveal-id="myModal" data-animation="fade">Политика конфиденциальности</a>
+			</form>
+		</div>
+	</div>
+<div id="slider2">
+	<div id="screen3">
+		<img class="bluebc22" src="img/bluebc22.png" alt="bluebc22">
+		<p class="title">Используемая технология -<br><span class="blue">новый эффективный способ раскрутки</span></p>
+		<div id="two_txt">
+			<p><span class="bold">ЛИДОГЕНЕРАЦИЯ</span> - способ поиска и привлечения клиентов через целенаправленный Интернет-маркетинг в формате Интернет-рекламы.</p>
+			<p class="second"><span class="bold">ЛИД</span> в интернет-меркетинге - это контакт клиента, заинтересованного в покупке именно Вашего продукта</p>
+		</div>
+		<div class="block">
+			<img class="icon2" src="img/4.png" alt="1">
+			<div id="purple_txt">
+				<p>Мы проводим:</p>
+				<ul>
+					<li>Маркетинговые исследования</li>
+					<li>Определяем портреты целевой аудитории</li>
+					<li>Разрабатываем стратегию продвижения</li>
+					<li>Делаем продающий сайт (сайты под каждую целевую аудиторию)</li>
+					<li>Настриваем комплексную рекламную кампанию: поисковики (Яндекс Директ, Google Adwords), тематические площадки (РСЯ), социальные сети (В контакте, Одноклассники, Facebook)</li>
+					<li>Настраиваем поток посетителей на сайт</li>				
+					<li>Проводим анализ статистики. Регулярно улучшаем и повышаем эффективность кампании</li>
+				</ul>
+			</div>
+			<img class="icon3" src="img/5.png" alt="1">
+		</div>
+	</div>
+</div>
+	<div id="screen4">
+		<h2>Почему не работают каналы продаж?</h2>
+		<div class="numbers">
+			<img class="icon" src="img/7.png" alt="7">
+			<img class="icon" src="img/8.png" alt="8">
+			<img class="icon" src="img/9.png" alt="9">
+			<img class="icon" src="img/10.png" alt="10">
+		</div>
+
+		
+		<div class="block2">
+			<p id="red">Ответьте для себя на следующие вопросы:</p>
+			<ul>
+				<li>Кто конкретно смотрит Ваш ролик на ТВ?</li>
+				<li>Как долго люди способны слушать Fm - волну с рекламой, не переключаясь?</li>
+				<li>Какова вероятность, что страницу с Вашими продающим текстом не пропустят среди сотен таких же?</li>
+			</ul>
+			<img class="icon" id="paper" src="img/paper.png" alt="7">
+			<p>Мы знаем эффективные способы <span class="blue">"как поймать"</span><br>именно Вашу целевую аудиторию</p>
+			
+			<img class="stop" src="img/stop.png" alt="stop7">
+			<p id="time">Пришло время платить за результат!</p>
+
+
+			<!-- кнопка -->
+				<button class="button3" onClick="$('#call-request').arcticmodal()"><span>Я ХОЧУ ПЛАТИТЬ ЗА<br>РЕЗУЛЬТАТ</span></button>
+				<!-- //кнопка -->
+
+				<!-- форма -->
+				<div class="g-hidden">
+				<div class="b-modal" id="call-request">
+				<div class="b-modal_close arcticmodal-close">X</div>
+
+				<div class="modal-form" align="center">
+					<form action="options3.php" method="post" name="call-form" class="call-form">
+					<h3>Я ХОЧУ ПЛАТИТЬ ЗА РЕЗУЛЬТАТ</h3>
+							<input type="text" required="required" class="inputbox2" name="name" placeholder="Ваше имя"> 
+							<input type="phone" required="required" class="inputbox2 phone-box" name="number" value="+7" placeholder="____">
+					        <input type="vopros" required="required" class="inputbox2" name="vopros" placeholder="Удобное время звонка (по МСК)"> 
+							<input name=""  id="submit" type="submit" class="button10" value="Перезвоните мне"/>
+					        <p>Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!</p>
+					</form>
+				</div>
+
+				</div>
+				</div>
+				<!-- // форма -->
+
+		</div>
+	</div>
+<div id="slider3">
+	<div id="screen5">
+		<img class="yel2" src="img/yel2.png" alt="yel1">
+		<h2 class="yelbg2">Почему результат неизбежен?</h2>
+		<div class="block">
+			<ul>
+				<li>Вы платите адекватные деньги за соизмеримый результат (контакты горячих клиентов), а не за стоимость рекламы.</li>
+				<li>Мы не возьмем в работу проект, если не будем уверены в том, что сможем привлечь Вам клиентов.</li>
+				<li>Мы знаем способы, которые приносят гарантированный результат.</li>			
+				<li>Сначала проводится тестовая кампания, которая дает Вам возможность оценить эффективность продвижения.<br>ДАЕМ ГАРАНТИИ ОКУПАЕМОСТИ ТЕСТА!</li>
+				<li>Мы работаем только с одной компанией из одной ниши, Ваши конкуренты останутся далеко позади.</li>
+			</ul>
+
+
+
+			<div class="form_block3">
+				<p class="name_form">Узнать стоимость<br>заявки<br><span class="small">для Вашего бизнеса</span></p>
+				<form action="options1.php" method="post" name="call-form" class="call-form">
+						<input type="text" required="required" class="inputbox3" name="name" placeholder="Введите Ваше имя">
+						<input type="phone" required="required" maxlength="19" class="inputbox3 phone-box" name="number" placeholder="Укажите Ваш номер телефона"><br>
+						<input name=""  id="submit" type="submit" class="button4" value="Заказать расчет"/>
+						<img class="letter" src="img/letter.png" alt="letter">
+						<p class="data"><span class="ziro4ka">*</span> Ваши данные не будут переданы третьим лицам</p>
+						<a href="#" class="polit" data-reveal-id="myModal" data-animation="fade">Политика конфиденциальности</a>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+	<div id="screen6">
+		<h2>Отзывы клиентов</h2>
+		<div class="numbers">
+			<div class="person">
+				<img class="pers1" src="img/pers1.png" alt="letter">
+				<p class="name">Наталья,<br>г. Ростов-на-Дону</p>
+				<p class="basiness">Бизнес: тренинги</p>
+				<p class="text">Поиск клиентов для меня был весьма трудозатратным и ненавистным делом. Спасибо агентству, теперь у меня постоянно полные группы учеников и я получаю удовольствие от занятия любимым делом.</p>
+			</div>
+			<div class="person">
+				<img class="pers2" src="img/pers2.png" alt="letter">
+				<p class="name">Геннадий,<br>г. Москва.</p>
+				<p class="basiness">Бизнес: кухни</p>
+				<p class="text">До начала работы не верил в результат, т.к. у нас уже было свое продвижение в интернете. Но сейчас понял насколько оно было неэффективное. Спасибо Лид-агентству за стабильно высокий поток клиентов</p>
+			</div>
+			<div class="person">
+				<img class="pers1" src="img/pers3.png" alt="letter">
+				<p class="name">Максим,<br>г. Самара </p>
+				<p class="basiness">Бизнес: агентство<br>недвижимости</p>
+				<p class="text">Спасибо агентству, очень понравилось сотрудничество. Результаты впечатляют, пришлось нанять дополнительных риелторов, т.к. свой отдел не справился с потоком клиентов</p>
+			</div>
+		</div>
+		<div class="block">
+			<!-- кнопка -->
+				<button class="button3" onClick="$('#call-request').arcticmodal()"><span>ПОЛУЧИТЬ ТАКИЕ ЖЕ<br>РЕЗУЛЬТАТЫ</span></button>
+				<!-- //кнопка -->
+
+				<!-- форма -->
+				<div class="g-hidden">
+				<div class="b-modal" id="call-request">
+				<div class="b-modal_close arcticmodal-close">X</div>
+
+				<div class="modal-form" align="center">
+					<form action="options3.php" method="post" name="call-form" class="call-form">
+					<h3>Получить такие же результаты</h3>
+							<input type="text" required="required" class="inputbox2" name="name" placeholder="Ваше имя"> 
+							<input type="phone" required="required" class="inputbox2 phone-box" name="number" value="+7" placeholder="____">
+					        <input type="vopros" required="required" class="inputbox2" name="vopros" placeholder="Удобное время звонка (по МСК)"> 
+							<input name=""  id="submit" type="submit" class="button10" value="Перезвоните мне"/>
+					        <p>Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!</p>
+					</form>
+				</div>
+
+				</div>
+				</div>
+				<!-- // форма -->
+		</div>
+	</div>
+<div id="slider4">
+	<div id="screen7">
+		<p class="title">Еще раз о главном за 2 минуты!</p>
+		<div class="block">
+
+			<div id="consult">
+		 		<p>Пока Вы находились на сайте, консультацию заказали</p>
+		 		<img class="icon" src="img/11.png" alt="icon">
+		 		<p>человека</p>
+		 	</div>
+			<p class="video">
+		 		<iframe width="500" height="300" src="https://www.youtube.com/embed/PT7fj7CZkWk?rel=0;wmode=transparent" frameborder="0" allowfullscreen></iframe>
+		 		<p class="video_title">Вам желают больших продаж успешные выпускники Академии Лидогенерации (Рустама Назипова)</p>
+		 	</p>
+		 	<img id="arrow" src="img/arrow.png" alt="arrow">
+		 	
+		 </div>
+	</div>
+</div>
+
+
+<a href="#" class="polit" data-reveal-id="myModal" data-animation="fade">Политика конфиденциальности</a>
+
+		<div id="myModal" class="reveal-modal">
+			<div class="fancybox-inner">
+			<div id="pol" class="modal">
+
+				<h3>Политика конфиденциальности</h3>
+
+				<p>Ваша конфиденциальность очень важна для нас. Мы хотим, чтобы Ваша работа в Интернет по возможности была максимально приятной и полезной, и Вы совершенно спокойно использовали широчайший спектр информации, инструментов и возможностей, которые предлагает Интернет.</p>
+
+				<p>Личная информация Членов, собранная при регистрации (или в любое другое время) преимущественно используется для подготовки Продуктов или Услуг в соответствии с Вашими потребностями. Ваша информация не будет передана или продана третьим сторонам. Однако мы можем частично раскрывать личную информацию в особых случаях, описанных в "Согласии с рассылкой"</p>
+
+				<p><strong>С какой целью собираются эти данные</strong></p>
+				<p>Имя используется для обращения лично к вам, а ваш e-mail для отправки вам писем рассылок, новостей тренинга, полезных материалов, коммерческих предложений.</p>
+				 
+				 
+				<p>Вы можете отказаться от получения писем рассылки и удалить из базы данных свои контактные данные в любой момент, кликнув на ссылку для отписки, присутствующую в каждом письме.</p>
+
+				<p><strong>Как эти данные используются</strong></p>
+				<p>На сайте используются куки (Cookies) и данные о посетителях сервиса Google Analytics.</p>
+				 
+				<p>При помощи этих данных собирается информация о действиях посетителей на сайте с целью улучшения его содержания, улучшения функциональных возможностей сайта и, как следствие, создания качественного контента и сервисов для посетителей.</p>
+				 
+				<p>Вы можете в любой момент изменить настройки своего браузера так, чтобы браузер блокировал все файлы cookie или оповещал об отправке этих файлов. Учтите при этом, что некоторые функции и сервисы не смогут работать должным образом.</p>
+
+				<p><strong>Как эти данные защищаются</strong></p> 
+				<p>Для защиты Вашей личной информации мы используем разнообразные административные, управленческие и технические меры безопасности. Наша Компания придерживается различных международных стандартов контроля, направленных на операции с личной информацией, которые включают определенные меры контроля по защите информации, собранной в Интернет. </p>
+
+				<p>Наших сотрудников обучают понимать и выполнять эти меры контроля, они ознакомлены с нашим Уведомлением о конфиденциальности, нормами и инструкциями.</p> 
+
+				<p>Тем не менее, несмотря на то, что мы стремимся обезопасить Вашу личную информацию, Вы тоже должны принимать меры, чтобы защитить ее. </p>
+
+				<p>Мы настоятельно рекомендуем Вам принимать все возможные меры предосторожности во время пребывания в Интернете. Организованные нами услуги и веб-сайты предусматривают меры по защите от утечки, несанкционированного использования и изменения информации, которую мы контролируем. Несмотря на то, что мы делаем все возможное, чтобы обеспечить целостность и безопасность своей сети и систем, мы не можем гарантировать, что наши меры безопасности предотвратят незаконный доступ к этой информации хакеров сторонних организаций.</p>
+				 
+				<p><strong>В случае изменения данной политики конфиденциальности вы сможете прочитать об этих изменениях на этой странице или, в особых случаях, получить уведомление на свой e-mail.</strong></p>
+				 
+				<p>Для связи с администратором сайта по любым вопросам вы можете  написать письмо на e-mail: leadmanager36@gmail.com</p>
+			</div>
+		</div>
+			<div class="close-reveal-modal">X</div>
+		</div>
+
+
+
+
+
+
+	<footer>
+		<div id="main">
+			<img id="logo" src="img/logo.png" alt="logo">
+			<h1>Первое Лид Агентство</h1>
+			<p id="business">Любое количество клиентов в любой бизнес</p>
+
+			<p id="rus">Работаем по всей России</p>
+			<p id="phone">+7(473)-228-49-70</p>	
+			<!-- кнопка -->
+				<img id="manager" src="img/manager.png" alt="manager">
+				<button class="button6" onClick="$('#call-request').arcticmodal()"><span>Заказать звонок</span></button>
+				<!-- //кнопка -->
+
+				<!-- форма -->
+				<div class="g-hidden">
+				<div class="b-modal" id="call-request">
+				<div class="b-modal_close arcticmodal-close">X</div>
+
+				<div class="modal-form" align="center">
+					<form action="options.php" method="post" name="call-form" class="call-form">
+					<h3>Заказать бесплатный звонок!</h3>
+							<input type="text" required="required" class="inputbox2" name="name" placeholder="Ваше имя"> 
+							<input type="phone" required="required" class="inputbox2 phone-box" name="number" value="+7" placeholder="____">
+					        <input type="vopros" required="required" class="inputbox2" name="vopros" placeholder="Удобное время звонка (по МСК)"> 
+							<input name=""  id="submit" type="submit" class="button10" value="Перезвоните мне"/>
+					        <p>Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!</p>
+					</form>
+				</div>
+
+				</div>
+				</div>
+				<!-- // форма -->
+		</div>
+
+		<p id="my_name">Made by ibutterfly777</p>
+	</footer>
+
+</body>
+</html>
+
+
+

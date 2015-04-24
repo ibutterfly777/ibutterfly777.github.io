@@ -1,0 +1,256 @@
+
+.clear {
+	clear:both;
+	display:block;
+	overflow:hidden;
+	visibility:hidden;
+	width:0;
+	height:0
+}
+.clearfix:after {
+	clear:both;
+	content:' ';
+	display:block;
+	font-size:0;
+	line-height:0;
+	visibility:hidden;
+	width:0;
+	height:0
+}
+.clearfix {
+	display:inline-block
+}
+* html .clearfix {
+	height:1%
+}
+.clearfix {
+	display:block
+}
+
+#wrapper {
+	width: 980px;
+	margin: 30px auto 0;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	3. CAROUSEL
+/*-----------------------------------------------------------------------------------*/
+
+#wrapper .d-carousel ul li {
+	background: none;
+	background-color: #FFF;
+	-webkit-box-shadow: 0px 1px 2px 0px #b7b7b7;
+	-moz-box-shadow: 0px 1px 2px 0px #b7b7b7;
+	box-shadow: 0px 1px 2px 0px #b7b7b7; 
+	padding: 15px;
+	box-shadow: 1px -1px 4px #b7b7b7;
+}
+
+.jcarousel-direction-rtl {
+	direction: rtl;
+}
+
+.d-carousel h4 {
+	margin: 5px 0 5px 0;
+}
+
+.d-carousel .jcarousel-container {
+	display: block;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.d-carousel .jcarousel-item {
+	width: 412px;
+	height: 268px;
+}
+
+.d-carousel .jcarousel-container-horizontal {
+	width: 910px;
+	height: 303px;
+	padding: 0 45px;
+}
+
+.d-carousel .jcarousel-item-horizontal {
+	margin-left: 3px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+	margin-right: 11px;
+}
+
+.d-carousel .jcarousel-next-horizontal {
+	position: absolute;
+	top: 149px;
+	right: 0;
+	margin-right: 3px;
+	width: 15px;
+	height: 28px;
+	cursor: pointer;
+	background: transparent url(blog-arrows.jpg) no-repeat top right;
+}
+
+.d-carousel .jcarousel-direction-rtl .jcarousel-next-horizontal {
+	left: 5px;
+	right: auto;
+	background-image: url(blog-arrows.jpg);
+}
+
+.d-carousel .jcarousel-next-horizontal:hover {
+	background-position: bottom right;
+}
+
+.d-carousel .jcarousel-prev-horizontal {
+	position: absolute;
+	top: 149px;
+	left: 0;
+	margin-left: 3px;
+	width: 15px;
+	height: 28px;
+	cursor: pointer;
+	background: transparent url(blog-arrows.jpg) no-repeat top left;
+}
+
+.d-carousel .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+	left: auto;
+	right: 5px;
+	background-image: url(blog-arrows.jpg);
+}
+
+.d-carousel .jcarousel-prev-horizontal:hover {
+	background-position: bottom left;
+}
+
+/*---------------------------tablet screen------------------------------------*/
+
+@media only screen and (max-width: 1230px) and (min-width: 1050px){
+
+	#wrapper {
+	width: 880px;
+	margin: 20px auto 0;
+}
+
+.d-carousel .jcarousel-container-horizontal {
+	width: 820px;
+	height: 275px;
+	padding: 0 30px;
+}
+
+.carousel_pic{
+	width: 370px;
+	height: 241px;
+}
+
+.d-carousel .jcarousel-item {
+	width: 370px;
+	height: 240px;
+}
+
+.d-carousel .jcarousel-prev-horizontal,.d-carousel .jcarousel-next-horizontal{
+	top: 130px;
+}
+}
+
+/*---------------------------tablet screen------------------------------------*/
+
+@media only screen and (max-width: 1049px) and (min-width: 800px){
+
+	#wrapper {
+	width: 700px;
+	margin: 30px auto 0;
+}
+
+.d-carousel .jcarousel-container-horizontal {
+	width: 640px;
+	height: 220px;
+	padding: 0 30px;
+}
+
+.carousel_pic{
+	width: 280px;
+	height: 182px;
+}
+
+.d-carousel .jcarousel-item {
+	width: 280px;
+	height: 182px;
+}
+
+.d-carousel .jcarousel-prev-horizontal,.d-carousel .jcarousel-next-horizontal{
+	top: 100px;
+}
+
+}
+
+/*---------------------------tablet screen------------------------------------*/
+
+@media only screen and (max-width: 799px) and (min-width: 600px){
+
+
+#wrapper {
+	width: 550px;
+	margin: 20px auto 0;
+}
+
+.d-carousel .jcarousel-container-horizontal {
+	width: 510px;
+	height: 170px;
+	padding: 0 20px;
+}
+
+.carousel_pic{
+	width: 246px;
+	height: 160px;
+}
+
+.d-carousel .jcarousel-item {
+	width: 246px;
+	height: 160px;
+}
+
+.d-carousel .jcarousel-prev-horizontal,.d-carousel .jcarousel-next-horizontal{
+	top: 70px;
+	width: 10px;
+}
+
+#wrapper .d-carousel ul li {
+	padding: 0px;
+}
+
+}
+
+
+/*---------------------------tablet screen------------------------------------*/
+
+@media only screen and (max-width: 599px){
+
+	#wrapper {
+	width: 305px;
+	margin: 20px auto 0;
+}
+
+.d-carousel .jcarousel-container-horizontal {
+	width: 255px;
+	height: 170px;
+	padding: 0 25px;
+}
+
+.carousel_pic{
+	width: 246px;
+	height: 160px;
+}
+
+.d-carousel .jcarousel-item {
+	width: 246px;
+	height: 160px;
+}
+
+.d-carousel .jcarousel-prev-horizontal,.d-carousel .jcarousel-next-horizontal{
+	top: 70px;
+	width: 10px;
+}
+
+#wrapper .d-carousel ul li {
+	padding: 0px;
+}
+
+}

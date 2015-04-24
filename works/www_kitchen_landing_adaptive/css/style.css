@@ -1,0 +1,735 @@
+@font-face{
+	font-family: OpenSans;
+	src: url(../fonts/open-sans.regular.ttf);
+}
+
+@font-face{
+	font-family: OpenSansB;
+	src: url(../fonts/open-sans.bold.ttf);
+}
+
+@font-face{
+	font-family: OpenSansI;
+	src: url(../fonts/open-sans.italic.ttf);
+}
+
+@font-face{
+	font-family: OpenSansS;
+	src: url(../fonts/open-sans.semibold.ttf);
+}
+
+@font-face{
+	font-family: OpenSansBI;
+	src: url(../fonts/OpenSans-BoldItalic.ttf);
+}
+
+body{
+	margin:0px auto;
+	text-align: center;
+	padding:0px;
+	background:#fff;	
+	font-family: OpenSans, Arial, Arial, Helvetica, sans-serif;
+	color: #414141;
+	font-size: 16px;
+	width: 960px;
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+header{
+	position: relative;
+	background: #cbf00a;
+	padding: 0;
+	height: 70px;
+}
+
+.logo{
+	position: absolute;
+	left: 17px;
+	top: 21px;
+}
+
+h1{
+	color: #0a3573;
+	font: normal 24px/26px OpenSansB;
+	width: 260px;
+	position: absolute;
+	top: 10px;
+	right: 0;
+	left: 0;
+	text-transform: uppercase;
+	margin: 0 auto;
+}
+
+.blue{
+	font-size: 30px;
+}
+
+.phone{
+	position: absolute;
+	right: 17px;
+	top: 20px;
+	margin: 0;
+	font: normal 18px/0px OpenSansB;
+	color: #0a3573;
+}
+
+#screen1{
+		background: url(../img/slide1.jpg) no-repeat center top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	height: 580px;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.sale{
+	position: absolute;
+	left: 40px;
+	bottom: 100px;
+	z-index: 10;
+}
+
+h2{
+	font: normal 32px/34px OpenSansBI;
+	color: #143d79;
+}
+
+.grey{
+	background: #f5f5f5;
+	margin-top: -30px;
+}
+
+.benefits{
+	padding: 30px 0; 
+}
+
+.benefit{
+	display: inline-block;
+	width: 135px;
+	color: #6a6868;
+	font: normal 16px/18px Arial, Arial, Helvetica, sans-serif;
+	margin-left: 60px;
+}
+
+.main_ben{
+	color: #ff8a00;
+	font: bold 36px/18px 'Bookman Old Style', Arial, Arial, Helvetica, sans-serif;
+}
+
+.kitchen{
+	display: inline-block;
+	width: 295px;
+	margin-right: 20px;
+}
+
+.grey{
+	background: #f5f5f5;
+	margin-top: -30px;
+}
+
+.why_our{
+	background: url(../img/bg.gif) repeat;
+	padding: 20px 0;
+}
+
+h4{
+	color: #f58500;
+	font: normal 18px/24px OpenSansB;
+}
+
+.block{
+	display: inline-block;
+	width: 350px;
+	vertical-align: text-top;
+	padding: 0 45px;
+}
+
+.block1{
+	width: 400px;
+	margin: 0 auto;
+}
+
+.why_our ul{
+	font: normal 14px/16px OpenSans;
+	text-align: left;
+}
+
+.why_our ul li{
+	padding-top: 15px;
+	list-style-image: url(../img/yes.png);
+}
+
+.work{
+	display: inline-block;
+	width: 240px;
+	color: #133b74;
+	font: italic 14px/16px Arial, Arial, Helvetica, sans-serif;
+	vertical-align: text-top;
+	margin: 40px 38px;
+}
+
+.how, .map{
+	position: relative;
+}
+
+.arrows{
+	position: absolute;
+	left: 0;
+	top: 160px;
+}
+
+h2 span{
+	color: #b52a2a;
+	text-transform: uppercase;
+}
+
+.not ul{
+	width: 645px;
+	margin: 0 auto;
+	text-align: left;
+	font: normal 16px/20px OpenSans;
+	color: #414141;
+}
+
+.not ul li{
+	padding-top: 30px;
+}
+
+
+.screen2{
+		background: url(../img/slide2.jpg) no-repeat center top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	height: 404px;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.manager{
+	position: absolute;
+	left: 30px;
+	z-index: 100;
+	padding-top: 20px;
+}
+
+iframe{
+	position: absolute;
+	right: 30px;
+	border: 3px solid #cbf00a;
+	width: 600px;
+	height: 375px;
+	z-index: 0;
+	border-radius: 5px;
+}
+
+.data2{
+	position: absolute;
+	top: 470px;
+}
+
+.block2{
+	display: inline-block;
+	vertical-align: text-top;
+	margin-left: 60px;
+	text-align: left;
+}
+
+.head{
+	color: #ae1717;
+	text-transform: uppercase;
+	font: normal 20px/20px OpenSans;
+}
+
+.copy{
+	position: absolute;
+	top: 600px;
+	left: 0;
+	right: 0;
+	font-size: 14px;
+}
+
+.confid a{
+	position: absolute;
+	top: 640px;
+	color: #da1111;
+	text-decoration: underline!important;
+	left: 0;
+	right: 0;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+.confid2 a{
+	position: absolute;
+	top: 670px;
+	color: #da1111;
+	text-decoration: underline!important;
+	left: 0;
+	right: 0;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+
+/*---------------------------tablet screen------------------------------------*/
+
+@media only screen and (max-width: 900px) and (min-width: 550px){
+
+body{
+	margin:0px auto;
+	text-align: center;
+	padding:0px;
+	background:#fff;	
+	font-family: OpenSans, Arial, Arial, Helvetica, sans-serif;
+	color: #414141;
+	font-size: 16px;
+	width: 600px;
+	max-width: 100%;
+}
+
+.logo{
+	left: 13px;
+	top: 21px;
+	width: 160px;
+}
+
+h1{
+	color: #0a3573;
+	font: normal 20px/24px OpenSansB;
+	width: 220px;
+}
+
+.blue{
+	font-size: 30px;
+}
+
+.phone{
+	position: absolute;
+	right: 17px;
+	top: 20px;
+	margin: 0;
+	font: normal 18px/0px OpenSansB;
+	color: #0a3573;
+}
+
+#screen1{
+		background: url(../img/slide1.jpg) no-repeat center top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	height: 580px;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.sale{
+	position: absolute;
+	left: 30px;
+	bottom: 132px;
+	z-index: 10;
+	width: 180px;
+}
+
+h2{
+	font: normal 22px/28px OpenSansBI;
+}
+
+.grey{
+	background: #f5f5f5;
+	margin-top: -30px;
+}
+
+.benefits{
+	padding: 30px 0; 
+}
+
+.benefit{
+	display: inline-block;
+	width: 110px;
+	color: #6a6868;
+	font: normal 14px/16px Arial, Arial, Helvetica, sans-serif;
+	margin-left: 15px;
+}
+
+.kitchen_picture{
+	width: 180px;
+}
+
+.main_ben{
+	color: #ff8a00;
+	font: bold 30px/18px 'Bookman Old Style', Arial, Arial, Helvetica, sans-serif;
+}
+
+.kitchen{
+	display: inline-block;
+	width: 180px;
+	margin-right: 10px;
+}
+
+.grey{
+	background: #f5f5f5;
+	margin-top: -30px;
+}
+
+.why_our{
+	background: url(../img/bg.gif) repeat;
+	padding: 20px 0;
+}
+
+h4{
+	font: normal 14px/18px OpenSansB;
+}
+
+.block{
+	display: inline-block;
+	width: 240px;
+	vertical-align: text-top;
+	padding: 0 20px;
+}
+
+.block1{
+	width: 400px;
+	margin: 0 auto;
+}
+
+.why_our ul{
+	font: normal 12px/14px OpenSans;
+	text-align: left;
+}
+
+.why_our ul li{
+	padding-top: 10px;
+	list-style-image: url(../img/yes.png);
+}
+
+.work{
+	display: inline-block;
+	width: 165px;
+	color: #133b74;
+	font: italic 12px/14px Arial, Arial, Helvetica, sans-serif;
+	vertical-align: text-top;
+	margin: 40px 10px;
+}
+
+.icon{
+	width: 100px;
+}
+
+.how, .map{
+	position: relative;
+}
+
+.arrows{
+	top: 130px;
+	width: 600px;
+	height: 290px;
+}
+
+h2 span{
+	color: #b52a2a;
+	text-transform: uppercase;
+}
+
+.not ul{
+	width: 520px;
+	font: normal 14px/16px OpenSans;
+}
+
+.not ul li{
+	padding-top: 20px;
+}
+
+
+.screen2{
+		background: url(../img/slide2.jpg) no-repeat center top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	height: 404px;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.manager{
+	position: absolute;
+	left: 15px;
+	z-index: 100;
+	padding-top: 20px;
+	width: 262px;
+}
+
+iframe{
+	right: 15px;
+	border: 3px solid #cbf00a;
+	width: 376px;
+	height: 257px;
+}
+
+.data2{
+	position: absolute;
+	top: 320px;
+}
+
+.data2 p{
+	font-size: 13px;
+}
+
+.block2{
+	display: inline-block;
+	vertical-align: text-top;
+	margin-left: 22px;
+	text-align: left;
+}
+
+.head{
+	color: #ae1717;
+	text-transform: uppercase;
+	font: normal 15px/10px OpenSans;
+}
+
+.copy{
+	top: 420px;
+	font-size: 12px;
+}
+
+.confid a{
+	top: 460px;
+	font-size: 12px;
+}
+
+.confid2 a{
+	top: 490px;
+	font-size: 12px;
+}
+}
+
+
+/*---------------------------phone screen------------------------------------*/
+
+@media only screen and (max-width: 549px) {
+
+body{
+	font-size: 14px;
+	width: 320px;
+}
+
+header{
+	position: relative;
+	background: #cbf00a;
+	padding: 0;
+	height: 240px;
+}
+
+.logo{
+	position: relative;
+	left: 0px;
+	top: 21px;
+}
+
+h1{
+	position: relative;
+	top: 30px;
+}
+
+.blue{
+	font-size: 30px;
+}
+
+.phone{
+	position: relative;
+	right: 0;
+	left: 0;
+	top: 50px;
+	margin: 0;
+	font: normal 22px/0px OpenSansB;
+	color: #0a3573;
+}
+
+.sale{
+	bottom: 400px;
+}
+
+h2 {
+font: normal 23px/26px OpenSansBI;
+color: #143d79;
+}
+
+.grey{
+	background: #f5f5f5;
+	margin-top: -30px;
+}
+
+.benefits{
+	padding: 30px 0; 
+}
+
+.benefit{
+	margin-left: 0;
+	padding-bottom: 25px;
+}
+
+.main_ben{
+	color: #ff8a00;
+	font: bold 36px/18px 'Bookman Old Style', Arial, Arial, Helvetica, sans-serif;
+}
+
+.kitchen{
+	display: block;
+	width: 295px;
+	margin: 0;
+}
+
+.kitchen_picture{
+	width: 200px;
+}
+
+.grey{
+	background: #f5f5f5;
+	margin-top: -30px;
+}
+
+.why_our{
+	background: url(../img/bg.gif) repeat;
+	padding: 20px 0;
+}
+
+h4{
+	color: #f58500;
+	font: normal 16px/20px OpenSansB;
+	margin: 0;
+}
+
+.block{
+	display: block;
+	width: 280px;
+	vertical-align: text-top;
+	padding: 0 13px;
+}
+
+.block1{
+	width: 280px;
+	margin: 0 auto;
+}
+
+.why_our ul{
+	font: normal 12px/14px OpenSans;
+	text-align: left;
+}
+
+.why_our ul li{
+	padding-top: 10px;
+	list-style-image: url(../img/yes.png);
+}
+
+.work {
+	display: inline-block;
+	width: 100px;
+	color: #133b74;
+	font: italic 10px/14px Arial, Arial, Helvetica, sans-serif;
+	margin: 20px 2px;
+}
+
+.icon{
+	width: 80px;
+}
+
+.how, .map{
+	position: relative;
+}
+
+.arrows{
+	display: none;
+}
+
+h2 span{
+	color: #b52a2a;
+	text-transform: uppercase;
+}
+
+.not ul{
+	width: 250px;
+	font: normal 14px/16px OpenSans;
+}
+
+.not ul li{
+	padding-top: 30px;
+}
+
+
+.screen2{
+		background: url(../img/slide2.jpg) no-repeat center top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	height: 404px;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.manager{
+	display: none;
+}
+
+iframe{
+	position: absolute;
+	right: 0px;
+	border: 3px solid #cbf00a;
+	width: 314px;
+	height: 230px;
+	z-index: 0;
+	border-radius: 5px;
+}
+
+.data2{
+	position: relative;
+	top: 250px;
+}
+
+.block2{
+	display: block;
+	margin-left: 5px;
+}
+
+.block2 p{
+	font-size: 12px;
+}
+
+.head{
+	font: normal 16px/0px OpenSans;
+}
+
+.copy, .confid a{
+	position: relative;
+	top: 246px;
+	font-size: 12px;
+}
+
+.confid2 a{
+	position: relative;
+	top: 260px;
+	font-size: 12px;
+	margin-bottom: 15px;
+}
+}

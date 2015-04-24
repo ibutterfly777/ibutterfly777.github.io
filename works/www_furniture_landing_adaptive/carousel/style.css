@@ -1,0 +1,164 @@
+
+.clear {
+	clear:both;
+	display:block;
+	overflow:hidden;
+	visibility:hidden;
+	width:0;
+	height:0
+}
+.clearfix:after {
+	clear:both;
+	content:' ';
+	display:block;
+	font-size:0;
+	line-height:0;
+	visibility:hidden;
+	width:0;
+	height:0
+}
+.clearfix {
+	display:inline-block
+}
+* html .clearfix {
+	height:1%
+}
+.clearfix {
+	display:block
+}
+
+a {
+	text-decoration: none;
+	color: #4b4b4b;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #1c1c1c;
+}
+
+#wrapper {
+	width: 1034px;
+	margin: 0 auto;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	3. CAROUSEL
+/*-----------------------------------------------------------------------------------*/
+
+#wrapper .d-carousel ul li {
+	background: none;
+	background-color: #FFF;
+	-webkit-box-shadow: 0px 1px 2px 0px #b7b7b7;
+	-moz-box-shadow: 0px 1px 2px 0px #b7b7b7;
+	box-shadow: 0px 1px 2px 0px #b7b7b7; 
+	padding: 15px;
+	box-shadow: 1px -1px 4px #b7b7b7;
+}
+
+.jcarousel-direction-rtl {
+	direction: rtl;
+}
+
+.d-carousel h4 {
+	margin: 5px 0 5px 0;
+}
+
+.d-carousel .jcarousel-container {
+	display: block;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.d-carousel .jcarousel-item {
+	width: 270px;
+	height: 290px;
+}
+
+.d-carousel .jcarousel-container-horizontal {
+	width: 950px;
+	height: 325px;
+	padding: 0 45px;
+}
+
+.d-carousel .jcarousel-item-horizontal {
+	margin-left: 3px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+	margin-right: 11px;
+}
+
+.d-carousel .jcarousel-next-horizontal {
+	position: absolute;
+	top: 149px;
+	right: 0;
+	margin-right: 3px;
+	width: 15px;
+	height: 28px;
+	cursor: pointer;
+	background: transparent url(blog-arrows.jpg) no-repeat top right;
+}
+
+.d-carousel .jcarousel-direction-rtl .jcarousel-next-horizontal {
+	left: 5px;
+	right: auto;
+	background-image: url(blog-arrows.jpg);
+}
+
+.d-carousel .jcarousel-next-horizontal:hover {
+	background-position: bottom right;
+}
+
+.d-carousel .jcarousel-prev-horizontal {
+	position: absolute;
+	top: 149px;
+	left: 0;
+	margin-left: 3px;
+	width: 15px;
+	height: 28px;
+	cursor: pointer;
+	background: transparent url(blog-arrows.jpg) no-repeat top left;
+}
+
+.d-carousel .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+	left: auto;
+	right: 5px;
+	background-image: url(blog-arrows.jpg);
+}
+
+.d-carousel .jcarousel-prev-horizontal:hover {
+	background-position: bottom left;
+}
+
+
+
+/*---------------------------tablet screen------------------------------------*/
+
+@media only screen and (max-width: 1024px) and (min-width: 640px){
+
+#wrapper {
+	width: 95%;
+	margin: 0 auto;
+}
+
+
+.d-carousel .jcarousel-container-horizontal {
+	width: 88%;
+	height: 245px;
+	padding: 0 45px;
+}
+
+
+.d-carousel .jcarousel-item {
+	width: 190px;
+	height: 210px;
+}
+
+.photo{
+	width: 200px;
+	margin-left: -5px;
+}
+
+.d-carousel .jcarousel-prev-horizontal, .d-carousel .jcarousel-next-horizontal {
+	top: 109px;
+}

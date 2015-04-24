@@ -1,0 +1,57 @@
+@font-face{font-family: RobotoBoldCondensed;
+	src: url(../font/Roboto-BoldCondensed.ttf);}
+
+/*DRUPAL*/
+.pagerDRUPAL{clear:both;font-family:RobotoCondensed,Verdana,Helvetica;font-size:12px;margin: 35px 0 45px;}
+.pagerDRUPAL a,.pagerDRUPAL strong.pagerDRUPAL-current{padding:0.5em;color:#ff916b;font-weight:normal;text-decoration:none;}
+.pagerDRUPAL{clear:both;padding:10px 0px 3px;}
+.pagerDRUPAL div{padding:0em;display:inline;}
+.pagerDRUPAL strong,.pagerDRUPAL a{padding: 4px 14px;border: 1px solid #ff916b;border-radius: 3px;margin: 0px 0.25em 0px 0.25em;}
+.pagerDRUPAL a:hover{text-decoration:underline;background:#fff0eb;}
+.pagerDRUPAL strong{color: #fff;background: #ff916b;border-radius: 3px;padding: 5px 15px;}
+.pagerDRUPAL .pager-list-dots-right{color:#ff916b; }
+
+.pagerDRUPAL2 {clear: both;font-family: RobotoCondensed,Verdana,Helvetica;font-size: 12px;margin: 35px auto 45px;text-align: center;}
+.pagerDRUPAL2 a,.pagerDRUPAL2 strong.pagerDRUPAL2-current{padding:0.5em;color:#ff916b;font-weight:normal;text-decoration:none;}
+.pagerDRUPAL2{clear:both;padding:10px 0px 3px;}
+.pagerDRUPAL2 div{padding:0em;display:inline;}
+.pagerDRUPAL2 strong,.pagerDRUPAL2 a{padding: 4px 14px;border: 1px solid #ff916b;border-radius: 3px;margin: 0px 0.25em 0px 0.25em;}
+.pagerDRUPAL2 a:hover{text-decoration:underline;background:#fff0eb;}
+.pagerDRUPAL2 strong{color: #fff;background: #ff916b;border-radius: 3px;padding: 5px 15px;}
+.pagerDRUPAL2 .pager-list-dots-right{color:#ff916b; }
+
+/*---------------------------tablet screen------------------------------------*/
+
+@media only screen and (max-width: 1115px) and (min-width: 960px){
+.pagerDRUPAL strong, .pagerDRUPAL a {padding: 3px 12px;border: 1px solid #ff916b;border-radius: 3px;margin: 0px 0.2em 0px 0.2em;}
+.pagerDRUPAL2 strong, .pagerDRUPAL2 a {padding: 3px 12px;border: 1px solid #ff916b;border-radius: 3px;margin: 0px 0.2em 0px 0.2em;}
+.pagerDRUPAL {margin: 23px 0 37px 0px;}
+}
+
+/*---------------------------tablet screen------------------------------------*/
+
+@media only screen and (max-width: 959px) and (min-width: 778px){
+.pagerDRUPAL strong, .pagerDRUPAL a {padding: 3px 12px;border: 1px solid #ff916b;border-radius: 3px;margin: 0px 0.2em 0px 0.2em;}
+.pagerDRUPAL2 strong, .pagerDRUPAL2 a {padding: 3px 12px;border: 1px solid #ff916b;border-radius: 3px;margin: 0px 0.2em 0px 0.2em;}
+}
+
+/*---------------------------tablet screen------------------------------------*/
+
+@media only screen and (max-width: 777px) and (min-width: 481px){
+.pagerDRUPAL strong, .pagerDRUPAL a {padding: 0px 8px;border: 1px solid #ff916b;border-radius: 3px;margin: 0px 0.2em 0px 0.2em;}
+.pagerDRUPAL {font-size: 12px;margin: 9px 0 26px;}
+.pagerDRUPAL2 strong, .pagerDRUPAL2 a {padding: 0px 8px;border: 1px solid #ff916b;border-radius: 3px;margin: 0px 0.2em 0px 0.2em;}
+.pagerDRUPAL2 {font-size: 12px;margin: 24px auto 24px;text-align: center;}
+}
+
+/*---------------------------tablet screen------------------------------------*/
+
+@media only screen and (max-width: 480px){
+	
+.pagerDRUPAL{font-size:12px;margin: 35px 0 45px 0px;}
+.pagerDRUPAL strong{color: #fff;background: #ff916b;border-radius: 3px;padding: 3px 11px;}
+.pagerDRUPAL strong,.pagerDRUPAL a{padding: 3px 11px;border: 1px solid #ff916b;border-radius: 3px;margin: 0px 0.25em 0px 0.25em;}
+
+.pagerDRUPAL2 {font-size: 12px;margin: 35px auto 45px;text-align: center;}
+.pagerDRUPAL2 strong,.pagerDRUPAL2 a{padding: 3px 11px;border: 1px solid #ff916b;border-radius: 3px;margin: 0px 0.25em 0px 0.25em;}
+.pagerDRUPAL2 strong{color: #fff;background: #ff916b;border-radius: 3px;padding: 3px 11px;}

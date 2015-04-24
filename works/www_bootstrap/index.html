@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 1</title>
+
+    <!-- Bootstrap -->
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body style="font-family:'Open Sans'">
+    
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+        <!-- Класс "container-fluid" - адаптивный контейнер -->
+
+        <div class="container maxWidthMy">
+
+            <!-- Блок с кнопкой "Brand" и кнопкой для развертывания меню (для мобильных устройств) -->
+
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <img class="img-responsive" src="img/logo.png" alt="logo">
+                        </div>
+                        <div class="col-xs-10">
+                            <h2>международные грузоперевозки<br>и таможенное оформление</h2>
+                        </div>
+                    </div>
+                </a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+
+                    <!-- Набор иконок для кнопки -->
+
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Набор ссылок навигации, форм и других элементов меню (в мобильном устройстве будет находится в раскрывающеемся списке) -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <form class="nav navbar-left">
+                    <p class="phone_number">8 (495) 995-86-11</p>
+                </form>
+
+                <button type="button" class="btn btn-primary navbar-nav navbar-right buttonmy" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Заказать звонок</button>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="container-fluid">
+        <div class="row backbluemy">
+            <div class="col-xs-10 text-center pull-none">
+                <h1 class="text-uppercase whiteuppercase">Международные перевозки сборных и<br />генеральных грузов из любого уголка мира</h1>
+                <p class="whitetext">автомобильные, авиа, железнодорожные и морские</p>
+            </div>
+        </div>            
+        <div class="row positionmy maxWidthMy pull-none">
+            <div class="col-xs-10 pull-none text-center">
+                <div class="col-xs-4">
+                    <img class="img-responsive center-block" src="img/1.png" alt="car">
+                    <p class="redtext text-uppercase">Возим быстро!</p>
+                </div>
+                <div class="col-xs-4">
+                    <img class="img-responsive center-block" src="img/2.png" alt="car">
+                    <p class="redtext text-uppercase">Надежно!</p>
+                </div>
+                <div class="col-xs-4">
+                    <img class="img-responsive center-block" src="img/3.png" alt="car">
+                    <p class="redtext text-uppercase">без проблем!</p>
+                </div>
+            </div>      
+            <div class="row col-xs-12">
+                <img class="img-responsive center-block" src="img/truck.png" alt="truck">
+                <ul class="list-unstyled listgreen text-uppercase">
+                    <li>Сборные грузы уже комплектуются, ждем только Вас</li>
+                    <li>Выбираем оптимальный маршрут</li>
+                    <li>Рассчитываем стоимость</li>
+                    <li>Решаем все проблемы с таможней и страхованием</li>
+                    <li>Доставим Ваш груз от двери до двери</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row text-center maxWidthMy pull-none">
+            <div class="col-xs-10 pull-none backbluemy">
+                <h1 class="text-uppercase whiteuppercase">С этого момента все Ваши заботы на нас!</h1>
+                <p class="whitetext">Занимайтесь своим бизнесом спокойно и получайте от нас<br><span class="text-uppercase reportmy">ежедневные отчеты!</span></p>
+            </div>
+        </div>
+        <div class="row text-center pull-none">
+            <form class="yourdesigen text-center">
+                <div class="form-group">
+                    <label for="exampleInputTel"> </label>
+                    <input type="tel" class="form-control input-lg  text-uppercase text-center" id="exampleInputTel" placeholder="Введите свой номер телефона">
+                </div>
+                <button type="submit" class="btn btn-default btn-block text-uppercase btn-lg btncareMy">Скинуть все заботы по доставке</button>
+            </form>
+        </div>
+        <div class="row backbluemy backbluetopsmall">
+            <div class="col-xs-10 text-center pull-none">
+                <p class="text-uppercase whiteuppercase questionsmy">НАШИ ПРЕДСТАВИТЕЛИ РЕШАЮТ ЛЮБЫЕ ВОПРОСЫ<br />В ЕВРОПЕ, ЮГО-ВОСТОЧНОЙ АЗИИ И АМЕРИКЕ</p>
+                <p class="whitetext">За счет этого, мы, как правило, предлагаем наиболее выгодные условия!</p>
+            </div>
+        </div> 
+        <div class="row maxWidthMy pull-none">
+            <div class="col-xs-10 pull-none">
+                <div class="col-xs-4">
+                    <img class="img-responsive" src="img/man.png" alt="man">
+                </div>
+                <div class="col-xs-8 greenblock">
+                    <h3 class="whiteuppercase text-uppercase">Услуга <span>«Проще не бывает»</span></h3>
+                    <p class="whitetext complectmy">По Вашему заказу мы приобретаем, комплектуем и доставляем груз.<br>Вы приобретаете его у нас, как у резидента РФ.</p>
+                </div>
+            </div>           
+        </div>
+        <div class="row backbluemy2">
+            <div class="text-center pull-none">
+                <p class="whitetext">С Вами будут работать специалисты с <span class="year">25-летним</span> опытом в международных перевозках.</p>
+            </div>
+        </div>
+        <div class="row">
+            <h1 class="text-center pull-none bluetextMy">ПОКА ВЫ ЧИТАЕТЕ, МЫ ПЕРЕВОЗИМ ГРУЗЫ ДЛЯ</h1>
+        </div> 
+        <div class="row maxWidthMy pull-none">
+            <div class="col-xs-11 pull-none text-center">
+                <div class="col-xs-4">
+                    <img class="img-responsive imgMy" src="img/4.png" alt="PAL">
+                    <h3 class="bluetextMy">PAL Industries RUS</h3>
+                    <p class="describetextMy text-justify">Продукция для животноводства и птицеводства www.palrus.ru поставки оборудования из Германии.</p>
+                </div>
+                <div class="col-xs-4">
+                    <img class="img-responsive imgMy" src="img/5.png" alt="Reserv">
+                    <h3 class="bluetextMy">ООО "Резерв"</h3>
+                    <p class="describetextMy text-justify">Продукция для животноводства и птицеводства www.reserv.ru поставки оборудования из Италии.</p>
+                </div>
+                <div class="col-xs-4">
+                    <img class="img-responsive imgMy" src="img/6.png" alt="PAL">
+                    <h3 class="bluetextMy">ООО "Фотон"</h3>
+                    <p class="describetextMy text-justify">Производство светильников www.foton-L.ru поставки комплектующих из Китая.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center pull-none">
+            <form class="yourdesigen text-center">
+                <div class="form-group">
+                    <label for="exampleInputTel"> </label>
+                    <input type="tel" class="form-control input-lg  text-uppercase text-center" id="exampleInputTel" placeholder="Введите свой номер телефона">
+                </div>
+                <button type="submit" class="btn btn-default btn-block text-uppercase btn-lg btncareMy">Скинуть все заботы по доставке</button>
+            </form>
+        </div>
+        <div class="row greenblock">
+            <div class="col-xs-10 text-center pull-none">
+                <p class="text-uppercase whiteuppercase questionsmy">Именно Вашего груза не хватает для доукомплектовки и<br>отправки СБОРНОГО ГРУЗА</p>
+            </div>
+        </div>
+        <div class="row">
+            <h1 class="text-center pull-none bluetextMy whatToDo">Что нужно сделать сейчас!</h1>
+        </div>
+        <div class="row">
+            <img class="img-responsive pull-none" src="img/back.png" alt="PAL">
+
+        </div>
+        <div class="row text-center pull-none">
+            <form class="yourdesigen text-center">
+                <div class="form-group">
+                    <label for="exampleInputTel"> </label>
+                    <input type="tel" class="form-control input-lg  text-uppercase text-center" id="exampleInputTel" placeholder="Введите свой номер телефона">
+                </div>
+                <button type="submit" class="btn btn-default btn-block text-uppercase btn-lg btncareMy">Скинуть все заботы по доставке</button>
+            </form>
+        </div>
+        <div class="row backbluemy backbluetopsmall">
+            <div class="col-xs-10 text-center pull-none">
+                <p class="text-uppercase whiteuppercase questionsmy">ЗАЧЕМ ОТВЛЕКАТЬСЯ ОТ ДЕЛ?<br />КОГДА МОЖНО СБРОСИТЬ ВСЕ ЗАБОТЫ НА НАС!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-7 pull-none">         
+                <img class="img-responsive col-xs-5" src="img/phone.png" alt="phone">
+                <p class="col-xs-7 phoneRedMy">8 (495) 995-86-11</p>
+            </div>            
+        </div>
+    </div>
+    <footer class="conteiner-fluid greyBackMy">
+        <div class="raw maxWidthMy pull-none">
+            <div class="col-lg-11 pull-none">
+                <div class="col-xs-1">
+                    <img src="img/logo2.png" alt="logo2">
+                </div>
+                <div class="col-xs-4 text-left greytextMy">
+                    <p>Международные грузоперевозки</p>
+                </div>
+                <div class="col-xs-4"></div>
+                <div class="col-xs-3 text-right">
+                    <p class="phonegreyMy">8 (495) 995-86-11</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    
+    <!--modal window content of callback form-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modalmy">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="exampleModalLabel">Заказ обратного звонка</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="control-label">Введите Ваше имя:</label>
+                            <input type="text" class="form-control" id="recipient-name" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-tel" class="control-label">Введите Ваш номер телефона:</label>
+                            <input type="tel" class="form-control" id="recipient-tel" required="required">
+                        </div> 
+                        <div class="form-group">
+                            <label for="message-text" class="control-label">Введите Ваш вопрос:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+            <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

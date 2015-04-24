@@ -1,0 +1,2114 @@
+@font-face{
+	font-family: OpenSansRegular;
+	src: url(../fonts/open-sans.regular.ttf);
+}
+
+@font-face{
+	font-family: OpenSansBold;
+	src: url(../fonts/open-sans.bold.ttf);
+}
+
+@font-face{
+	font-family: OpenSansItalic;
+	src: url(../fonts/frI4lXTJ.ttf);
+}
+
+@font-face{
+	font-family: MyriadPro-Cond;
+	src: url(../fonts/MyriadPro-Cond.otf),
+		 url(../fonts/myriadpro-cond-webfont.woff);
+}
+
+body{
+	margin: 0 auto;
+	text-align: center;
+	padding:0px;
+	background:#fff;	
+	font-family: OpenSansRegular, Arial, sans-serif;
+	color: #2f2f2f;
+	width: 1440px;
+	max-width: 100%;
+}
+
+header{
+	position: fixed;
+	width: 100%;
+	background: #fff;
+	z-index: 100;
+	left: 0;
+	right: 0;
+}
+
+#main{
+	position: absolute;
+	top: 200px;
+	width: 100%;
+}
+
+.window_work{
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+#menu-icon {
+	display: none; /* Скрываем иконку при инициализации */
+}
+
+.menu li:hover > ul {
+	display: block; /* выводим список */
+}
+
+.menu{
+	display: block;
+	margin: 0 auto;
+	max-width: 1440px;
+	width: 100%;
+	background: #0585c5;
+	height: 44px;
+}
+
+.menu a {
+	height: 30px;
+	text-decoration: none;
+	display: block;
+	padding: 10px 0 2px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.menu ul{
+	margin: 0;
+	padding: 0;
+}
+
+.menu ul li{
+	display: inline-block;
+	list-style-type: none;
+	border: 1px solid #0585c5;
+	border-left-color: #006394;
+	font-size: 16px;
+	font-weight: bold;
+	width: 242px;
+	margin: 0 -3px;
+}
+
+.menu ul li:last-child{
+	border-right-color: #006394;
+}
+
+.menu ul li:hover{
+	background: #2f7abe;
+}
+
+.head{
+	margin: 0px auto;
+	width: 970px;
+	max-width: 77%;	
+}
+
+.top{
+	height: 155px!important;
+	position: relative;
+}
+
+#left{
+	width: 305px;
+	position: absolute;
+	left: 0;
+	top: 40px;
+}
+
+.logo{
+	width: 100%;
+}
+
+#left p{
+	font-size: 16px;
+	line-height: 15px;
+	margin: 0;
+	color: #000000;
+}
+
+#center{
+	position: absolute;
+	left: 7%;
+	right: 0;
+	top: 15px;
+	width: 370px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#center p{
+	font-size: 16px;
+	color: #181818;
+	display: inline-block;
+	padding: 7px 15px;
+	background: #dbf1fc;
+	margin: 0 0 5px;
+}
+
+#right{
+	position: absolute;
+	right: 0;
+	top: 15px;
+}
+
+#right .call{
+	color: #666666;
+	font-size: 16px;
+	margin: 0 0 5px;
+}
+
+#right .phone{
+	font-size: 24px;
+	color: #212121;
+	margin: 0;
+}
+
+#right .time{
+	font-size: 12px;
+	color: #ff0000;
+	margin: 5px 0 2px;
+}
+
+.slide {
+	width: 100%;
+	max-width: 1440px;
+	min-height: 560px;
+	position: relative;
+	overflow: hidden;
+	background: url(../img/bg1.jpg);
+	background-size: 100% 100%;
+	-webkit-transition: background-position 1s ease-out 0.3s;
+	-moz-transition: background-position 1s ease-out 0.3s;
+	-o-transition: background-position 1s ease-out 0.3s;
+	-ms-transition: background-position 1s ease-out 0.3s;
+	transition: background-position 1s ease-out 0.3s;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.white_title{
+	background: rgba(255,255,255,0.6);
+	width: 960px;
+	height: 105px;
+	margin: 20px auto 0;
+}
+
+.white_title .big{
+	font-size: 30px;
+	line-height: 0;
+	color: #000;
+	text-transform: uppercase;
+	padding-top: 40px;
+}
+
+.white_title .small2{
+	font-size: 20px;
+	line-height: 0;
+	color: #000;
+}
+
+h2{
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: normal;
+	width: 910px;
+	margin: 50px auto 0;
+}
+
+#timer{
+	background: rgba(229, 0, 46, 0.8);
+	width: 400px;
+	height: 90px;
+	border-radius: 0 0 6px 6px;
+	position: absolute;
+	bottom: 15px;
+	left: 200px;
+	z-index: 0;
+}
+
+#timer p{
+	width: 110px;
+	color: #fff;
+	font-size: 14px;
+	text-align: right;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+
+.punkt, .block_now{
+	display: inline-block;
+	vertical-align: text-top;
+	margin: 30px 6px 0;
+}
+
+.punkt p.title{
+	color: #0585c5;
+	font-size: 17px;
+	width: 145px;
+	text-align: center;
+	margin: 5px auto;
+	font-family: OpenSansRegular!important;
+}
+
+.punkt p.text{
+	font-size: 14px;
+	width: 145px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.deferment{
+	width: 100%;
+	height: 650px;
+	background: url(../img/bg2.jpg) repeat;
+	box-shadow: 3px 3px 5px #909090;
+}
+
+.block{
+	position: relative;
+	width: 980px;
+	margin: 0 auto;
+}
+
+.block .title{
+	width: 150px;
+	margin: 0 auto;
+	font-family: OpenSansItalic, Arial, sans-serif;
+}
+
+.deferment h2, .how_we_work h2, .dream h2{
+	padding-top: 40px;
+	width: 980px;
+}
+
+.step1{
+	position: absolute;
+	left: 0;
+	top: 135px;
+}
+
+.arrow1{
+	position: absolute;
+	left: 150px;
+	top: 135px;
+}
+
+.step2{
+	position: absolute;
+	left: 240px;
+	top: 62px;
+}
+
+.arrow2{
+	position: absolute;
+	left: 430px;
+	top: 135px;
+}
+
+.step3{
+	position: absolute;
+	right: 300px;
+	top: 118px;
+}
+
+.arrow3{
+	position: absolute;
+	right: 195px;
+	top: 200px;
+}
+
+.step4{
+	position: absolute;
+	right: 0px;
+	top: 25px;
+}
+
+.problem{
+	display: inline-block;
+	vertical-align: text-top;
+	margin: 0 15px;
+	width: 410px;
+	text-align: left;
+}
+
+.problem .they{
+	color: #df0036;
+	font-size: 20px;
+	line-height: 0;
+	margin-top: 40px;
+	text-transform: uppercase;
+}
+
+.problem .problem_pic{
+	border: 1px solid #dddddd;
+}
+
+.problem h3{
+	color: #0585c5;
+	font-size: 16px;
+	font-family: OpenSansBold, Arial, sans-serif;
+	text-transform: uppercase;
+	margin: 3px 0;
+}
+
+.problem .we{
+	color: #fff;
+	background: #0585c5;
+	padding: 10px;
+	margin: 7px 0;
+}
+
+.dream {
+	width: 100%;
+	height: 660px;
+	background: url(../img/bg3.gif) repeat;
+	box-shadow: 3px 3px 5px #909090;
+	position: relative;
+}
+
+.how_we{
+	display: inline-block;
+	vertical-align: text-top;
+	margin: 30px 7px 0;
+}
+
+.how_we_work{
+	width: 100%;
+	height: 460px;
+	background: url(../img/bg3.gif) repeat;
+	box-shadow: 3px 3px 5px #909090;
+	position: relative;
+}
+
+.how_we p{
+	font-family: MyriadPro-Cond;
+	font-size: 22px;
+	width: 185px;
+	text-transform: uppercase;
+	margin: 17px auto;
+	line-height: 23px;
+}
+
+.how_we p span{
+	color: #0585c5;
+	font-size: 27px;
+	line-height: 27px;
+}
+
+.how_we_work .next{
+	position: absolute;
+	top: 170px;
+}
+
+.now {
+	width: 100%;
+	height: 720px;
+	background: url(../img/bg2.jpg) repeat;
+	box-shadow: 3px 3px 5px #909090;
+}
+
+.now h2{
+	width: 980px;
+	padding-top: 40px;
+}
+
+.block_now p{
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #0585c5;
+	width: 290px;
+	margin: 5px auto;
+}
+
+.info {
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	min-height: 555px;
+	position: relative;
+	overflow: hidden;
+	background: url(../img/bg4.jpg);
+	background-size: 100% 100%;
+	-webkit-transition: background-position 1s ease-out 0.3s;
+	-moz-transition: background-position 1s ease-out 0.3s;
+	-o-transition: background-position 1s ease-out 0.3s;
+	-ms-transition: background-position 1s ease-out 0.3s;
+	transition: background-position 1s ease-out 0.3s;
+	text-align: center;
+}
+
+.info h2{
+	background: rgba(255,255,255,0.65);
+	padding: 10px 0;
+}
+
+.arrowleft{
+	position: absolute;
+	top: 185px;
+	left: 395px;
+}
+
+.arrowright{
+	position: absolute;
+	top: 185px;
+	right: 0px;
+}
+
+.diplom {
+	width: 100%;
+	height: 290px;
+	background: url(../img/bg2.jpg) repeat;
+	box-shadow: 3px 3px 5px #909090;
+}
+
+.diploma{
+	display: inline-block;
+	margin: 35px 5px 0;
+}
+
+.map {
+	position: relative;
+	height: 550px;
+}
+
+.map .manager {
+	position: absolute;
+	left: 30px;
+	z-index: 2;
+	padding-top: 20px;
+	top: 20px;
+}
+
+.map iframe {
+	position: absolute;
+	right: 30px;
+	border: 3px solid #ffd93e!important;
+	width: 600px;
+	height: 375px;
+	z-index: 0;
+	border-radius: 5px;
+	top: 20px;
+}
+
+.map .data2{
+	position: absolute;
+	right: 25px;
+	top: 400px;
+}
+
+.map .block222{
+	display: inline-block;
+	text-align: left;
+	vertical-align: text-top;
+	margin-left: 30px;
+}
+
+.map .head1 {
+	color: #0585c5;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+footer{
+	margin-top: 70px;
+}
+
+.small_block{
+	width: 650px;
+	margin: 0 auto;
+	height: 230px;
+}
+
+#call{
+	float: left;
+}
+
+.phone_number{
+	font-size: 40px;
+	color: #2a80b9;
+	padding-top: 60px;
+	line-height: 0;
+}
+
+.blue{
+	background: #2a80b9;
+	color: #fff;
+	font-size: 18px;
+	margin: -20px auto 0;
+}
+
+#grey{
+	padding: 20px 0;
+	line-height: 24px;
+	margin: 0;
+}
+
+
+/*---------------------------tablet screen------------------------------------*/
+
+@media only screen and (max-width: 1230px) and (min-width: 1050px){
+
+body{
+	font-size: 14px;
+}
+
+#main{
+	top: 160px;
+	width: 100%;
+}
+
+.menu{
+	height: 40px;
+}
+
+.menu a {
+	height: 30px;
+	padding: 10px 0 2px;
+}
+
+.menu ul{
+	margin: 0;
+	padding: 0;
+}
+
+.menu ul li{
+	font-size: 15px;
+	width: 220px;
+	margin: 0 -3px;
+	height: 38px;
+}
+
+.top{
+	height: 120px!important;
+}
+
+#left{
+	width: 240px;
+	top: 30px;
+}
+
+#left p{
+	font-size: 12.5px;
+	line-height: 12px;
+}
+
+#center{
+	left: 2%;
+	right: 0;
+	top: 10px;
+	width: 300px;
+}
+
+#center p{
+	font-size: 13px;
+	padding: 5px 10px;
+}
+
+#right{
+	top: 5px;
+}
+
+#right .call{
+	font-size: 14px;
+	margin: 0 0 3px;
+}
+
+#right .phone{
+	font-size: 22px;
+}
+
+#right .time{
+	font-size: 10px;
+	margin: 3px 0 1px;
+}
+
+.slide {
+	min-height: 520px;
+}
+
+.white_title{
+	width: 800px;
+	height: 85px;
+}
+
+.white_title .big{
+	font-size: 28px;
+	padding-top: 30px;
+}
+
+.white_title .small2{
+	font-size: 18px;
+}
+
+h2{
+	font-size: 26px;
+	width: 870px;
+	margin: 40px auto 0;
+}
+
+#timer{
+	width: 400px;
+	height: 91px;
+	bottom: 15px;
+	left: 200px;
+}
+
+#timer p{
+	width: 110px;
+	font-size: 14px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.punkt, .how_we{
+	margin: 25px 0px 0 15px;
+}
+
+.punkt{
+	width: 125px;
+}
+
+.icon{
+	width: 100%;
+}
+
+.punkt p.title{
+	font-size: 14px;
+	width: 125px;
+	margin: 3px auto;
+}
+
+.punkt p.text{
+	font-size: 12px;
+	width: 125px;
+}
+
+.deferment{
+	height: 600px;
+}
+
+.block{
+	width: 880px;
+}
+
+.block .title{
+	width: 150px;
+}
+
+.icon2{
+	width: 90%;
+}
+
+.deferment h2, .how_we_work h2, .dream h2{
+	padding-top: 30px;
+	width: 880px;
+}
+
+.step1{
+	top: 135px;
+}
+
+.arrow1{
+	left: 150px;
+	top: 135px;
+	width: 50px;
+}
+
+.step2{
+	left: 220px;
+	top: 62px;
+}
+
+.arrow2{
+	left: 400px;
+	top: 135px;
+	width: 50px;
+}
+
+.step3{
+	right: 250px;
+	top: 118px;
+}
+
+.arrow3{
+	right: 195px;
+	top: 200px;
+	width: 50px;
+}
+
+.step4{
+	top: 25px;
+}
+
+.problem{
+	margin: 0 10px;
+	width: 370px;
+}
+
+.problem .they{
+	font-size: 17px;
+	margin-top: 35px;
+}
+
+.problem .problem_pic{
+	width: 370px;
+}
+
+.problem h3{
+	font-size: 14px;
+	margin: 3px 0;
+}
+
+.problem .we{
+	padding: 7px;
+	margin: 5px 0;
+}
+
+.dream {
+	height: 590px;
+}
+
+.how_we_work{
+	height: 400px;
+}
+
+.how{
+	width: 135px;
+}
+
+.how_we p{
+	font-size: 18px;
+	width: 165px;
+	line-height: 20px;
+}
+
+.how_we p span{
+	font-size: 23px;
+	line-height: 25px;
+}
+
+.how_we_work .next{
+	top: 170px;
+	width: 7px;
+	margin-left: 5px;
+}
+
+.now {
+	height: 660px;
+}
+
+.now h2{
+	width: 880px;
+	padding-top: 30px;
+}
+
+.block_now{
+	margin: 30px 7px 0;
+	width: 275px;
+}
+
+.how2{
+	width: 275px;
+}
+
+.block_now p{
+	font-size: 17px;
+	width: 260px;
+}
+
+.info {
+	min-height: 450px;
+}
+
+.info h2{
+	padding: 7px 0;
+}
+
+.arrowleft{
+	top: 190px;
+	left: 400px;
+	width: 60px;
+}
+
+.arrowright{
+	position: absolute;
+	top: 190px;
+	right: 0px;
+	width: 60px;
+}
+
+.diplom {
+	height: 250px;
+}
+
+.dip{
+	width: 125px;
+}
+
+.diploma{
+	margin: 35px 5px 0;
+}
+
+.map {
+	height: 415px;
+}
+
+.map .manager {
+	left: 61px;
+	padding-top: 20px;
+	top: 18px;
+	width: 310px;
+}
+
+.map iframe {
+	right: 90px;
+	width: 486px;
+	height: 300px;
+}
+
+.map .data2{
+	right: 88px;
+	top: 320px;
+}
+
+.map .block222{
+	margin-left: 10px;
+}
+
+.map .head1 {
+	font-size: 17px;
+	margin-bottom: -10px;
+}
+
+footer{
+	margin-top: 70px;
+}
+
+.small_block{
+	width: 550px;
+	height: 140px;
+}
+
+#call{
+	width: 200px;
+}
+
+.phone_number{
+	font-size: 36px;
+	padding-top: 40px;
+}
+
+.blue{
+	font-size: 14px;
+	margin: 0 auto;
+}
+
+#grey{
+	padding: 18px 0;
+	line-height: 18px;
+}
+}
+
+/*---------------------------tablet screen------------------------------------*/
+
+@media only screen and (max-width: 1049px) and (min-width: 800px){
+
+	body{
+	font-size: 12px;
+}
+
+#main{
+	top: 160px;
+	width: 100%;
+}
+
+.menu{
+	height: 30px;
+}
+
+.menu a {
+	padding: 6px 0 0px;
+}
+
+.menu ul li{
+	font-size: 12px;
+	width: 190px;
+	margin: 0 -3px;
+	height: 28px;
+}
+
+.head {
+	max-width: 100%;
+	width: 750px;
+}
+
+.top{
+	height: 100px!important;
+}
+
+#left{
+	width: 215px;
+	top: 30px;
+}
+
+#left p{
+	font-size: 11px;
+	line-height: 12px;
+}
+
+#center{
+	left: 2%;
+	right: 0;
+	top: 10px;
+	width: 300px;
+}
+
+#center p{
+	font-size: 12px;
+	padding: 3px 10px;
+}
+
+#right{
+	top: 5px;
+}
+
+#right .call{
+	font-size: 13px;
+	margin: 0 0 1px;
+}
+
+#right .phone{
+	font-size: 18px;
+}
+
+#right .time{
+	font-size: 9px;
+	margin: 2px 0 0;
+}
+
+.slide {
+	min-height: 400px;
+}
+
+.white_title{
+	width: 750px;
+	height: 75px;
+}
+
+.white_title .big{
+	font-size: 24px;
+	padding-top: 30px;
+}
+
+.white_title .small2{
+	font-size: 15px;
+}
+
+h2{
+	font-size: 22px;
+	width: 730px;
+	margin: 30px auto 0;
+}
+
+#timer{
+	width: 350px;
+	height: 80px;
+	bottom: 10px;
+	left: 165px;
+}
+
+#timer p{
+	width: 98px;
+	line-height: 14px;
+	font-size: 12px;
+	margin-top: 17px;
+	margin-left: 3px;
+}
+
+.punkt, .how_we{
+	margin: 25px 0px 0 15px;
+}
+
+.punkt{
+	width: 100px;
+}
+
+.icon{
+	width: 100%;
+}
+
+.punkt p.title{
+	font-size: 12px;
+	width: 95px;
+	margin: 0 auto;
+}
+
+.punkt p.text{
+	font-size: 10px;
+	width: 95px;
+}
+
+.deferment{
+	height: 550px;
+}
+
+.block{
+	width: 750px;
+}
+
+.block .title{
+	width: 120px;
+	font-size: 13px;
+}
+
+.icon2{
+	width: 85%;
+}
+
+.deferment h2, .how_we_work h2, .dream h2{
+	padding-top: 30px;
+	width: 750px;
+}
+
+.step1{
+	top: 135px;
+}
+
+.arrow1{
+	left: 140px;
+	top: 135px;
+	width: 40px;
+}
+
+.step2{
+	left: 190px;
+	top: 62px;
+}
+
+.arrow2{
+	left: 350px;
+	top: 135px;
+	width: 40px;
+}
+
+.step3{
+	right: 200px;
+	top: 118px;
+}
+
+.arrow3{
+	right: 165px;
+	top: 180px;
+	width: 40px;
+}
+
+.step4{
+	top: 25px;
+}
+
+.problem{
+	margin: 0 10px;
+	width: 320px;
+}
+
+.problem .they{
+	font-size: 14px;
+	margin-top: 25px;
+}
+
+.problem .problem_pic{
+	width: 320px;
+}
+
+.problem h3{
+	font-size: 12px;
+	margin: 3px 0;
+}
+
+.problem .we{
+	padding: 7px;
+	margin: 5px 0;
+}
+
+.dream {
+	height: 520px;
+}
+
+.how_we_work{
+	height: 345px;
+}
+
+.how{
+	width: 110px;
+}
+
+.how_we p{
+	font-size: 15px;
+	width: 130px;
+	line-height: 17px;
+	margin: 10px auto 3px;
+}
+
+.how_we p span{
+	font-size: 19px;
+	line-height: 22px;
+}
+
+.how_we_work .next{
+	top: 170px;
+	width: 7px;
+	margin-left: 5px;
+}
+
+.now {
+	height: 560px;
+}
+
+.now h2{
+	width: 750px;
+	padding-top: 30px;
+}
+
+.block_now{
+	margin: 15px 7px 0;
+	width: 230px;
+}
+
+.how2{
+	width: 230px;
+}
+
+.block_now p{
+	font-size: 13px;
+	width: 200px;
+}
+
+.info {
+	min-height: 390px;
+}
+
+.info h2{
+	padding: 7px 0;
+}
+
+.arrowleft{
+	top: 180px;
+	left: 380px;
+	width: 40px;
+}
+
+.arrowright{
+	position: absolute;
+	top: 180px;
+	right: 0px;
+	width: 40px;
+}
+
+.diplom {
+	height: 230px;
+}
+
+.dip{
+	width: 115px;
+}
+
+.diploma{
+	margin: 35px 5px 0;
+}
+
+.map {
+	height: 375px;
+}
+
+.map .manager {
+	left: 40px;
+	padding-top: 0px;
+	top: 34px;
+	width: 280px;
+}
+
+.map iframe {
+	right: 30px;
+	width: 470px;
+	height: 270px;
+}
+
+.map .data2{
+	right: 40px;
+	top: 300px;
+}
+
+.map .block222{
+	margin-left: 30px;
+}
+
+.map .head1 {
+	font-size: 14px;
+	margin-bottom: -10px;
+}
+
+footer{
+	margin-top: 55px;
+}
+
+.small_block{
+	width: 500px;
+	height: 140px;
+}
+
+#call{
+	width: 185px;
+}
+
+.phone_number{
+	font-size: 26px;
+	padding-top: 35px;
+}
+
+.blue{
+	font-size: 12px;
+	margin: -10px auto 0;
+}
+
+#grey{
+	padding: 14px 0;
+	line-height: 15px;
+}
+}
+
+/*---------------------------tablet screen------------------------------------*/
+
+@media only screen and (max-width: 799px) and (min-width: 600px){
+
+body{
+	font-size: 10px;
+}
+
+#main{
+	top: 120px;
+	width: 100%;
+}
+
+.menu{
+	height: 30px;
+}
+
+.menu a {
+	padding: 6px 0 0px;
+}
+
+.menu ul li{
+	font-size: 10px;
+	width: 140px;
+	margin: 0 -3px;
+	height: 28px;
+}
+
+.head {
+	max-width: 100%;
+	width: 550px;
+}
+
+.top{
+	height: 90px!important;
+}
+
+#left{
+	width: 160px;
+	top: 20px;
+}
+
+#left p{
+	font-size: 8.6px;
+	line-height: 10px;
+}
+
+#center{
+	left: 5%;
+	right: 0;
+	top: 10px;
+	width: 240px;
+}
+
+#center p{
+	font-size: 10px;
+	padding: 3px 10px;
+	margin-bottom: 3px;
+}
+
+#right{
+	top: 5px;
+}
+
+#right .call{
+	font-size: 11px;
+	margin: 0 0 1px;
+}
+
+#right .phone{
+	font-size: 15px;
+}
+
+#right .time{
+	font-size: 8px;
+	margin: 2px 0 0;
+}
+
+.slide {
+	min-height: 350px;
+}
+
+.white_title{
+	width: 530px;
+	height: 60px;
+}
+
+.white_title .big{
+	font-size: 18px;
+	padding-top: 22px;
+}
+
+.white_title .small2{
+	font-size: 12px;
+}
+
+h2{
+	font-size: 18px;
+	width: 550px;
+	margin: 30px auto 0;
+}
+
+#timer{
+	width: 270px;
+	height: 68px;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+#timer p{
+	width: 98px;
+	line-height: 14px;
+	font-size: 12px;
+	margin-top: 17px;
+	margin-left: 3px;
+}
+
+.punkt, .how_we{
+	margin: 11px 0px 0 6px;
+}
+
+.punkt{
+	width: 125px;
+}
+
+.icon{
+	width: 100%;
+}
+
+.punkt p.title{
+	font-size: 12px;
+	width: 115px;
+	margin: 0 auto;
+}
+
+.punkt p.text{
+	font-size: 10px;
+	width: 115px;
+}
+
+.deferment{
+	height: 450px;
+}
+
+.block{
+	width: 530px;
+}
+
+.block .title{
+	width: 93px;
+	font-size: 11px;
+}
+
+.icon2{
+	width: 55%;
+}
+
+.deferment h2, .how_we_work h2, .dream h2{
+	padding-top: 20px;
+	width: 550px;
+}
+
+.step1{
+	top: 75px;
+}
+
+.arrow1{
+	left: 115px;
+	top: 80px;
+	width: 25px;
+}
+
+.step2{
+	left: 109px;
+	top: 30px;
+}
+
+.arrow2{
+	left: 238px;
+	top: 75px;
+	width: 25px;
+}
+
+.step3{
+	right: 137px;
+	top: 65px;
+}
+
+.arrow3{
+	right: 150px;
+	top: 90px;
+	width: 25px;
+}
+
+.step4{
+	top: 25px;
+}
+
+.problem{
+	margin: 0 10px;
+	width: 240px;
+}
+
+.problem .they{
+	font-size: 11px;
+	margin-top: 15px;
+}
+
+.problem .problem_pic{
+	width: 240px;
+}
+
+.problem h3{
+	font-size: 10px;
+	margin: 3px 0;
+}
+
+.problem .we{
+	padding: 7px;
+	margin: 5px 0;
+}
+
+.dream {
+	height: 435px;
+}
+
+.how_we_work{
+	height: 255px;
+}
+
+.how{
+	width: 85px;
+}
+
+.how_we p{
+	font-size: 12.5px;
+	width: 106px;
+	line-height: 14px;
+	margin: 7px auto 3px;
+}
+
+.how_we p span{
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.how_we_work .next{
+	top: 95px;
+	width: 4px;
+	margin-left: 0px;
+}
+
+.now {
+	height: 725px;
+}
+
+.now h2{
+	width: 550px;
+	padding-top: 20px;
+}
+
+.block_now{
+	margin: 15px 7px 0;
+	width: 230px;
+}
+
+.how2{
+	width: 230px;
+}
+
+.block_now p{
+	font-size: 13px;
+	width: 200px;
+}
+
+.info {
+	min-height: 285px;
+}
+
+.info h2{
+	padding: 6px 0;
+	margin-top: 12px;
+}
+
+.arrowleft{
+	top: 130px;
+	left: 210px;
+	width: 30px;
+}
+
+.arrowright{
+	top: 130px;
+	right: 40px;
+	width: 30px;
+}
+
+.diplom {
+	height: 150px;
+}
+
+.dip{
+	width: 80px;
+}
+
+.diploma{
+	margin: 20px 5px 0;
+}
+
+.map {
+	height: 375px;
+}
+
+.map .manager {
+	display: none;
+}
+
+.map iframe {
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	width: 470px;
+	height: 270px;
+}
+
+.map .data2{
+	right: 0px;
+	left: 0;
+	top: 300px;
+}
+
+.map .block222{
+	margin-left: 30px;
+}
+
+.map .head1 {
+	font-size: 14px;
+	margin-bottom: -10px;
+}
+
+footer{
+	margin-top: 55px;
+}
+
+.small_block{
+	width: 500px;
+	height: 140px;
+}
+
+#call{
+	width: 185px;
+}
+
+.phone_number{
+	font-size: 26px;
+	padding-top: 35px;
+}
+
+.blue{
+	font-size: 9px;
+	margin: -10px auto 0;
+}
+
+#grey{
+	padding: 14px 0;
+	line-height: 11px;
+}
+}
+
+
+/*---------------------------tablet screen------------------------------------*/
+
+@media only screen and (max-width: 599px){
+
+body{
+	font-size: 10px;
+}
+
+header {
+	position: relative;
+}
+
+#main{
+	top: 310px;
+	width: 100%;
+}
+
+.menu {
+	position: fixed;
+	z-index: 10000;
+}
+
+.menu ul li {
+border: none;
+}
+
+#menu-icon {
+		color: #000;
+		font-size: 14px;
+		font-family: OpenSansBold, Arial, sans-serif;
+		width: 70%;
+		height: 27px;
+		text-align: left;
+		text-transform: uppercase;
+		background: #F8F8F8 url(../img/menu-icon.png) no-repeat 10px center;
+		padding: 8px 0px 0px 38px;
+		cursor: pointer;
+		border: solid 1px #AFAFAF;
+		display: block;
+		border-radius: 5px;
+		margin: 0px auto; /* Выводим иконку меню */
+	}
+	#menu-icon:hover {
+		background-color: #f8f8f8;
+	}
+	#menu-icon.active {
+		background-color: #bbb;
+	}
+
+
+.menu ul li:hover{
+	background: none;
+}
+
+	/* Навигация */
+	#nav2 {
+		clear: both;
+		position: absolute;
+		top: 38px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		width: 77%;
+		z-index: 10000;
+		padding: 5px;
+		background: #f8f8f8;
+		border: solid 1px #999;
+		display: none; /* Видимость включается jQuery */
+	}
+	#nav2 li {
+		clear: both;
+		float: none;
+		font-weight: bold;
+		list-style-type: none;
+		margin: 5px 0 5px 10px;
+		font-size: 14px;
+	}
+	#nav2 a, 
+	#nav2 ul a {
+		font: inherit;
+		text-decoration: none;
+		background: none;
+		display: inline;
+		padding: 0;
+		color: #666;
+		border: none;
+	}
+	#nav2 a:hover, 
+	#nav2 ul a:hover {
+		background: none;
+		color: #2f7abe;
+	}
+	
+	/* Выпадающий список */
+	#nav2 ul {
+		width: auto;
+		position: static;
+		display: block;
+		border: none;
+		background: inherit;
+	}
+	#nav2 ul li {
+		margin: 3px 0 3px 15px;
+	}
+
+
+.head {
+	max-width: 100%;
+	width: 550px;
+	position: absolute;
+	top: 50px;
+}
+
+.top{
+	height: 265px!important;
+}
+
+#left{
+	width: 160px;
+	top: 10px;
+	right: 0;
+	margin: 0 auto;
+}
+
+#left p{
+	font-size: 8.6px;
+	line-height: 10px;
+}
+
+#center{
+	left: 0;
+	right: 0;
+	top: 60px;
+	width: 240px;
+}
+
+#center p{
+	font-size: 10px;
+	padding: 5px 10px;
+	display: block;
+	margin-bottom: 3px;
+}
+
+#right{
+	top: 150px;
+	left: 0;
+}
+
+#right .call{
+	font-size: 13px;
+	margin: 0 0 1px;
+}
+
+#right .phone{
+	font-size: 18px;
+}
+
+#right .time{
+	font-size: 10px;
+	margin: 2px 0 3px;
+}
+
+.slide {
+	min-height: 405px;
+	background: url(../img/bg1_1.jpg);
+	background-size: 100% 100%;
+}
+
+.white_title{
+	width: 95%;
+	height: 60px;
+	margin: -14px auto 0;
+}
+
+.white_title .big{
+	font-size: 14px;
+	padding-top: 17px;
+}
+
+.white_title .small2{
+	font-size: 10px;
+	line-height: 11px;
+}
+
+h2{
+	font-size: 14px;
+	width: 95%;
+	margin: 30px auto 0;
+}
+
+#timer{
+	width: 60%;
+	height: 65px;
+	bottom: 4px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+#timer p{
+	width: 60px;
+	line-height: 12px;
+	font-size: 10px;
+	margin-top: 9px;
+	margin-left: 3px;
+}
+
+.punkt, .how_we{
+	margin: 11px 0px 0 6px;
+}
+
+.punkt{
+	width: 90px;
+}
+
+.icon{
+	width: 100%;
+}
+
+.punkt p.title{
+	font-size: 10px;
+	width: 85px;
+	margin: 0 auto;
+}
+
+.punkt p.text{
+	font-size: 8px;
+	width: 85px;
+}
+
+.deferment{
+	height: 500px;
+}
+
+.block{
+	width: 300px;
+}
+
+.block .title{
+	width: 60px;
+	font-size: 10px;
+}
+
+.icon2{
+	width: 70px;
+}
+
+.deferment h2, .how_we_work h2, .dream h2{
+	padding-top: 15px;
+	width: 300px;
+}
+
+.step1{
+	top: 86px;
+}
+
+.arrow1{
+	left: 57px;
+	top: 80px;
+	width: 25px;
+}
+
+.step2{
+	top: 10px;
+	left: 80px;
+}
+
+.arrow2{
+	left: 145px;
+	top: 75px;
+	width: 25px;
+}
+
+.step3{
+	right: 80px;
+	top: 86px;
+}
+
+.arrow3{
+	right: 48px;
+	top: 135px;
+	width: 25px;
+}
+
+.step4{
+	right: 0;
+	top: 10px;
+}
+
+.problem{
+	margin: 0 10px;
+	width: 240px;
+}
+
+.problem .they{
+	font-size: 11px;
+	margin-top: 15px;
+}
+
+.problem .problem_pic{
+	width: 240px;
+}
+
+.problem h3{
+	font-size: 10px;
+	margin: 3px 0;
+}
+
+.problem .we{
+	padding: 7px;
+	margin: 5px 0;
+}
+
+.dream {
+	height: 470px;
+}
+
+.how_we_work{
+	height: 100%;
+}
+
+.how{
+	width: 85px;
+}
+
+.how_we p{
+	font-size: 13px;
+	width: 125px;
+	line-height: 14px;
+	margin: 7px auto 3px;
+}
+
+.how_we p span{
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.how_we_work .next{
+	top: 95px;
+	width: 4px;
+	margin-left: 0px;
+}
+
+.now {
+	height: 615px;
+}
+
+.now h2{
+	width: 300px;
+	padding-top: 20px;
+}
+
+.block_now{
+	margin: 9px 4px 0;
+	width: 140px;
+}
+
+.how2{
+	width: 140px;
+}
+
+.block_now p{
+	font-size: 10px;
+	width: 127px;
+}
+
+.info {
+	min-height: 285px;
+	background: url(../img/bg4_1.jpg);
+	background-size: 100% 100%;
+}
+
+.info h2{
+	padding: 6px 0;
+	margin-top: 12px;
+}
+
+.arrowleft{
+	top: 130px;
+	left: 30px;
+	width: 30px;
+}
+
+.arrowright{
+	top: 130px;
+	right: 0;
+	width: 30px;
+}
+
+.diplom {
+	height: 300px;
+}
+
+.dip{
+	width: 90px;
+}
+
+.diploma{
+	margin: 15px 5px -10px;
+}
+
+.map {
+	height: 300px;
+}
+
+.map .manager {
+	display: none;
+}
+
+.map iframe {
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	width: 300px;
+	height: 170px;
+}
+
+.map .data2{
+	right: 0px;
+	left: 0;
+	top: 200px;
+}
+
+.map .block222{
+	margin-left: 10px;
+}
+
+.map .head1 {
+	font-size: 12px;
+	margin-bottom: -10px;
+}
+
+footer{
+	margin-top: 55px;
+}
+
+.small_block{
+	width: 300px;
+	height: 110px;
+}
+
+#call{
+	width: 90px;
+}
+
+.phone_number{
+	font-size: 20px;
+	padding-top: 25px;
+}
+
+.blue{
+	font-size: 9px;
+	margin: -10px auto 0;
+}
+
+#grey{
+	padding: 14px 0;
+	line-height: 11px;
+	width: 250px;
+	margin: 0 auto;
+}
+}

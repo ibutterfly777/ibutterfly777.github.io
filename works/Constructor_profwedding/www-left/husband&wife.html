@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+ 	<title>Он-лайн конструктор свадебных сайтов</title>
+
+ 	<link rel="stylesheet" href="css/main.css">
+ 	<link rel="stylesheet" href="css/mobile.css">
+ 	<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="carousel/style.css" media="all">
+		<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="style/css/ie7.css" media="all" />
+		<![endif]-->
+
+		<script type="text/javascript" src="carousel/jquery.jcarousel.js"></script>
+
+		<script type="text/javascript">
+		jQuery(document).ready(function() {
+		    // Initialise the first and second carousel by class selector.
+			// Note that they use both the same configuration options (none in this case).
+			jQuery('.d-carousel .carousel').jcarousel({
+		        scroll: 1
+		    });
+		});
+		</script>
+
+		<script type="text/javascript">
+		jQuery(document).ready(function($){
+
+			/* Подготавливаем иконку меню */
+			$('#nav-wrap').prepend('<div id="menu-icon"></div>');
+			
+			/* Переключаем навигацию */
+			$("#menu-icon").on("click", function(){
+				$(".menu").slideToggle();
+				$(this).toggleClass("active");
+			});
+
+		});
+		</script>
+
+		<script type="text/javascript">
+		$(
+		  function(){
+		    $("body").addClass("js");
+		  
+		    $(".link_nav").click(
+		      function(){
+		        $("body").toggleClass("mobile_nav");
+		      });
+		  });
+		</script>
+
+		<script type="text/javascript">
+		var id_menu = new Array('sub_menu_2');
+		startList = function allclose() {
+			for (i=0; i < id_menu.length; i++){
+				document.getElementById(id_menu[i]).style.display = "none";
+			}
+		}
+		function openMenu(id){
+			for (i=0; i < id_menu.length; i++){
+				if (id != id_menu[i]){
+					document.getElementById(id_menu[i]).style.display = "none";
+				}
+			}
+			if (document.getElementById(id).style.display == "block"){
+				document.getElementById(id).style.display = "none";
+			}else{
+				document.getElementById(id).style.display = "block";
+			}
+		}
+		window.onload=startList;
+		</script>
+
+	<script src="js/modernizr.custom.js"></script>
+
+
+	 <script type="text/javascript">
+	  function openbox(id){
+	    if(window.innerWidth < 550){
+	      display = document.getElementById(id).style.display;
+
+      if(display=='block'){
+         document.getElementById(id).style.display='none';
+      }else{
+         document.getElementById(id).style.display='block';
+	      }
+	    }
+	  }
+	 </script>
+
+ </head>
+
+ <body>
+
+ 	<header>
+	 	<div id="logo">
+	 		<a href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
+	 	</div>
+
+	 	<a href="#go_nav" class="link_nav"><img class="menu" src="img/menu.png" alt="menu"></a>
+	 	<div id="right_part">
+		 	<div id="menu_body">
+				<ul class="menu">
+					<h3 class="name_menu">Меню сайта:</h3>
+					<li><a href="#">Home</a></li>
+					<li><a href="article.html">About Us</a></li>
+					<li><a id="dd" class="wrapper-dropdown-1" tabindex="1" href="#"onclick="openMenu('sub_menu_2');return(false)"><span>Your Services</span></a>
+						<ul id="sub_menu_2" class="submenu">
+							<li><a href="#"> first item</a></li>
+							<li><a href="#"> second item</a></li>
+							<li><a href="#"> third item</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Prices</a></li>
+					<li><a href="#">Testimonials</a></li>
+					<li><a href="#">Contact us</a></li>
+				</ul>
+			</div>
+			<script type="text/javascript">
+			
+					function DropDown(el) {
+						this.dd = el;
+						this.placeholder = this.dd.children('span');
+						this.opts = this.dd.find('ul.dropdown > li');
+						this.val = '';
+						this.index = -1;
+						this.initEvents();
+					}
+					DropDown.prototype = {
+						initEvents : function() {
+							var obj = this;
+
+							obj.dd.on('click', function(event){
+								$(this).toggleClass('active');
+								return false;
+							});
+
+							obj.opts.on('click',function(){
+								var opt = $(this);
+								obj.val = opt.text();
+								obj.index = opt.index();
+								obj.placeholder.text('Gender: ' + obj.val);
+							});
+						},
+						getValue : function() {
+							return this.val;
+						},
+						getIndex : function() {
+							return this.index;
+						}
+					}
+
+					$(function() {
+
+						var dd = new DropDown( $('#dd') );
+
+						$(document).click(function() {
+							// all dropdowns
+							$('.wrapper-dropdown-1').removeClass('active');
+						});
+
+					});
+			</script>
+
+	 		<div id="sb-search" class="sb-search">
+			    <form id="search_form">
+			    	<p id="form">Search this site</p>
+			        <input class="sb-search-input" placeholder="Search" type="search" value="" name="search" id="search">
+			        <input class="sb-search-submit" type="submit" value="">
+			        <span class="sb-icon-search"></span>
+			    </form>
+			</div>
+			
+		 </div>
+	</header>
+<div class="info">
+	<div class="conteiner_right">
+
+		<div class="path">
+			<div class="button2"><a href="our_weddings.html" class="back"><span><<  Back to catalog</span></a></div>
+			<p><a href="index.html" class="back">Главная  >></a> <a href="our_weddings.html" class="back">Каталог свадеб  >></a> Husband & Wife</p>
+		</div>
+
+		<div class="center">
+			<h2 id="for_mobile">Husband & wife</h2>
+			<h3>SUBJECT OF WEDDING</h3>
+			<p>20.06.2014</p>
+			<p>Next, communicate that style to your prospective florist.  Amy Febinger, owner of Bourgeon BK- a Brooklyn based floral company, suggests that having some images of designs and flowers ready to show a potential designer is super helpful. "I like to know right off the bat what style and look the bride is looking to achieve.  I want to make sure that our styles and visions match, so I can best serve the bridde to be on her day."</p>
+			<p>That said, it's important to still be flexible.  You may find in your research that you love Peonies, but if they are not in season when you are getting married, it could be very costly to have them all over your wedding reception.  Febinger says that if you are fixated on a specific bloom "I'd recommend using those specific blooms just in her bridal bouquet.  To get a flower which is out of season and then use it in every centerpiece, that's going to be very costly and the chances are the guests at the table are not going to know the difference between the out of season peony and a rose from a California grower.  So I would suggest keeping it personal and using those blooms just in her bouquet."</p>
+			<p>Typically, after speaking with a florist for the first time, they will ask you about your wedding flower budget.  Often this is a tricky question, because if you aren't sure what something might cost, it's hard to decide what you can or might be willing to spend.  Give the florist a range of which you are comfortable, but explain that you aren't certain of how far that money will stretch.  They will likely offer some information to further guide you. </p>
+			<p>It's also helpful to understand a bit of what goes into the pricing of wedding centerpieces and bouquets.  Often brides will suggest to the florist that they are willing to use seasonal, local flowers in the hopes that this will bring their cost down.  Febinger mentions "It's not just about the hard cost of the flowers themselves, but the amount of time, thought and labor involved in making it all come together. The cost is not just for the day itself, but for the months and months of planning, conversations, meetings and emails before hand, the prep work that goes into it days before, the day itself and the breakdown and clean up on the back end." </p>
+		</div>
+
+		<div class="slider1">
+			<div class="main_picture_slide">
+				<img class="back2" src="img/back.png" alt="back">
+				<img class="main_picture_slide" src="img/slide_main.jpg" alt="main_picture_slide">
+				<img class="forward" src="img/forward.png" alt="forward">
+			</div>
+			<div class="inline">
+				<img class="slide_small" src="img/sl1.jpg" alt="main_picture_slide">
+				<img class="slide_small" src="img/sl2.jpg" alt="main_picture_slide">
+				<img class="slide_small" src="img/sl3.jpg" alt="main_picture_slide">
+				<img class="slide_small" src="img/sl4.jpg" alt="main_picture_slide">
+				<img class="slide_small" src="img/sl5.jpg" alt="main_picture_slide">
+				<img class="slide_small" src="img/sl6.jpg" alt="main_picture_slide">
+			</div>
+		</div>
+
+		<div class="weddings">
+			<h2><a href="our_weddings.html">Our weddings</a></h2>
+
+			<div id="wrapper">
+	  
+			    <div class="d-carousel">
+			      <ul class="carousel">
+			        <li>
+			            <a href="husband&wife.html"><img class="photo_wedding" src="img/wedding1.jpg" alt="wedding">
+						<p class="name_wedding">Husband & Wife</p></a>
+						<p class="date_wedding">27.06.2014</p>
+						<p class="Subject">Subject of wedding</p>
+			        </li>
+			         <li>
+			            <a href="husband&wife.html"><img class="photo_wedding" src="img/wedding1.jpg" alt="wedding">
+						<p class="name_wedding">Husband & Wife</p></a>
+						<p class="date_wedding">27.06.2014</p>
+						<p class="Subject">Subject of wedding</p>
+			        </li>
+			        <li>
+			            <a href="husband&wife.html"><img class="photo_wedding" src="img/wedding1.jpg" alt="wedding">
+						<p class="name_wedding">Husband & Wife</p></a>
+						<p class="date_wedding">27.06.2014</p>
+						<p class="Subject">Subject of wedding</p>
+			        </li>
+			        <li>
+			            <a href="husband&wife.html"><img class="photo_wedding" src="img/wedding1.jpg" alt="wedding">
+						<p class="name_wedding">Husband & Wife</p></a>
+						<p class="date_wedding">27.06.2014</p>
+						<p class="Subject">Subject of wedding</p>
+			        </li>
+			        <li>
+			            <a href="husband&wife.html"><img class="photo_wedding" src="img/wedding1.jpg" alt="wedding">
+						<p class="name_wedding">Husband & Wife</p></a>
+						<p class="date_wedding">27.06.2014</p>
+						<p class="Subject">Subject of wedding</p>
+			        </li>
+			        <li>
+			            <a href="husband&wife.html"><img class="photo_wedding" src="img/wedding1.jpg" alt="wedding">
+						<p class="name_wedding">Husband & Wife</p></a>
+						<p class="date_wedding">27.06.2014</p>
+						<p class="Subject">Subject of wedding</p>
+			        </li>
+			        <li>
+			            <a href="husband&wife.html"><img class="photo_wedding" src="img/wedding1.jpg" alt="wedding">
+						<p class="name_wedding">Husband & Wife</p></a>
+						<p class="date_wedding">27.06.2014</p>
+						<p class="Subject">Subject of wedding</p>
+			        </li>
+
+			      </ul>	
+			    </div>
+			</div>
+		</div>
+
+<footer>
+			<div id="footer">
+				<div class="inline">
+					<div class="first_block">
+						<div class="box">
+							<h4><a href="#" onclick="openbox('box'); return false">Контакты<span class="plus"><img class="arrow_little" src="img/arrow_little.png" alt="arrow"></span></a></h4>
+							<div id="box" class="cont1">
+								<ul class="sub_menu">
+									<li>Россия +7 499 346 7818, +7 812 424 5604</li>
+									<li>Украина +38 067 588 3344</li>
+									<li>США +1 718 425 3181</li>
+									<li>Великобритания +44 203 411 4526</li>
+									<li>admin@professionalwedding.org</li>
+									<li><a href="#">Правила использования портала</a></li>
+									<li><a href="#">Политика конфиденциальности</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="second_block">
+						<div class="box">
+							<h4><a href="#" onclick="openbox('box2'); return false">Свадебные курсы<span class="plus"><img class="arrow_little" src="img/arrow_little.png" alt="arrow"></span></a></h4>
+							<div id="box2" class="cont">
+								<ul class="sub_menu">
+									<li><a href="#">Группа № 1</a></li>
+									<li><a href="#">Свадебный Организатор Beginner</a></li>
+									<li><a href="#">Свадебный координатор 3.0</a></li>
+									<li><a href="#">Свадебный Организатор Professional</a></li>
+									<li><a href="#">Свадебный Гуру 3.0</a></li>
+									<li><a href="#">The Boss</a></li>
+									<li><a href="#">VIP Клиенты на всю жизнь</a></li>
+									<li><a href="#">Комплект из 4 вебинаров</a></li>
+									<li><a href="#">Курсы для самостоятельного изучения</a></li>
+									<li><a href="#">Индивидуальная консультация с Ольгой Ермиловой</a></li>
+									<li><a href="#">Идеальная свадьба от идеи до воплощения</a></li>
+									<li><a href="#">Пригласить Ольгу Ермилову</a></li>
+									<li><a href="#">Все секреты успешной первой встречи</a></li>
+									<li><a href="#">Свадебный бизнес для чайников</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="third_block">
+							<h4>Мы в сети:</h4>
+							<div class="social">
+								<p><a href="#"><img class="socseti" src="img/vk.png" alt="vk"><span class="text">VKontakte</span></a></p>
+								<p><a href="#"><img class="socseti" src="img/tw.png" alt="tw"><span class="text">Twitter</span></a></p>
+								<p><a href="#"><img class="socseti" src="img/fb.png" alt="fb"><span class="text">Facebook</span></a></p>
+								<p><a href="#"><img class="socseti" src="img/google.png" alt="google"><span class="text">Google+</span></a></p>
+								<p><a href="#"><img class="socseti" src="img/mm.png" alt="mm"><span class="text">Мой мир</span></a></p>
+								<p><a href="#"><img class="socseti" src="img/odn.png" alt="odn"><span class="text">Одноклассники</span></a></p>
+							</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<p id="copyright">© Международная свадебная федерация. Все права защищены</p>
+	</div>
+</div>
+ </body>
+ </html>

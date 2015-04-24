@@ -1,0 +1,57 @@
+@font-face{
+	font-family: FuturisLightC;
+	src: url(../font/FTX45__C.ttf);
+}
+@font-face{
+	font-family: Futuris Bold;
+	src: url(../font/Futuris Bold.ttf);
+}
+
+body{
+	margin:0px;
+	padding:0px;
+	background:#fff;	
+	font-family: FuturisLightC;
+	padding-top: 20px;
+}
+
+#popup{
+	padding-top: 10px;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	width: 560px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#person{
+	margin: 0 auto;
+	text-align: center;
+	width: 430;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #6d6e71;
+}
+
+
+#cross{
+	background: url(../image/cross.png) no-repeat center center;
+	display: block;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.description{
+	padding: 10px 0 20px;
+	margin: 0 auto;
+	font-size: 15px;
+	width: 515px;
+	color: #6d6e71;
+	font-family: FuturisLightC;
+	text-align: justify
+}
+
+
+.des{
+	font-weight: bold;
+}
