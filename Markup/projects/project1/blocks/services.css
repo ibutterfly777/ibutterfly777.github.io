@@ -1,0 +1,32 @@
+h2.services__title{
+	font: bold 30px/0 "Trebuchet MS", sans-serif;
+	color: #41525c;
+}
+
+div.services{
+	margin: 60px auto 0;
+	text-align: justify;
+	width: 1024px;
+}
+
+div.services__item{
+	color: #999999;
+	display: inline-block;
+	font: 14px/25px 'Open Sans', sans-serif;
+	margin-top: 75px;
+	text-align: center;
+	vertical-align: top;
+	width: 315px;
+}
+
+h3{
+	color: #3070a8;
+	font: 30px/0 Futura, sans-serif;
+	text-transform: uppercase;
+}
+
+div.services:after {
+  display: inline-block;
+  width: 100%;
+  content: "";
+}
