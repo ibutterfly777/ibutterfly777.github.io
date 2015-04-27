@@ -1,0 +1,59 @@
+@font-face{
+	font-family: Futura;
+	src: url(fonts/futuralightc.otf);
+}
+
+@font-face{
+	font-family: Futura-Bold;
+	src: url(fonts/futura-md-bt-bold.ttf);
+}
+
+div.intro{
+	background: url(../images/intro.jpg) repeat center center;
+		-webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+	min-height: 585px;
+	width: 100%;
+	color: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+
+h1.intro__title{
+	font-size: 48px;
+	padding-top: 130px;
+	text-transform: uppercase;
+    font-family: Futura-Bold, 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+h1.intro__title span.intro__title-first{
+	font-size: 36px;
+	font-weight: normal;
+	text-transform: none;
+	font-family: Futura, 'Open Sans', sans-serif;
+}
+
+p.intro__annotation{
+	font: italic 20px/30px Calibri, sans-serif; 
+	margin: 20px auto 0;
+	width: 585px;
+}
+
+div.intro > div{
+	margin-top: 60px;
+}
+
+a.button__intro{
+	font: 16px/0 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	padding: 18px 63px;
+	border: 1px solid #98aabd;
+}
+
+a.button__intro:hover{
+	box-shadow: 0 0 6px #BBDEF3; 
+	cursor: pointer;
+}

@@ -1,0 +1,16 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+div.header{
+	height: 115px;
+	margin: 0 auto;
+	position: relative;
+	width: 1024px;
+}
+
+div.logo{
+	float: left;
+	padding-top: 45px;
+}

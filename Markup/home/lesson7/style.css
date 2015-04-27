@@ -1,0 +1,70 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, sans-serif;
+}
+
+div.sivtsev{
+	width: 450px;
+	margin: 0 auto;
+    text-align:justify;
+}
+
+div.uline{
+    color: red;
+    background-color: red;
+    height: 1px;
+    margin-bottom: 30px;
+}
+
+p{
+	text-transform: uppercase;
+	color: rgba(0,0,0,0);
+  	text-shadow: 0 0 5px #555;
+  	margin: 0 auto 30px;
+}
+
+p.sight01{
+	font-size: 130px;
+	word-spacing: 181px;
+}
+
+p.sight02{
+	font-size: 110px;
+	word-spacing: 60px;
+}
+
+p.sight03{
+	font-size: 90px;
+	word-spacing: 13.9px;
+}
+
+p.sight04{
+	font-size: 70px;
+	word-spacing: 19.7px;
+}
+
+p.sight05{
+	font-size: 70px;
+	word-spacing: 16px;
+}
+
+p.sight06, p.sight07{
+	font-size: 50px;
+	word-spacing: 24px;
+}
+
+p.sight08, p.sight09{
+	font-size: 25px;
+	word-spacing: 42px;
+}
+
+p.sight10{
+	font-size: 15px;
+	word-spacing: 45px;
+}
+
+p.sight15, p.sight20{
+	font-size: 12px;
+	word-spacing: 49px;
+}

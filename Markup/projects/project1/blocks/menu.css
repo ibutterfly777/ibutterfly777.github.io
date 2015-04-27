@@ -1,0 +1,41 @@
+ul.menu__list{
+	float: right;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	margin: 0 auto;
+	padding: 30px 0 0;
+	width: 580px;
+}
+
+ul.menu__list li.menu__item, ul.menu__list li.menu__item_current_true{
+	float: left; 
+	list-style: none;
+	text-align: center;
+	text-transform: uppercase;
+	padding-left: 11px;
+}
+
+ul.menu__list li.menu__item_current_true{
+	padding: 0; 
+}
+
+ul.menu__list li.menu__item a{
+	color: #989898;
+	display: block;
+	padding: 30px 15px;
+	text-decoration: none;
+}
+
+ul.menu__list li.menu__item_current_true a{
+	color: #3070a8;	
+	display: block;
+	text-decoration: none;
+	border-bottom: 4px solid #3070a8;	
+	padding: 30px 15px;
+}
+
+ul.menu__list li.menu__item a:hover{
+	border-bottom: 4px solid #3070a8;
+	color: #3070a8;
+}
+
