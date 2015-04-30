@@ -10,7 +10,27 @@
 	<div class="content">
 		<div class="left__side">
 			<img class="logo" src="logo.png" height="87" width="231" alt="logo">
-			<img class="image" src="image.png" height="346" width="287" alt="image pensionary">
+
+
+			<section class="jqueryOption1 opt1">
+				<img class="image" src="image.png" height="346" width="287" alt="image pensionary">
+			</section>
+			<section class="jqueryOptions opt2">
+				<img class="image" src="image.png" height="346" width="287" alt="image pensionary">
+			</section>
+			<section class="jqueryOptions opt3">
+				<img class="image" src="http://lorempixel.com/287/346/nature/1/" height="346" width="287" alt="image pensionary">
+			</section>
+			<section class="jqueryOptions opt4">
+				<img class="image" src="http://lorempixel.com/287/346/animals/2/" height="346" width="287" alt="image pensionary">
+			</section>
+			<section class="jqueryOptions opt5">
+				<img class="image" src="http://lorempixel.com/287/346/abstract/3/" height="346" width="287" alt="image pensionary">
+			</section>
+
+
+
+
 			<p class="left__title">Выгодный денежный займ без дополнительных платежей</p>
 			<p class="left__documents">Перечень необходимых документов</p>
 			<ul>
@@ -21,10 +41,38 @@
 		</div>
 		<div class="right__side">
 			<h2>Онлайн заявка</h2>
-			<div class="change">				
-				<p>на получение займа “ПЕНСИОННЫЙ“</p>
-				<img class="procent" src="price.png" alt="price pensionary">
-			</div>
+
+			<section class="jqueryOption1 opt1">
+				<div class="change">				
+					<p>на получение займа “ПЕНСИОННЫЙ“</p>
+					<img class="procent" src="price.png" alt="price pensionary">
+				</div>
+			</section>
+			<section class="jqueryOptions opt2">
+				<div class="change">				
+					<p>на получение займа “ТРУДОВАЯ КНИГА“</p>
+					<img class="procent" src="http://lorempixel.com/118/118/technics/1" alt="price pensionary">
+				</div>
+			</section>
+			<section class="jqueryOptions opt3">
+				<div class="change">				
+					<p>на получение займа “КОНТАКТ“</p>
+					<img class="procent" src="http://lorempixel.com/118/118/technics/2" alt="price pensionary">
+				</div>
+			</section>
+			<section class="jqueryOptions opt4">
+				<div class="change">				
+					<p>на получение займа “ПРЕДПРИНИМАТЕЛЬ“</p>
+					<img class="procent" src="http://lorempixel.com/118/118/technics/3" alt="price pensionary">
+				</div>
+			</section>
+			<section class="jqueryOptions opt5">
+				<div class="change">				
+					<p>на получение займа “ПЕНСИОННЫЙ“</p>
+					<img class="procent" src="price.png" alt="price pensionary">
+				</div>
+			</section>
+
 			<p class="comission">без страховок и комиссий</p>
 			<p class="pink__cost">от <span>1 000</span> до <span>500 000</span> руб<br />на срок от 1 до 18 месяцев</p>
 
@@ -58,12 +106,12 @@
 				</div>
 		        <div class="employment line">
 		        	<label for="TypeOfEmployment">Тип занятости</label>
-		        	<select>
-		        		<option value="0" name="employment">Выберите вариант</option>
-			        	<option value="workbook" name="employment">Работаю по трудовой книжке</option>
-			        	<option value="contract" name="employment">Работаю по контракту</option>
-			        	<option value="businessman" name="employment">Предприниматель</option>
-			        	<option value="pensionary" name="employment">Пенсионер</option>
+		        	<select id="choose">
+		        		<option value="opt1" selected disabled>Выберите вариант</option>
+			        	<option value="opt2" name="employment">Работаю по трудовой книжке</option>
+			        	<option value="opt3" name="employment">Работаю по контракту</option>
+			        	<option value="opt4" name="employment">Предприниматель</option>
+			        	<option value="opt5" name="employment">Пенсионер</option>
 			        </select>
 		        </div>
 		        <div class="user__town">
@@ -244,12 +292,23 @@
 			<div class="close-reveal-modal">X</div>
 		</div>
 	<!--*******end*******-->
-
-
+	
 
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.reveal.js"></script> <!--крипт для конфиденциальности-->
 
+	<script>
+	$(function() {
+		  $('.jqueryOptions').hide(0);
+
+		  $('#choose').change(function () {
+		    $('.jqueryOptions').fadeOut(0);
+		    $("." + $(this).val()).fadeIn(1000);
+		    $('.jqueryOption1').hide(0);
+		  });
+		});
+	</script>
+<!--
 	<script>
 		'birthDate' : function (){
 	        $('body').append('<div id="birthInfo" class="info"></div>');
@@ -271,5 +330,7 @@
 	        }
 		}
 	</script>
+
+	-->
 </body>
 </html>

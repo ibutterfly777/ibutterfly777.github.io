@@ -74,6 +74,7 @@ h2{
 .procent{
 	float: left;
 	margin-right: 50px;
+	border-radius: 100%;
 }
 
 .comission{
@@ -322,4 +323,8 @@ input.user_sum{
 	font-size: 11px;
 	text-transform: uppercase;
 	margin: 0; 
+}
+
+.jqueryOptions{
+	display: none;
 }
