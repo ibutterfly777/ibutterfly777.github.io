@@ -6,7 +6,7 @@ body{
 }
 
 .content{
-	background: url(../bg.png) center center;
+	background: url(../images/bg.png) center center;
 		-moz-background-size: 1046px;
 		-o-background-size: 1046px;
 		-webkit-background-size: 1046px;
@@ -198,14 +198,18 @@ input.user_sum{
 
 .birthday input{ 
 	overflow: hidden;
-    background-color: #d62f5d;
 	color: #fff;
 	border: none;
 	width: 320px;
 	height: 33px;
 	outline: none;
 	margin-top: 6px;
-	font-size: 16px;
+	font-size: 16px;	
+	background-color: #d62f5d;
+}
+
+.birthday input:-webkit-calendar-picker-indicator{
+	display: none;
 }
 
 .employment{
@@ -214,7 +218,6 @@ input.user_sum{
 
 .employment select{ 
 	overflow: hidden;
-    background-color: #d62f5d;
 	color: #fff;
 	border: none;
 	width: 256px;
@@ -222,15 +225,22 @@ input.user_sum{
 	outline: none;
 	margin-top: 6px;
 	font-size: 16px;
-    background: url(../select.png) no-repeat 232px #d62f5d;  
+    background: url(../images/select.png) no-repeat 232px #d62f5d;  
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    background-image: none\0;    
+}
+
+@-moz-document url-prefix() {
+ .employment select, .birthday input{background-image: none;}
+}
+@media \0screen{
+	.employment select {background-image: none;}
 }
 
 .user__town{
 	margin-top: 52px;
-
 }
 
  .left__phone{
