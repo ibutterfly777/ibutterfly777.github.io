@@ -287,7 +287,7 @@ button.orange:active{
 }
 
 
-@media screen and (max-width: 559px) {
+@media screen and (max-device-width : 559px) {
 	.price{
 		margin: 30px auto 0;
 		width: 98%;
