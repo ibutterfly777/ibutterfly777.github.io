@@ -28,7 +28,7 @@
             echo "Спасибо за отправку Вашего обращения.";
             } 
  
-            $to = "prudkaya.inna@gmail.com"; //сам E-mail внутри кавычек
+            $to = "ibutterfly777@gmail.com"; //сам E-mail внутри кавычек
             $headers = "Content-type: text/plain; charset = windows-1251"; //кодировка в кирилицу
             $subject = "Сообщение о заявке на займ"; //в теме письма будет указано с какого сайта пришло письмо
             $message = "Желаемая сумма займа: $userSum \nТекущая просроченная задолженность: $debt \nФамилия: $surname \nИмя: $name \nОтчество: $aftername \nДата рождения: $birthday \Тип занятости: $employment \nНаселенный пункт ЧР: $city \nМобильный телефон: $phone \nЭлектронная почта: $mail \nСтационарный телефон: $stationalPhone \nТелефон отдела кадров: $workPhone"; //соответственно текст из всех полей
