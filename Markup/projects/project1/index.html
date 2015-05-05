@@ -3,23 +3,24 @@
 <head lang="en">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="index.css"/>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <title></title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+    <title>project1</title>
 </head>
 <body>
+
 <div class="header">
-    <div class="header__inner">
-        <div class="logo">
-            <img src="images/logo.jpg" alt="Company name" height="34" width="283"/>
+    <div class="header__inner" id="top">
+        <div class="head__logo">
+            <img class="logo_image" src="images/logo.jpg" alt="Company name"/>
         </div>
         <div class="menu">
             <ul class="menu__list">
-                <li class="menu__item_current_true"><a href="#" class="menu__link">Home</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">About</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Portfolio</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Services</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Pricing</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+                <li class="menu__item"><a href="#top" class="menu__link">Home</a></li>
+                <li class="menu__item"><a href="#services" class="menu__link">Services</a></li>
+                <li class="menu__item"><a href="#about" class="menu__link">About</a></li>
+                <li class="menu__item"><a href="#price" class="menu__link">Price</a></li>
+                <li class="menu__item"><a href="#review" class="menu__link">Review</a></li>
+                <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -28,126 +29,168 @@
 <div class="intro">
     <h1 class="intro__title"><span class="intro__title-first">We are specialist in</span><br/>Responsive designs, stationary<br/>and wordpress themes</h1>
     <p class="intro__annotation">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-    <div><a class="button__intro">Button Name</a></div>
+    <div><button class="button__intro">Button Name</button></div>
 </div>
 
-<div class="services">
+<div class="services" id="services">
     <h2 class="services__title">Lorem Ipsum is simply dummy text of the printing</h2>
     <div class="services__item">
-        <img src="images/services_icon1.jpg" height="141" width="141" alt="services_icon1">
-        <h3>PROTECT</h3>
-        <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, debitis doloremque dolorem cum et ex? Suscipit adipisci, quam sed vitae vel amet deleniti eaque sint voluptatem animi tempore saepe ullam!</p>
-    </div>
-    <div class="services__item">
-        <img src="images/services_icon2.jpg" height="141" width="141" alt="services_icon2">
-        <h3>Alert</h3>
-        <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus doloribus rem eius nam? Similique alias dicta possimus, quae incidunt, facilis voluptatem! Magnam reiciendis alias mollitia. Numquam rerum non magnam recusandae?</p>
-    </div>
-    <div class="services__item">
-        <img src="images/services_icon3.jpg" height="141" width="141" alt="services_icon3">
-        <h3>Detect</h3>
-        <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, itaque excepturi, beatae illo ipsa, hic commodi tempore harum minus ex iste dolores, expedita pariatur dolore sit vel deleniti architecto at.</p>
-    </div>
-
-</div>
-
-
-    <div class="pricing_block">
-        <h2 class="pricing_title">We have a very flexible offers for you to choose</h2>
-            <div class="price_blue_block">
-                <div class="price_blue_block_title">
-                    <div>Standard</div>
-                </div>
-                <div class="price_white_block">
-                    <p>Iconic Graphics</p>
-                    <div>
-                        <p><sup>$</sup>10<sub>Monthly</sub></p>
-                    </div>
-                    <ul>
-                        <li>Unmetered Traffic</li>
-                        <li>Unlimited Domain</li>
-                        <li>Unlimited Databases</li>
-                        <li>Unlimited e-Mails</li>
-                    </ul>
-                    <button class="blue">Enroll Today</button>
-                </div>
-            </div>
-            <div class="price_orange_block">
-                <div class="price_orange_block_title">
-                    <div>best value</div>
-                </div>
-                <div class="price_white_block">
-                    <p>Iconic Graphics</p>
-                    <div>
-                        <p><sup>$</sup>25<sub>Monthly</sub></p>
-                    </div>
-                    <ul>
-                        <li>PHP, PERL, ASP, JSP</li>
-                        <li>SEMI DEDICATED</li>
-                        <li>Staging or Production</li>
-                        <li>Unlimited e-Mails</li>
-                    </ul>
-                    <button class="orange">Enroll Today</button>
-                </div>
-            </div>
-            <div class="price_green_block">
-                <div class="price_green_block_title">
-                    <div>Ultimate</div>
-                </div>
-                <div class="price_white_block">
-                    <p>Iconic Graphics</p>
-                    <div>
-                        <p><sup>$</sup>35<sub>Monthly</sub></p>
-                    </div>
-                    <ul>
-                        <li>Semi Dedicated</li>
-                        <li>1TB Storage</li>
-                        <li>Faster Site, Better SEO</li>
-                        <li>Unlimited e-Mails</li>
-                    </ul>
-                    <button class="green">Enroll Today</button>
-                </div>
-            </div>
-    </div>
-
-    <div class="review_back">
-        <div class="reviews">
-            <div class="review_title">
-                <h2><span>What</span> Client Says</h2>
-            </div>
-            <div class="review_testimonial">
-                <div class="review_testimonial_item_left">
-                    <div class="testimonial_photo">
-                        <img src="images/photo1.jpg" alt="Staciya Trollio">
-                    </div>
-                    <div class="testimonial_card">
-                        <div class="testimonial_card_name">
-                            <p class="testimonial_name">- Staciya Trollio</p>
-                            <p class="testimonial_customer">Customer</p>
-                        </div>
-                        <div class="testimonial_card_text">
-                            Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry. 
-                        </div>
-                    </div>
-                </div>
-                <div class="review_testimonial_item_right">
-                    <div class="testimonial_photo">
-                        <img src="images/photo2.jpg" alt="David Soul">
-                    </div>
-                    <div class="testimonial_card">
-                        <div class="testimonial_card_name">
-                            <p class="testimonial_name">- David Soul</p>
-                            <p class="testimonial_customer">Customer</p>
-                        </div>
-                        <div class="testimonial_card_text">
-                            Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry.
-                        </div>
-                    </div>
-                </div>
-            </div>                      
+        <img class="services__item_inline" src="images/services_icon1.png" height="141" width="141" alt="services_icon1">
+        <div class="services__item_inner">
+            <h3 class="services__item_title services__item_inline">PROTECT</h3>
+            <p class="services__text services__item_inline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, debitis doloremque dolorem cum et ex? Suscipit adipisci, quam sed vitae vel amet deleniti eaque sint voluptatem animi tempore saepe ullam!</p>
         </div>
     </div>
+    <div class="services__item">
+        <img class="services__item_inline" src="images/services_icon2.png" height="141" width="141" alt="services_icon2">
+        <div class="services__item_inner">
+            <h3 class="services__item_title services__item_inline">Alert</h3>
+            <p class="services__text services__item_inline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus doloribus rem eius nam? Similique alias dicta possimus, quae incidunt, facilis voluptatem! Magnam reiciendis alias mollitia. Numquam rerum non magnam recusandae?</p>
+        </div>
+    </div>
+    <div class="services__item">
+        <img class="services__item_inline" src="images/services_icon3.png" height="141" width="141" alt="services_icon3">
+        <div class="services__item_inner">
+            <h3 class="services__item_title services__item_inline">Detect</h3>
+            <p class="services__text services__item_inline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, itaque excepturi, beatae illo ipsa, hic commodi tempore harum minus ex iste dolores, expedita pariatur dolore sit vel deleniti architecto at.</p>
+        </div>
+    </div>
+</div>
 
+<div class="aboutUs" id="about">
+    <div class="aboutUs__inner">
+        <p class="aboutUs__title">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been....</p>
+        <p class="aboutUs__annotation">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <ul class="aboutUs__list">
+            <li class="aboutUs__list_item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem vel quaerat voluptatum. Labore hic molestiae perspiciatis eveniet ex quibusdam earum soluta laudantium aspernatur alias, natus vero optio voluptatem fugit. Ut.</li>
+            <li class="aboutUs__blue_item aboutUs__list_item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, natus eaque animi ducimus qui aperiam veritatis, et numquam culpa.</li>
+            <li class="aboutUs__list_item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, repudiandae. Voluptas maxime velit debitis, repellendus perspiciatis odio eligendi optio magnam reprehenderit nisi eius et excepturi magni aliquid ipsum id ea.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="price" id="price">
+    <h2 class="price__title">We have a very flexible offers for you to choose</h2>
+        <div class="price__blue_block">
+            <div class="price_blue_block_title">
+                <div>Standard</div>
+            </div>
+            <div class="price__top_block">
+                <p>Iconic Graphics</p>
+                <div>
+                    <p><sup>$</sup>10<sub>Monthly</sub></p>
+                </div>
+            </div>                
+            <div class="price_inner_block">
+                <ul>
+                    <li>Unmetered Traffic</li>
+                    <li>Unlimited Domain</li>
+                    <li>Unlimited Databases</li>
+                    <li>Unlimited e-Mails</li>
+                </ul>
+                <button class="blue">Enroll Today</button>
+            </div>
+        </div>
+        <div class="price__orange_block">
+            <div class="price_orange_block_title">
+                <div>best value</div>
+            </div>            
+            <div class="price__top_block">
+                <p>Iconic Graphics</p>
+                <div>
+                    <p><sup>$</sup>25<sub>Monthly</sub></p>
+                </div>
+            </div>                
+            <div class="price_inner_block">
+                <ul>
+                    <li>PHP, PERL, ASP, JSP</li>
+                    <li>SEMI DEDICATED</li>
+                    <li>Staging or Production</li>
+                    <li>Unlimited e-Mails</li>
+                </ul>
+                <button class="orange">Enroll Today</button>
+            </div>
+        </div>
+        <div class="price__green_block">
+            <div class="price_green_block_title">
+                <div>Ultimate</div>
+            </div>
+            <div class="price__top_block">
+                <p>Iconic Graphics</p>
+                <div>
+                    <p><sup>$</sup>35<sub>Monthly</sub></p>
+                </div>
+            </div>                
+            <div class="price_inner_block">
+                <ul>
+                    <li>Semi Dedicated</li>
+                    <li>1TB Storage</li>
+                    <li>Faster Site, Better SEO</li>
+                    <li>Unlimited e-Mails</li>
+                </ul>
+                <button class="green">Enroll Today</button>
+            </div>
+        </div>
+</div>
+
+<div class="review" id="review">
+    <div class="review__inner">
+        <h2 class="review__title"><span>What</span> Client Says</h2>
+        <div class="review_testimonial">
+            <div class="review_testimonial_item_left">
+                <div class="testimonial__photo">
+                    <img class="inner__photo" src="images/photo1.jpg" alt="Staciya Trollio">
+                </div>
+                <div class="testimonial_card">
+                    <div class="testimonial_card_name">
+                        <p class="testimonial_name">- Staciya Trollio</p>
+                        <p class="testimonial_customer">Customer</p>
+                    </div>
+                    <div class="testimonial_card_text">
+                        Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry. 
+                    </div>
+                </div>
+            </div>
+            <div class="review_testimonial_item_right">
+                <div class="testimonial__photo">
+                    <img class="inner__photo" src="images/photo2.jpg" alt="David Soul">
+                </div>
+                <div class="testimonial_card">
+                    <div class="testimonial_card_name">
+                        <p class="testimonial_name">- David Soul</p>
+                        <p class="testimonial_customer">Customer</p>
+                    </div>
+                    <div class="testimonial_card_text">
+                        Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry.
+                    </div>
+                </div>
+            </div>
+        </div>                      
+    </div>
+</div>
+
+<div class="contacts" id="contact">
+    <div class="contact__map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5082.210493885411!2d30.498289431228685!3d50.4391402483242!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef1c68c9a5f%3A0x3b98e006521a4958!2z0JHQuNC30L3QtdGBLdGG0LXQvdGC0YAg0JXQstGA0LDQt9C40Y8!5e0!3m2!1sru!2sua!4v1430215162057" width="705" height="345" frameborder="0" style="border:0"></iframe></div>
+    <div class="contact__inner">
+        <ul class="contact__inner_list">
+            <li class="contact__place">Iconic Graphics</li>
+            <li>123 Main Street</li>
+            <li>EastWest</li>
+            <li>LHR 54500</li>
+            <li class="contact__phone"><a href="#">012.345.6789</a></li>
+            <li class="contact__email"><a href="#">info@iconicgraphics.com</a></li>
+        </ul>
+        <ul class="contact__social_networks">
+            <a href="https://www.facebook.com/" target="_blank"><li class="contact__facebook"></li></a>
+            <a href="https://twitter.com/?lang=ru" target="_blank"><li class="contact__twitter"></li></a>
+            <a href="https://www.linkedin.com/" target="_blank"><li class="contact__linkedin"></li></a>
+        </ul>
+    </div>
+</div>
+
+<div class="copyright">
+    <p class="copyright__inner">Copyright © 2014 <span class="copyright__company_bold">Company Name.</span> All rights reserved. Designed by <span class="copyright__company_black">IconicGraphics.com</span></p>
+</div>
 
 </body>
 </html>

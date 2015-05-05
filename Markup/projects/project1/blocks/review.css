@@ -1,0 +1,206 @@
+.review{
+	background: url(../images/bg_reviews.jpg) repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    width: 100%;
+    font-family: "Trebuchet MS", sans-serif;
+    margin-top: 80px; 
+    overflow: hidden;
+}
+
+.review__inner{
+	max-width: 1020px;
+	width: 82%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.review__title{
+	color: #3170a8;
+	font-size: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0;
+	padding-top: 58px;
+	padding-bottom: 48px;
+}
+
+.review__title span{
+	color: #ee8129;
+	font-weight: normal;
+}
+
+.review_testimonial{
+	padding-bottom: 78px;
+	overflow: hidden;
+}
+
+.review_testimonial_item_left{
+	float: left;
+	max-width: 488px;
+	width: 48%;
+}
+
+.review_testimonial_item_right{
+	float: right;
+	max-width: 488px;
+	width: 48%;
+}
+
+.testimonial__photo{
+	float: left;
+	max-width: 98px;
+	width: 21%;
+}
+
+.inner__photo{
+	max-width: 98px;
+	width: 100%;
+	max-height: 98px;
+	height: auto;
+}
+
+.testimonial_card{
+	background-color: #fff;
+	float: right;
+	max-width: 365px;
+	width: 75%;
+	border: 1px solid #e0e0e0;
+	box-sizing: border-box;
+	color: #666666;
+	font-size: 13px;
+	padding: 12px 14px;
+	position: relative;
+}
+
+.testimonial_card_name{
+	color: #3070a8;
+	border-bottom: 1px dotted #666666;
+	position: relative;
+	padding-bottom: 8px;
+	margin-bottom: 8px;
+	font-style: italic;
+}
+
+.testimonial_card_name > .testimonial_name{
+	margin: 0;
+}
+
+.testimonial_card_name > .testimonial_customer{
+	position: absolute;
+	margin: 0;
+	right: 0;
+	top: 0;
+}
+
+.testimonial_card_text{
+	line-height: 20px;
+	letter-spacing: 0.4px;
+}
+
+
+.testimonial_card:before{
+	content: ' ';
+	width: 0;
+	height: 0;
+	position: absolute;
+	border: 12px solid;
+	border-color: transparent white transparent transparent;
+	left: -24px;
+	top: 35px;
+}
+
+
+@media screen and (max-width: 900px) and (min-width: 700px) {	
+	.review__title {
+	  font-size: 30px;
+	  padding-top: 40px;
+	  padding-bottom: 30px;
+	}
+	
+	.review_testimonial {
+	  padding-bottom: 50px;
+	}
+	
+	.testimonial_card_text {
+	  line-height: 14px;
+	  font-size: 12px;
+	  letter-spacing: 0;
+	}
+
+	.testimonial_card {
+		padding: 9px 9px;
+		font-size: 12px;
+	}
+
+	.testimonial_card:before {
+	  content: ' ';
+	  width: 0;
+	  height: 0;
+	  position: absolute;
+	  border: 7px solid;
+	  border-color: transparent white transparent transparent;
+	  left: -14px;
+	  top: 25px;
+	}
+}
+
+
+@media screen and (max-width: 699px){
+	.review {
+	  margin-top: 40px;
+	 }	
+
+	.review__inner {
+		width: 90%;
+	}
+
+	.review__title {
+	  font-size: 22px;
+	  padding-top: 20px;
+	  padding-bottom: 20px;
+	}
+	
+	.review_testimonial {
+	  padding-bottom: 30px;
+	}
+	
+	.testimonial_card_text {
+	  line-height: 12px;
+	  font-size: 12px;
+	  letter-spacing: 0;
+	}
+
+	.testimonial_card {
+		padding: 9px 9px;
+		font-size: 12px;
+	}
+
+	.testimonial_card:before {
+	  content: ' ';
+	  width: 0;
+	  height: 0;
+	  position: absolute;
+	  border: 7px solid;
+	  border-color: transparent white transparent transparent;
+	  left: -14px;
+	  top: 25px;
+	}
+
+	.review_testimonial_item_left, .review_testimonial_item_right {
+	  float: none;
+	  max-width: 488px;
+	  width: 100%;
+	  overflow: hidden;
+	  margin-bottom: 10px;
+	}
+
+	.testimonial__photo {
+		width: 19%;
+	}
+
+
+
+}

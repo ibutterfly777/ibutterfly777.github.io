@@ -13,27 +13,34 @@
 	position: relative;
 }
 
+form{
+	width: 99%;
+}
+
+.search__table{
+	width: 100%;
+}
+
+.search__input{
+	padding-right: 6px;
+}
+
 .input__search{
-  width: 82%;
-  min-width: 302px;
-  height: 23px;
-  border: 1px solid #C6C6C6;
-  border-bottom-color: #E5E5E5;
-  box-shadow: inset 0px 1px 2px #A3A3A3;
+	width: 100%;
+	min-width: 300px;
+	height: 23px;
+	box-shadow: inset 0px 1px 2px #A3A3A3;
+	border: 1px solid #C6C6C6;
+	border-bottom-color: #E5E5E5;
 }
 
-.button__search{
-	height: 27px;
-	width: 13%;
-	min-width: 62px;
-	border-radius: 2px;
-	border: 1px solid #AA925E;
-	background: linear-gradient(to top, #CCCCCC, #fff);
-	font-size: 17px;
+.search__button{
+	width: 72px;
 }
 
-.button__search:hover{
-	background: linear-gradient(to top, #fff, #CCCCCC);
+button{
+	width: 72px;
+	height: 29px;
 }
 
 .checkbox{
@@ -53,7 +60,7 @@ a{
 	width: 0;
 	height: 0;
 	position: absolute;
-	border: 30px solid;
+	border: 34px solid;
 	border-left: 20px solid;
 	border-color: transparent transparent transparent #FFCD5D;
 	top: 0;

@@ -1,4 +1,4 @@
-ul.menu__list{
+.menu__list{
 	float: right;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
@@ -7,35 +7,58 @@ ul.menu__list{
 	width: 580px;
 }
 
-ul.menu__list li.menu__item, ul.menu__list li.menu__item_current_true{
+.menu__item{
 	float: left; 
 	list-style: none;
 	text-align: center;
 	text-transform: uppercase;
-	padding-left: 11px;
+	padding-left: 1%;
 }
 
-ul.menu__list li.menu__item_current_true{
-	padding: 0; 
-}
-
-ul.menu__list li.menu__item a{
+.menu__item a{
 	color: #989898;
 	display: block;
 	padding: 30px 15px;
 	text-decoration: none;
 }
 
-ul.menu__list li.menu__item_current_true a{
-	color: #3070a8;	
-	display: block;
-	text-decoration: none;
-	border-bottom: 4px solid #3070a8;	
-	padding: 30px 15px;
-}
-
-ul.menu__list li.menu__item a:hover{
+.menu__item a:hover{
 	border-bottom: 4px solid #3070a8;
 	color: #3070a8;
 }
 
+@media screen and (max-width: 1120px) {
+	.menu__list{
+		font-size: 13px;
+		padding: 15px 0 0;
+		width: 425px;
+		-webkit-transition: padding 1s linear;
+		-o-transition: padding 1s linear;
+		-moz-transition: padding 1s linear;
+		transition: padding 1s linear;
+	}
+
+	.menu__item a{
+		padding: 15px 7px;
+	}
+}
+
+
+@media screen and (max-width: 900px) and (min-width: 471px) {
+	.menu__list{
+		padding: 0;
+		margin: 0 auto;
+		float: none;
+		width: 386px;
+	}
+}
+
+@media screen and (max-width: 470px){
+	.menu__list{
+		padding: 0;
+		margin: -10px auto 0;
+		float: none;
+		width: 317px;
+		font-size: 10px;
+	}
+}

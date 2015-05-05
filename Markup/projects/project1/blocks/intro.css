@@ -14,7 +14,6 @@ div.intro{
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-	min-height: 585px;
 	width: 100%;
 	color: #fff;
     overflow: hidden;
@@ -46,14 +45,76 @@ div.intro > div{
 	margin-top: 60px;
 }
 
-a.button__intro{
+.button__intro{
 	font: 16px/0 'Open Sans', sans-serif;
 	text-transform: uppercase;
-	padding: 18px 63px;
 	border: 1px solid #98aabd;
+	width: 240px;
+	height: 60px;
+	margin-bottom: 45px;
+	background: transparent;
+	color:  #ececec;
 }
 
-a.button__intro:hover{
+.button__intro:hover{
 	box-shadow: 0 0 6px #BBDEF3; 
 	cursor: pointer;
+}
+
+@media screen and (max-width: 900px) and (min-width: 700px) {
+	h1.intro__title {
+	  font-size: 30px;
+	  padding-top: 90px;
+	}
+
+	h1.intro__title span.intro__title-first {
+		font-size: 30px;
+	}
+
+	p.intro__annotation {
+	  font: italic 16px/25px Calibri, sans-serif;
+	  margin: 20px auto 0;
+	  width: 65%;
+	}
+
+	div.intro > div {
+	  margin-top: 30px;
+	}
+
+	.button__intro{
+		font: 14px/0 'Open Sans', sans-serif;
+		width: 180px;
+		height: 50px;
+		margin-bottom: 35px;
+	}
+
+}
+
+@media screen and (max-width: 699px){
+	h1.intro__title {
+	  font-size: 21px;
+	  padding-top: 50px;
+	}
+
+	h1.intro__title span.intro__title-first {
+		font-size: 18px;
+	}
+
+	p.intro__annotation {
+	  font: italic 13px/20px Calibri, sans-serif;
+	  margin: 15px auto 0;
+	  width: 65%;
+	}
+
+	div.intro > div {
+	  margin-top: 20px;
+	}
+
+	.button__intro{
+		font: 12px/0 'Open Sans', sans-serif;
+		width: 160px;
+	  height: 44px;
+	  margin-bottom: 25px;
+	}
+
 }

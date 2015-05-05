@@ -16,44 +16,39 @@
 }
 
 form{
-	width: 94%;
+	width: 96%;
+}
+
+.search__table{
+	width: 100%;
+}
+
+.search__input{
+	padding-right: 6px;
 }
 
 .input__search{
-  width: 86%;
-  min-width: 302px;
-  height: 23px;
-  border: 1px solid #C6C6C6;
-  border-bottom-color: #E5E5E5;
-  box-shadow: inset 0px 1px 2px #A3A3A3;
+	width: 100%;
+	min-width: 300px;
+	height: 23px;
+	box-shadow: inset 0px 1px 2px #A3A3A3;
+	border: 1px solid #C6C6C6;
+	border-bottom-color: #E5E5E5;
 }
 
-@media screen and (max-width: 730px) {
-	.input__search{
-		width: 81%;
-	}
+.search__button{
+	width: 72px;
 }
 
-.button__search{
-	height: 27px;
-	width: 13%;
-	min-width: 62px;
-	border-radius: 2px;
-	border: 1px solid #AA925E;
-	background: linear-gradient(to top, #CCCCCC, #fff);
-	font-size: 17px;
-	float: right;
-}
-
-.button__search:hover{
-	background: linear-gradient(to top, #fff, #CCCCCC);
+button{
+	width: 72px;
+	height: 29px;
 }
 
 .bradcramps{
 	margin: 0;
 	color: #000;
 	font-size: 12px;
-	padding-top: 7px;
 }
 
 a{
@@ -65,12 +60,12 @@ a{
 
 .arrow{
 	position: absolute;
-	left: 96.5%;
+	left: 98%;
 	  width: 0;
 	  height: 0;
-	  border-right: 20px solid transparent;
-	  border-top: 34px solid #fff;
-	  border-left: 31px solid #fff;
+	  border-right: 23px solid transparent;
+	  border-top: 35px solid #fff;
+	  border-left: 15px solid #fff;
 	  border-bottom: 31px solid #fff;
 	  -webkit-transform: rotate(180deg);
  }

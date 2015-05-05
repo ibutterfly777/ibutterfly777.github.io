@@ -3,14 +3,66 @@ body{
 	padding: 0;
 }
 
-div.header{
+.header{
 	height: 115px;
 	margin: 0 auto;
 	position: relative;
-	width: 1024px;
+	max-width: 1024px;
+	width: 82%
 }
 
-div.logo{
+.head__logo{
 	float: left;
 	padding-top: 45px;
+	width: 283px;
+	height: 34px;
+}
+
+@media screen and (max-width: 1120px) and (min-width: 901px){
+	.header{
+		height: 70px;
+		max-width: 1024px;
+		width: 82%;
+		-webkit-transition: height 1s linear;
+		-o-transition: height 1s linear;
+		-moz-transition: height 1s linear;
+		transition: height 1s linear;
+	}
+
+	.head__logo{
+		float: left;
+		padding-top: 25px;
+		width: 30%;
+	}
+
+	.logo_image{
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+@media screen and (max-width: 900px){
+
+	.header{
+		height: 70px;
+		max-width: 1024px;
+		width: 82%;
+		-webkit-transition: height 1s linear;
+		-o-transition: height 1s linear;
+		-moz-transition: height 1s linear;
+		transition: height 1s linear;
+	}
+
+	.head__logo{
+		  float: none;
+		  padding-top: 25px;
+		  width: 50%;
+		  margin: 0 auto;
+	}
+
+	.logo_image{
+		width: 100%;
+		height: auto;
+	}
 }

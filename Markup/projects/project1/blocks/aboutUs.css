@@ -1,0 +1,108 @@
+.aboutUs{
+	background: url(../images/111.png) repeat center center;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: auto;
+	width: 100%;
+	margin-top: 25px;
+}
+
+.aboutUs__inner{
+	margin: 0 auto;
+	max-width: 1024px;
+	width: 82%;
+	padding-bottom: 50px;
+}
+
+.aboutUs__title{
+	color: #ee8129;
+	font: bold 26px/48px "Trebuchet MS", sans-serif;
+	padding-top: 70px;
+	text-align: left;
+	text-transform: uppercase;
+	max-width: 700px;
+	width: 99%;
+	margin: 0;
+}
+
+.aboutUs__annotation{
+	color: #fff;
+	font: italic 19px/30px "Open Sans", sans-serif;
+	margin: 10px 0 30px;
+	width: 98%;
+}
+
+.aboutUs__list{
+	color: #9d9d9d;
+	font: 14px/30px "Open Sans", sans-serif;
+	max-width: 610px;
+	width: 95%;
+}
+
+.aboutUs__blue_item{
+	color: #3070a8;
+	font: 14px/30px "Open Sans", sans-serif;
+	max-width: 610px;
+	width: 95%;
+}
+
+.aboutUs__list_item{
+	padding-bottom: 15px;
+}
+
+
+@media screen and (max-width: 900px) and (min-width: 700px) {	
+	.aboutUs__inner{
+		padding-bottom: 20px;
+	}
+	.aboutUs__title {
+	  font: bold 22px/36px "Trebuchet MS", sans-serif;
+	  padding-top: 40px;
+	  text-align: center;
+	}
+
+	.aboutUs__annotation {
+	  color: #fff;
+	  font: italic 15px/18px "Open Sans", sans-serif;
+	  margin: 13px auto 22px;
+	  width: 95%;
+	  text-align: center;
+	}
+	
+	.aboutUs__list, .aboutUs__blue_item {
+	  font: 12px/24px "Open Sans", sans-serif;
+	}
+
+}
+
+@media screen and (max-width: 699px){	
+	.aboutUs{
+		margin-top: 0;
+	}
+
+	.aboutUs__inner{
+		padding-bottom: 20px;
+	}
+	.aboutUs__title {
+	  font: bold 18px/30px "Trebuchet MS", sans-serif;
+	  padding-top: 30px;
+	  text-align: center;
+	}
+
+	.aboutUs__annotation {
+	  font: italic 13px/15px "Open Sans", sans-serif;
+	  margin: 10px auto 15px;
+	  width: 95%;
+	  text-align: center;
+	}
+	
+	.aboutUs__list, .aboutUs__blue_item {
+	  font: 11px/20px "Open Sans", sans-serif;
+	  list-style-position: inside;
+	  padding: 0;
+	  width: 100%;
+	}
+
+}

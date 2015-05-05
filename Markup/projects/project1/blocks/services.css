@@ -1,32 +1,107 @@
-h2.services__title{
-	font: bold 30px/0 "Trebuchet MS", sans-serif;
+.services__title{
+	font: bold 30px/40px "Trebuchet MS", sans-serif;
 	color: #41525c;
+	text-align: center;
 }
 
-div.services{
+.services{
 	margin: 60px auto 0;
 	text-align: justify;
-	width: 1024px;
+	max-width: 1024px;
+	width: 82%
 }
 
-div.services__item{
+.services__item{
 	color: #999999;
 	display: inline-block;
 	font: 14px/25px 'Open Sans', sans-serif;
 	margin-top: 75px;
 	text-align: center;
 	vertical-align: top;
-	width: 315px;
+	max-width: 315px;
+	width: 31%; 
 }
 
-h3{
+.services__item_title{
 	color: #3070a8;
-	font: 30px/0 Futura, sans-serif;
+	font: 30px/40px Futura, sans-serif;
 	text-transform: uppercase;
 }
 
-div.services:after {
+.services:after {
   display: inline-block;
   width: 100%;
   content: "";
+}
+
+
+@media screen and (max-width: 900px) and (min-width: 700px) {
+	.services__title {
+	  font: bold 22px/0px "Trebuchet MS"
+	}
+
+	.services__item {
+	  color: #999999;
+	  display: inline-block;
+	  font: 12px/23px 'Open Sans', sans-serif;
+	  margin-top: 30px;
+	}
+
+	.services__item img{
+		width: 60%;
+		height: 60%;
+	}
+
+	.services__item_title {
+		font: 22px/0px Futura, sans-serif;
+	}
+	
+}
+
+
+@media screen and (max-width: 699px) {
+
+	.services {
+	  margin: 25px auto 0;
+	  width: 90%;
+	}
+
+	.services__title {
+	  font: bold 18px/22px "Trebuchet MS"
+	}
+
+	.services__item_inline{
+		display: inline-block;
+		margin: 0;
+	}
+
+	.services__item {
+	  display: block;
+	  font: 12px/21px 'Open Sans', sans-serif;
+	  margin: 25px auto;
+	  max-width: 900px;
+	  overflow: hidden;
+	  position: relative;
+	  width: 90%;
+	}
+
+	.services__item img{
+		  width: 15%;
+		  height: auto;
+		  position: absolute;
+		  left: 0;
+		  margin-right: 5px;
+	}
+
+	.services__item_title {
+		font: 18px/0px Futura, sans-serif;
+		margin: 0;
+	}
+
+	.services__item_inner{
+		float: right;
+		text-align: left;
+		width: 80%;
+	}
+	
 }
