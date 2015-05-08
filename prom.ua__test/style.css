@@ -72,7 +72,6 @@ body
     -o-border-radius: 22px;
     -ms-border-radius: 22px;
     border-radius: 22px;
-    behavior: url(images/border-radius.htc);
 	border: 2px solid #ffffff;
 	box-shadow: 2px 2px 3px #C7C7C7;
 	color: #fff;
@@ -97,7 +96,6 @@ body
 		background: -ms-linear-gradient(top,  #329ef3 0%,#005d84 100%); /* IE10+ */
 		background: linear-gradient(to bottom,  #329ef3 0%,#005d84 100%); /* W3C */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#329ef3', endColorstr='#005d84',GradientType=0 ); /* IE6-9 */
-
 }
 
 .testimonial__button:active{
@@ -146,7 +144,6 @@ body
     -o-border-radius: 22px;
     -ms-border-radius: 22px;
 	border-radius: 22px;
-	behavior: url(images/border-radius.htc);
 	border: 1px solid #dcdcdc;
 	box-shadow:  1px 1px 2px #C7C7C7;
 	padding: 5px;
@@ -170,7 +167,6 @@ body
     -o-border-radius: 22px;
     -ms-border-radius: 22px;
 	border-radius: 22px;
-	behavior: url(images/border-radius.htc);
 	border: 1px dashed #c6d5e6;
 	box-sizing: border-box;
 	height: auto;
@@ -230,7 +226,6 @@ body
     -o-border-radius: 22px;
     -ms-border-radius: 22px;
 	border-radius: 22px;
-	behavior: url(images/border-radius.htc);
 	border: 4px solid #ffabd6;
 	box-shadow: 0 0 0 2px #fff,
 				2px 2px 5px #dedede;
@@ -256,7 +251,6 @@ body
     -o-border-radius: 22px;
     -ms-border-radius: 22px;
 	border-radius: 22px;
-	behavior: url(images/border-radius.htc);
 	border: 4px solid #4badf3;
 	box-shadow: 0 0 0 2px #fff,
 				2px 2px 5px #dedede;
@@ -282,7 +276,6 @@ body
     -o-border-radius: 22px;
     -ms-border-radius: 22px;
 	border-radius: 22px;
-	behavior: url(images/border-radius.htc);
 	border: 4px solid #9dafb8;
 	box-shadow: 0 0 0 2px #fff,
 				2px 2px 5px #dedede;
