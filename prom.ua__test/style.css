@@ -85,7 +85,6 @@ body
 	text-shadow: 1px 1px 1px #777;
 	width: 100%;
 	overflow-wrap: break-word;
-	overflow: hidden;
 }
 
 .testimonial__button:hover
