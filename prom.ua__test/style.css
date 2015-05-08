@@ -13,7 +13,6 @@ body
     -o-border-radius: 5px;
     -ms-border-radius: 5px;
     border-radius: 5px;
-    behavior: url(border-radius.htc); /* IE */
 	border: 3px solid #ffffff;
 	box-shadow: inset 0px 1px 2px #f1f1f1,
 				1px 1px 5px #C7C7C7;
