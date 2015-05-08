@@ -1,0 +1,292 @@
+body
+{
+	background: url(images/bg.png) repeat fixed;
+	margin: 0;
+	padding: 0;
+}
+
+.wrap
+{
+	background-color: #fcfcfc;
+	border-radius: 5px;
+	border: 3px solid #ffffff;
+	box-shadow: inset 0px 1px 2px #f1f1f1,
+				1px 1px 5px #C7C7C7;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	height: auto;
+	margin: 155px auto 0;
+	max-width: 806px;
+	min-width: 400px;
+	padding: 20px;
+	width: 80%;
+}
+
+.testimonial
+{
+	max-width: 606px;
+	padding-right: 20px;
+	width: 100%;
+}
+
+.testimonial__item
+{
+	display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+    width: 50%;
+}
+
+
+.testimonial__inner
+{
+    margin-right: 10px;
+    position: relative;
+    vertical-align: top;
+}
+
+.testimonial__item:nth-child(even) .testimonial__inner
+{
+    margin: 0 0 10px 10px;
+}
+
+.testimonial__button
+{
+	background: linear-gradient(to top, #0176a7, #56b5ff);
+	border-radius: 22px;
+	border: 2px solid #ffffff;
+	box-shadow: 2px 2px 3px #C7C7C7;
+	color: #fff;
+	font-size: 18px;
+	height: auto;
+	max-width: 294px;
+	min-height: 50px;
+	outline: none;
+	padding: 15px;
+	text-shadow: 1px 1px 1px #777;
+	width: 100%;
+	overflow-wrap: break-word;
+}
+
+.testimonial__button:hover
+{
+	background: linear-gradient(to top, #005d84, #329ef3);
+}
+
+.testimonial__button:active{
+	box-shadow: inset 1px 1px 3px #002C4D;
+	background: #0176a7;
+}
+
+.testimonial__text
+{
+	color: #333;
+	font-size: 18px;
+	margin: 53px 0 29px;
+	padding: 0 12px;
+	position: relative;
+	text-align: justify;
+	overflow-wrap: break-word;
+}
+
+.testimonial__text:before
+{
+	background: url(images/line2.png) repeat-x;
+	content: ' ';
+	height: 7px;
+	left: 0;
+	position: absolute;
+	top: -24px;
+	width: 100%;
+}
+
+.testimonial__text:after
+{
+	background: url(images/line2.png) repeat-x;
+	bottom: -30px;
+	content: ' ';
+	height: 7px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+
+.testimonial-popup
+{	
+	background: #fff;
+	border-radius: 22px;
+	border: 1px solid #dcdcdc;
+	box-shadow:  1px 1px 2px #C7C7C7;
+	padding: 5px;
+}
+
+.testimonial-popup:after
+{	
+	background: url(images/popup.png) no-repeat;
+	bottom: -24px;
+	content: ' ';
+	height: 28px;
+	right: 15%;
+	position: absolute;
+	width: 32px;
+}
+
+.testimonial-popup-inner{
+	background: #fff;
+	border-radius: 22px;
+	border: 1px dashed #c6d5e6;
+	box-sizing: border-box;
+	height: auto;
+	padding: 20px;
+	width: 100%;
+}
+
+.testimonial-popup__title
+{
+	color: #dd567f;
+	font-size: 24px;
+	margin: 0 0 14px 0;
+	text-align: center;
+	font-weight: normal;
+	overflow-wrap: break-word;
+}
+
+.testimonial-popup__text
+{
+	color: #666;
+	font-size: 14px;
+	margin: 0;
+	text-align: center;
+	overflow-wrap: break-word;
+}
+
+.statistics__inner
+{
+	position: relative;
+	right: 0;
+	top: 0;
+	width: 130px;
+}
+
+.statistics__inner:after
+{
+	background: url(images/line2.png) repeat-x;
+	bottom: -18px;
+	content: ' ';
+	height: 7px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+
+.statistics__heart
+{
+	float: left;
+	position: relative;
+}
+
+.statistics__heart-line
+{
+	background-color: #ffd2e9;
+	border-radius: 22px;
+	border: 4px solid #ffabd6;
+	box-shadow: 0 0 0 2px #fff,
+				2px 2px 5px #dedede;
+	height: 91px;
+	margin-left: 7px;
+	position: absolute;
+	bottom: 39px;
+	width: 6px;
+}
+
+.statistics__clock
+{
+	margin: 0 auto;
+	width: 28px;
+	position: relative;
+}
+
+.statistics__clock-line
+{
+	background-color: #9ed3f9;
+	border-radius: 22px;
+	border: 4px solid #4badf3;
+	box-shadow: 0 0 0 2px #fff,
+				2px 2px 5px #dedede;
+	height: 21px;
+	margin-left: 6px;
+	position: absolute;
+	bottom: 39px;
+	width: 6px;
+}
+
+.statistics__label
+{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.statistics__label-line
+{
+	background-color: #cad4d9;
+	border-radius: 22px;
+	border: 4px solid #9dafb8;
+	box-shadow: 0 0 0 2px #fff,
+				2px 2px 5px #dedede;
+	height: 51px;
+	margin-left: 6px;
+	position: absolute;
+	bottom: 39px;
+	width: 6px;
+}
+
+.statistics-align
+{
+	vertical-align: bottom;
+}
+
+.clear
+{
+	clear: both;
+    margin-bottom: 30px;
+}
+
+.main-information
+{
+	width: 100%;
+}
+
+td{
+	vertical-align: top;
+}
+
+.main-information__inner
+{
+	padding: 0 18px;
+	width: 100%;
+}
+
+.main-information__inner-text
+{
+	color: #666;
+	margin-bottom: 70px;
+	padding-top: 5px;
+	position: relative;
+	width: 100%;
+	text-indent: 15px;
+	text-align: justify;
+}
+
+.main-information__inner-text:after
+{
+	background: url(images/line2.png) repeat-x;
+	bottom: -30px;
+	content: ' ';
+	height: 7px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+
