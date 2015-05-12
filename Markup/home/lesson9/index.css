@@ -116,3 +116,14 @@ h1
 	  margin: 0 auto;
 	}
 }
+
+@media screen and (max-width: 779px){
+	.wrap{
+	  max-width: 360px;
+	}
+	.wrap__inner {
+	  text-align: justify;
+	  width: 360px;
+	  margin: 0 auto;
+	}
+}
