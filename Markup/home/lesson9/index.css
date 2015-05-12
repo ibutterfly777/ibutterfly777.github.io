@@ -9,7 +9,7 @@ body
 .wrap
 {
 	max-width: 1140px;
-	width: 92%;
+	width: 100%;
 	margin: 0 auto; 
 }
 
@@ -104,4 +104,12 @@ h1
   display: inline-block;
   width: 100%;
   content: "";
+}
+
+@media and screen (max-width: 1160px){
+.wrap
+{
+	width: 70%;
+}	
+}
 }
