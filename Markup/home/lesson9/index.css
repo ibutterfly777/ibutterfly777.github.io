@@ -107,5 +107,12 @@ h1
 }
 
 @media screen and (max-width: 1160px){
-	.wrap{max-width: 750px;}
+	.wrap{
+	  max-width: 750px;
+	}
+	.wrap__inner {
+	  text-align: justify;
+	  width: 750px;
+	  margin: 0 auto;
+	}
 }
