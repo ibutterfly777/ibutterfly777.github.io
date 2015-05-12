@@ -106,12 +106,11 @@ h1
   content: "";
 }
 
-@media screen and (max-width: 1160px){
+@media screen and (max-width: 1160px) and (min-width: 780px){
 	.wrap{
 	  max-width: 750px;
 	}
 	.wrap__inner {
-	  text-align: justify;
 	  width: 750px;
 	  margin: 0 auto;
 	}
@@ -122,7 +121,6 @@ h1
 	  max-width: 360px;
 	}
 	.wrap__inner {
-	  text-align: justify;
 	  width: 360px;
 	  margin: 0 auto;
 	}
