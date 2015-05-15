@@ -1,0 +1,79 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" ng-app="ToDoListApp">
+<head>
+    <title>ToDo List (Task2)</title>
+    <script src="../Libraries/angular.js"></script>
+    <link href="../Libraries/bootstrap.css" rel="stylesheet" />
+    <link href="../Libraries/bootstrap-theme.css" rel="stylesheet" />
+    <script src="todo.js"></script>
+    <script>
+
+        // Добавьте AngularJS контроллер
+        var toDoListApp = angular.module("ToDoListApp", []);
+
+        toDoListApp.controller("ToDoListController", function ($scope) {
+            $scope.url = 'details.html';
+            $scope.data = todoModel.data;
+            $scope.name;
+            $scope.description;
+            $scope.date;
+            $scope.completed;
+            $scope.addTask = function () { todoModel.addItem($scope.name, $scope.date, $scope.description, $scope.completed); }
+            $scope.showDetails = function (index) {
+                $scope.show = true;
+                $scope.detailsDescription = todoModel.data[index].description;
+                $scope.detailsTask = todoModel.data[index].name;
+            }
+        });
+
+    </script>
+
+</head>
+<body>
+
+    <div class="container" ng-controller="ToDoListController" ng-cloak>
+        <div class="row panel panel-success">
+            <h3 class="panel-heading">ToDo List</h3>
+            <div class="col-md-6">
+
+                <div class="well">
+                    <span>Tasks To Do: {{(data | filter : {completed : 'false'} ).length}}</span>
+                </div>
+                <table class="table table-striped table-bordered table-hover text-center">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>Completed</th>
+                            <th>Show details</th>
+                        </tr>
+                    </thead>
+                    <tr ng-repeat="item in data">
+                        <td>{{item.name}}</td>
+                        <td>{{item.duedate | date : "dd MMM yy"}}</td>
+                        <td><input type="checkbox" name="chkCompleted" ng-model="item.completed" ng-checked="item.completed" /></td>
+                        <td><input type="button" class="btn btn-default" name="name" value="Details" ng-click="showDetails($index)" /></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="col-md-6" ng-show="show">
+                <ng-include src="url"></ng-include>
+            </div>
+        </div>
+        <div class="form-group">
+            <!-- Форма для добавления новых задач -->
+            <p>Name</p>
+            <input ng-model="name" class="form-control" type="text" name="txtName" id="txtName" value="" placeholder="Название задания" />
+            <p><b>Due Date</b></p>
+            <input ng-model="date" class="form-control" type="date" name="txtDueDate" id="txtName" value="" placeholder="Due date" />
+            <p><b>Description</b></p>
+            <textarea ng-model="description" class="form-control" name="txtDescription" cols="10" rows="5"></textarea>
+            <label><b>Completed</b></label><br />
+            <input ng-model="completed" type="checkbox" /><br />
+
+        </div>
+        <button class="btn btn-default" ng-click="addTask()">Add</button>
+    </div>
+</body>
+</html>
+

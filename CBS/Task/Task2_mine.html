@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="ToDoListApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>    
+    <link href="../Libraries/bootstrap.css" rel="stylesheet" />
+    <link href="../Libraries/bootstrap-theme.css" rel="stylesheet" />
+    <script src="todo.js"></script>
+    <script src="../Libraries/angular.js"></script>
+    <script>
+        var ToDoListApp = angular.module('ToDoListApp', []);
+
+        ToDoListApp.controller('ToDoListCtrl', function ($scope){
+            $scope.url = 'details_mine.html';
+            $scope.data = todoModel.data;
+            $scope.name;
+            $scope.description;
+            $scope.date;
+            $scope.completed;
+            $scope.addTask = function () { todoModel.addItem($scope.name, $scope.date, $scope.description, $scope.completed); }
+        });
+
+    </script>
+</head>
+<body ng-controller="ToDoListCtrl">
+    <div class="container-fluid col-md-10 col-md-offset-1">
+        <h1 class="panel-heading">ToDo List</h1>
+
+        <table class="table table-hover text-left" ng-cloak>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Date</th>
+                    <th>Completed</th>
+                </tr>
+            </thead>
+            <tr class="table table-hover text-left" ng-repeat="item in data">
+                <td>{{item.name}}</td>
+                <td>{{item.description}}</td>
+                <td>{{item.duedate | date : "dd MMM yy"}}</td>                
+                <td><input type="checkbox" name="chkCompleted" ng-model="item.completed" ng-checked="item.completed" /></td>
+            </tr>
+        </table>
+
+        <div class="form-group">
+        <h5><b>Name</b></h5>
+            <input ng-model="name" class="form-control" type="text" name="txtName" id="txtName" value="" placeholder="Задание" />
+        <h5><b>Due Date</b></h5>
+            <input ng-model="date" class="form-control" type="date" name="txtDueDate" id="txtName" value="" placeholder="Due date" />
+        <h5><b>Description</b></h5>
+            <textarea ng-model="description" class="form-control" name="txtDescription" cols="10" rows="5"></textarea>
+        <label><b>Completed</b></label><br />
+            <input ng-model="completed" type="checkbox" /><br />
+
+        </div>
+        <button class="btn btn-default" ng-click="addTask()">Add</button>       
+
+    </div>
+
+</body>
+</html>
+
+
+

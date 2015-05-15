@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app='newsItvdnApp'>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="../Libraries/bootstrap.css" rel="stylesheet" />
+    <link href="../Libraries/bootstrap-theme.css" rel="stylesheet" />
+    <script src="model1.js"></script>
+    <script src="../Libraries/angular.js"></script>
+    
+    <script>
+        var newsItvdnApp = angular.module('newsItvdnApp', []);
+
+        newsItvdnApp.controller('newsItvdnCtrl', function ($scope) {
+            $scope.model = model;
+        });
+
+    </script>
+</head>
+<body ng-controller='newsItvdnCtrl'>
+    <div class="panel panel-default">
+    <h1 class="panel-heading text-left" style="margin-top: 0;">{{model.maintitle}}</h1>
+        
+
+        <div class="panel-body container">
+            <div class="row">
+                <div class="well" ng-repeat="newsitem in model.newsitem">
+                    <h2>{{newsitem.title}}</h2>
+                    <p>{{newsitem.published}}</p>
+                    <p>{{newsitem.description}}</p>
+                    <button class="btn btn-primary">Читать дальше</button>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+</body>
+</html>
