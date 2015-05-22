@@ -1,0 +1,252 @@
+.relative{
+	position: relative;
+	height: auto;
+	min-height: 251px;
+}
+
+.intro__inner-welcome-block{
+	background: url(../images/bg_intro.gif) no-repeat center center;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	width: 100%;
+	max-width: 1440px;
+	height: auto;
+	min-height: 351px;
+	color: #fff;
+	margin: 0 auto;
+}
+
+h2{
+	font-size: 50px;
+	padding-top: 65px;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.intro__description{
+	width: 550px;
+	font-size: 30px;
+	line-height: 40px;
+	margin: 5px 0 0;
+}
+
+.intro__inner-about-block{
+	color: #333;
+	background: #f2f2f2;
+	min-height: 250px;
+	height: auto;
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.intro__about-title{
+	font-size: 15px;
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-top: 25px;
+}
+
+.intro__about-description{
+	font-size: 13px;
+	width: 580px;
+	line-height: 20px;
+	margin-top: 17px;
+}
+
+.intro__form{
+	position: absolute;
+	right: 0;
+	width: 360px;
+	bottom: 36px;
+	background: #fff;
+	text-align: center;
+	box-shadow: 0 5px 0 0 #3498db;
+}
+
+.form-title{
+	font-size: 30px;
+	color: #333;
+	text-transform: uppercase;
+}
+
+input, select{
+	width: 320px;
+	height: 35px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+	padding-left: 13px;
+	border: 1px solid #e6e6e6;
+	background: #f2f2f2;
+	color: #333;
+	font-size: 15px;
+	outline: none;
+}
+
+select{
+	background: url(../images/select_arrow.png) no-repeat 292px #f2f2f2;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: none\0;
+}
+
+textarea{
+	width: 320px;
+	height: 75px;
+	box-sizing: border-box;
+	margin-bottom: 9px;
+	padding-left: 13px;
+	border: 1px solid #e6e6e6;
+	background: #f2f2f2;
+	color: #333;
+	font-size: 15px;
+	font-family: Helvetica, Arial, sans-serif;
+	padding-top: 10px;
+	outline: none;
+}
+
+input[placeholder], textarea[placeholder]{color: #333;}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {color:#333;}
+input::-moz-placeholder, textarea::-moz-placeholder {color:#333;}
+input:-moz-placeholder, textarea:-moz-placeholder {color:#333;}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {color:#333;}
+
+.intro__form-button{
+	background: #e74c3c;
+	color: #fff;
+	font-size: 25px;
+	border: none;
+	width: 220px;
+	height: 50px;
+	margin: 20px auto 30px; 
+}
+
+.intro__form-button:hover{
+	background: #DA4434;
+}
+
+.intro__form-button:active{
+	background: #DA4434;
+	box-shadow: inset 3px 3px 3px #961204;
+	outline: none;
+}
+
+
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+	h2{
+		font-size: 45px;
+		padding-top: 85px;
+	}
+
+	.intro__description{
+		width: 380px;
+		font-size: 25px;
+		line-height: 36px;
+	}
+
+	.intro__about-description{
+		width: 380px;
+	}
+
+	.intro__form{
+		width: 340px;
+		bottom: 30px;
+	}
+
+	.form-title{
+		font-size: 20px;
+		font-weight: normal;
+		  padding: 10px 0 2px;
+	}
+
+	input, select{
+		width: 300px;
+		height: 35px;
+		margin-bottom: 11px;
+	}
+
+	select {
+		background: url(../images/select_arrow.png) no-repeat 270px #f2f2f2;
+	}
+
+	textarea{
+		width: 300px;
+		height: 75px; 
+	}
+
+	.intro__form-button{
+		width: 200px;
+		height: 50px;
+		margin: 15px auto 36px; 
+		font-size: 20px;
+	}
+
+	.intro__form-button:hover{
+		background: #DA4434;
+	}
+}
+
+
+@media screen and (max-width: 799px) and (min-width: 350px) {
+	
+	h2{
+		font-size: 40px;
+		padding-top: 15px;
+		text-align: center;
+	}
+
+	.intro__about-title {
+		padding-top: 396px;
+		text-align: center;
+	}
+
+	.intro__description{
+		width: 250px;
+		font-size: 16px;
+		line-height: 28px;
+		text-align: center;
+		margin: 6px auto 0;
+	}
+
+	.intro__about-description{
+		width: 270px;
+		margin: 0 auto;
+		text-align: center;
+		padding-bottom: 33px;
+		padding-top: 17px;
+	}
+
+	.intro__form{
+		width: 300px;
+		bottom: 300px;
+	}
+
+	.form-title{
+		font-size: 20px;
+		font-weight: normal;
+		padding: 12px 0 5px;
+	}
+
+	input, select{
+		width: 260px;
+		height: 35px;
+		margin-bottom: 10px;
+	}
+
+	select {
+		background: url(../images/select_arrow.png) no-repeat 230px #f2f2f2;
+	}
+
+	textarea{
+		width: 260px;
+		height: 75px; 
+	}
+
+	.intro__form-button{
+		margin: 17px auto 29px; 
+	}
+}
