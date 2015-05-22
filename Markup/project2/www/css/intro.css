@@ -191,7 +191,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {color:#333;}
 }
 
 
-@media screen and (max-width: 799px) and (min-width: 350px) {
+@media screen and (max-width: 799px) and (min-width: 320px) {
 	
 	h2{
 		font-size: 40px;
