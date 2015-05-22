@@ -116,7 +116,7 @@
 }
 
 
-@media screen and (max-width: 799px) and (min-width: 350px) {
+@media screen and (max-width: 799px) and (min-width: 320px) {
 
 	.reviews{
 		width: 300px;
