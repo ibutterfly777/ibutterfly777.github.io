@@ -129,7 +129,7 @@ footer{
 }
 
 
-@media screen and (max-width: 799px) and (min-width: 300px) {
+@media screen and (max-width: 799px) and (min-width: 320px) {
 	footer{
 		height: 320px;
 	}
