@@ -112,6 +112,15 @@ input
     background: #f2f2f2;
 }
 
+.select-item
+{
+    background: url(../images/select_arrow.png) no-repeat 292px #f2f2f2;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: none\0;
+}
+
 textarea
 {
     font-family: Helvetica, Arial, sans-serif;
