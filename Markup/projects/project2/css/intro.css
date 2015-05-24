@@ -234,7 +234,12 @@ textarea:-ms-input-placeholder
         height: 35px;
         margin-bottom: 11px;
     }
-
+    
+    .select-item
+    {
+        background: url(../images/select_arrow.png) no-repeat 270px #f2f2f2;
+    }
+    
     textarea
     {
         width: 300px;
@@ -318,6 +323,11 @@ textarea:-ms-input-placeholder
         margin-bottom: 10px;
     }
 
+    .select-item
+    {
+        background: url(../images/select_arrow.png) no-repeat 230px #f2f2f2;
+    }
+    
     textarea
     {
         width: 260px;
