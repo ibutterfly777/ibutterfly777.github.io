@@ -152,6 +152,13 @@ footer
 
         float: left;
 
+        margin-top: 3px;
+    }
+    
+    .footer__facebook:before,
+    .footer__google:before,
+    .footer__twitter:before
+    {
         margin-top: 0;
     }
 
