@@ -141,6 +141,12 @@ body
             background-size: cover;
 }
 
+.testimonial a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
 .testimonial__title
 {
     width: 717px;
