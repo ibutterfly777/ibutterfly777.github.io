@@ -1,0 +1,249 @@
+@font-face
+{
+    font-family: 'Serendity';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url(fonts/SerendityScript.otf);
+    src: url(fonts/SerendityScript.eot) format('embedded-opentype'),
+    url(fonts/SerendityScript.woff) format('woff'),
+    url(fonts/SerendityScript.woff2) format('woff'),
+    url(fonts/SerendityScript.ttf) format('truetype'),
+    url(fonts/SerendityScript.svg) format('svg');
+}
+
+@font-face
+{
+    font-family: 'icomoon';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('fonts/icomoon.eot?jhsvr3');
+    src: url('fonts/icomoon.eot?#iefixjhsvr3') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?jhsvr3') format('truetype'),
+    url('fonts/icomoon.woff?jhsvr3') format('woff'),
+    url('fonts/icomoon.svg?jhsvr3#icomoon') format('svg');
+}
+
+[class^='icon-'],
+[class*=' icon-']
+{
+    font-family: 'icomoon';
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+
+    text-transform: none;
+
+    speak: none;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.header
+{
+    width: 100%;
+    max-width: 1440px;
+    height: 40px;
+    margin: 0 auto;
+
+    background: #000;
+}
+
+.header__menu,
+.testimonial__background
+{
+    width: 870px;
+    margin: 0 auto;
+}
+
+.header__menu-block
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.header__menu-block a
+{
+    padding-right: 34px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #fff;
+}
+
+.header__menu-block li
+{
+    float: left;
+
+    padding-top: 12px;
+}
+
+.header__menu-block a:hover,
+.header__contact-block-inner a:hover
+{
+    transition: 1s;
+
+    color: #a50d55;
+}
+
+.header__contact-block-inner
+{
+    font-weight: normal;
+
+    position: relative;
+
+    float: right;
+
+    width: auto;
+    margin-right: 12px;
+    padding-top: 13px;
+}
+
+.header__contact-block-inner a
+{
+    margin-left: 10px;
+
+    text-decoration: none;
+
+    color: #fff;
+}
+
+.testimonial
+{
+    position: relative;
+
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    min-height: 431px;
+    margin: 0 auto;
+
+    color: #fff;
+    background: url(images/bg.png) no-repeat center center;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+}
+
+.testimonial__title
+{
+    width: 717px;
+    margin: 0 auto;
+    padding-top: 147px;
+}
+
+.testimonial__sub-title
+{
+    font-family: 'Serendity';
+    font-size: 39px;
+
+    width: 565px;
+    height: 62px;
+    margin: 48px auto 0;
+    padding-top: 7px;
+
+    text-align: center;
+
+    background: url(images/text-bg.png) no-repeat;
+}
+
+.testimonial__arrow
+{
+    width: 44px;
+    margin: 44px auto 0;
+    padding-bottom: 25px;
+
+    text-align: center;
+}
+
+.form-block
+{
+    margin-top: -30px;
+    padding: 50px 0;
+
+    background: url(images/form-bg.png) repeat;
+}
+
+.form-subscribe
+{
+    position: relative;
+
+    box-sizing: border-box;
+    width: 890px;
+    height: 109px;
+    margin: 0 auto;
+    padding: 29px 60px;
+
+    border: 2px solid #ccc;
+    background: #fff;
+}
+
+input[type='email']
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+
+    box-sizing: border-box;
+    width: 363px;
+    height: 44px;
+    padding-left: 10px;
+
+    color: #7d798a;
+    border: 2px solid #ccc;
+}
+
+.form-subscribe:before
+{
+    position: absolute;
+    top: 41px;
+    left: 385px;
+
+    width: 18px;
+    height: 18px;
+
+    content: ' ';
+
+    background: url(images/email.png);
+}
+
+input[type='submit']
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+
+    float: right;
+
+    box-sizing: border-box;
+    width: 363px;
+    height: 44px;
+
+    text-transform: uppercase;
+
+    color: #fff;
+    border: none;
+    background: #a50d55;
+    box-shadow: 1px 1px 1px #61002e;
+}
+
+input[type='submit']:hover
+{
+    transition: 1s;
+
+    background: #61002e;
+}
