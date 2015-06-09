@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task2</title>
+	<script>
+		var name = prompt('your login', ' ');
+
+		if(name == 'admin'){
+			var password = prompt('password', ' ');
+			if(password == 'passw0rd'){
+				alert('Welcome home!')
+			} else if(password == 'null'){
+				alert('Canceled');
+			} else{
+				alert('Wrong password');
+			}
+
+		} else if(name == 'null'){
+			alert('Canceled');
+		} else{
+			alert('Access denied');
+		}
+		
+	</script>
+</head>
+<body>
+</body>
+</html>
