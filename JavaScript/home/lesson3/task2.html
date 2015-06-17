@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+
+	nextNum:
+	  for (var num = 2; num < 10; num++) {
+
+	    for (var j = 2; j < num; j++) {
+	      if (num % j == 0) continue nextNum;
+	    }
+
+	    console.log( num );
+	  }
+
+	</script>
+</body>
+</html>

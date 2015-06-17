@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	function fib(n){
+		var a = 1,
+		    b = 1;
+		for (var i = 3; i <= n; i++) {
+			var c = a + b;
+			a = b;
+			b = c;
+		}
+		return b;
+	}
+
+	console.log(fib(77));
+	</script>
+</body>
+</html>

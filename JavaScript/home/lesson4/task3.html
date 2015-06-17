@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function checkSpam(str){
+			if(str.length >= 20){
+				return str = str.substring(0, 21) + '...';
+			} else {
+				return str;
+			}
+		}
+
+		console.log(checkSpam('Напишите функцию, которая принимает на вход строку и возвращает ее неизменной если ее длина'));
+		console.log(checkSpam('How hhhhhhhhhhhhhhhhhhhhhhhhhhh to earn fast money?'));
+		console.log(checkSpam('How?'));
+		console.log(checkSpam('How to earn fast money?'));
+		console.log(checkSpam('New PSD template'));
+	</script>
+</body>
+</html>
