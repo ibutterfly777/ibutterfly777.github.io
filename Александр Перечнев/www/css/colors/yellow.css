@@ -1,0 +1,28 @@
+.button, .to-top, .tags a {
+  background-color: #fff947;
+  color: #000;
+}
+
+.nav-link:hover, .section-icon, .price-amount, .pricing-table h3, .callout p, .post-li-link, .post-author.post-author-list, .h5-portfolio, .nav-link.current  {
+    color: #fff947;
+}
+
+.chat, .contact-callout h2, .col-services, .big-link:hover, .blog-home-contain .button:hover {
+  border-color: #fff947;
+}
+
+.section-icon-white {
+	color: rgba(0,0,0,0.3);
+}
+
+.thumb-overlay {
+  background-color: rgba(255,249,71,0.54);
+}
+
+.center-icon { 
+	color: #000;
+}
+
+.pace .pace-progress {
+  background: #fff947;
+}

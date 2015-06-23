@@ -1,0 +1,30 @@
+.button, .to-top, .tags a {
+  background-color: #202328;
+}
+
+.nav-link:hover, .section-icon, .price-amount, .pricing-table h3, .callout p, .post-li-link, .post-author.post-author-list, .h5-portfolio, .nav-link.current  {
+    color: #ebebed;
+}
+
+.chat, .contact-callout h2, .col-services, .big-link:hover, .blog-home-contain .button:hover {
+  border-color: #ebebed;
+}
+
+.section-icon-white {
+	color: rgba(0,0,0,0.3);
+}
+
+.button {
+box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.2) 0px 0px 6px 0px;
+  background-image: -webkit-linear-gradient(rgba(255,255,255,0.15), rgba(0,0,0,0.15));
+  background-image: -o-linear-gradient(rgba(255,255,255,0.15), rgba(0,0,0,0.15));
+  background-image: linear-gradient(rgba(255,255,255,0.15), rgba(0,0,0,0.15));
+}
+
+.thumb-overlay {
+  background-color: rgba(33,34,38,0.55);
+}
+
+.pace .pace-progress {
+  background: #ebebed;
+}

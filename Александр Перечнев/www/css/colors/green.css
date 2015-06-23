@@ -1,0 +1,19 @@
+.button, .to-top, .tags a {
+  background-color: #54ba5b;
+}
+
+.nav-link:hover, .section-icon, .price-amount, .pricing-table h3, .callout p, .post-li-link, .post-author.post-author-list, .h5-portfolio, .nav-link.current  {
+    color: #54ba5b;
+}
+
+.chat, .contact-callout h2, .col-services, .big-link:hover, .blog-home-contain .button:hover {
+  border-color: #54ba5b;
+}
+
+.thumb-overlay {
+  background-color: rgba(84,186,91,0.54);
+}
+
+.pace .pace-progress {
+  background: #54ba5b;
+}
